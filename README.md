@@ -10,7 +10,8 @@ The app includes 3 buttons showing ads for each product (ad unit type):
 
 ### How do I get set up? ###
 
-Load the project with XCode (on a Mac machine).
+* Load the project with XCode (on a Mac machine).
+* For instrcutions of how to integrate YouAppi's iOS SDK refer to [YouApp's confluence](https://youappi.atlassian.net/wiki/display/RD/YouAppi+iOS+SDK) 
 
 ### How do I run? ###
 
