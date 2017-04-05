@@ -14,7 +14,7 @@ Load the project with XCode (on a Mac machine).
 
 ### How do I run? ###
 
-TBD
+Simply press the project play button.
 
 ### Who do I talk to? ###
 
