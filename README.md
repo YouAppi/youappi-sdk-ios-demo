@@ -19,4 +19,4 @@ Simply press the project play button.
 
 ### Who do I talk to? ###
 
-* Guy Bashan, guy.b@youappi.com
+* Guy Bashan, [guy.b@youappi.com](mailto:guy.b@youappi.com)
