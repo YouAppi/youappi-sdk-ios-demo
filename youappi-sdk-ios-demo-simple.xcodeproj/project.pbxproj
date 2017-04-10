@@ -14,8 +14,8 @@
 		8C2D83171E94758300E55A8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C2D83151E94758300E55A8B /* LaunchScreen.storyboard */; };
 		8C2D83221E94758300E55A8B /* youappi_sdk_ios_demo_simpleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2D83211E94758300E55A8B /* youappi_sdk_ios_demo_simpleTests.swift */; };
 		8C2D832D1E94758300E55A8B /* youappi_sdk_ios_demo_simpleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2D832C1E94758300E55A8B /* youappi_sdk_ios_demo_simpleUITests.swift */; };
-		8C2D833D1E94762700E55A8B /* YouAppi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C2D833B1E94761C00E55A8B /* YouAppi.framework */; };
-		8C2D833E1E94762700E55A8B /* YouAppi.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8C2D833B1E94761C00E55A8B /* YouAppi.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8CCC753B1E9C0BC700FBA764 /* YouAppi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CCC753A1E9C0BC700FBA764 /* YouAppi.framework */; };
+		8CCC753D1E9C0BD800FBA764 /* YouAppi.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8CCC753A1E9C0BC700FBA764 /* YouAppi.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +42,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				8C2D833E1E94762700E55A8B /* YouAppi.framework in Embed Frameworks */,
+				8CCC753D1E9C0BD800FBA764 /* YouAppi.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -63,7 +63,7 @@
 		8C2D83281E94758300E55A8B /* youappi-sdk-ios-demo-simpleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "youappi-sdk-ios-demo-simpleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C2D832C1E94758300E55A8B /* youappi_sdk_ios_demo_simpleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = youappi_sdk_ios_demo_simpleUITests.swift; sourceTree = "<group>"; };
 		8C2D832E1E94758300E55A8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8C2D833B1E94761C00E55A8B /* YouAppi.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = YouAppi.framework; sourceTree = "<group>"; };
+		8CCC753A1E9C0BC700FBA764 /* YouAppi.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = YouAppi.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C2D833D1E94762700E55A8B /* YouAppi.framework in Frameworks */,
+				8CCC753B1E9C0BC700FBA764 /* YouAppi.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,7 +147,7 @@
 		8C2D833A1E9475FE00E55A8B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8C2D833B1E94761C00E55A8B /* YouAppi.framework */,
+				8CCC753A1E9C0BC700FBA764 /* YouAppi.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -450,7 +450,7 @@
 				DEVELOPMENT_TEAM = BS569XT53A;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/**",
 				);
 				INFOPLIST_FILE = "youappi-sdk-ios-demo-simple/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -469,7 +469,7 @@
 				DEVELOPMENT_TEAM = BS569XT53A;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/**",
 				);
 				INFOPLIST_FILE = "youappi-sdk-ios-demo-simple/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -556,6 +556,7 @@
 				8C2D83331E94758300E55A8B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8C2D83341E94758300E55A8B /* Build configuration list for PBXNativeTarget "youappi-sdk-ios-demo-simpleTests" */ = {
 			isa = XCConfigurationList;
@@ -564,6 +565,7 @@
 				8C2D83361E94758300E55A8B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8C2D83371E94758300E55A8B /* Build configuration list for PBXNativeTarget "youappi-sdk-ios-demo-simpleUITests" */ = {
 			isa = XCConfigurationList;
@@ -572,6 +574,7 @@
 				8C2D83391E94758300E55A8B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
