@@ -1,82 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-<device id="retina4_7" orientation="portrait">
-<adaptation id="fullscreen"/>
-</device>
-<dependencies>
-<deployment identifier="iOS"/>
-<plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
-<capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
-</dependencies>
-<scenes>
-<!--View Controller-->
-<scene sceneID="tne-QT-ifu">
-<objects>
-<viewController id="BYZ-38-t0r" customClass="ViewController" customModule="youappi_ios_sdk_demo_simple" customModuleProvider="target" sceneMemberID="viewController">
-<layoutGuides>
-<viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-<viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-</layoutGuides>
-<view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-<rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-<autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-<subviews>
-<button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wyN-k3-2wf">
-<rect key="frame" x="95" y="65" width="184" height="30"/>
-<color key="backgroundColor" red="0.70409525296214581" green="0.84181162132239595" blue="0.95075696243523311" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-<constraints>
-<constraint firstAttribute="width" constant="184" id="1mW-zb-qiS"/>
-</constraints>
-<state key="normal" title="Show Rewarded Video"/>
-<connections>
-<action selector="showAdWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xEi-mH-8oM"/>
-</connections>
-</button>
-<button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="azp-rM-9QQ">
-<rect key="frame" x="95" y="128" width="184" height="30"/>
-<color key="backgroundColor" red="0.70409525299999998" green="0.84181162129999998" blue="0.95075696239999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-<constraints>
-<constraint firstAttribute="width" constant="184" id="tdh-SD-E7w"/>
-</constraints>
-<state key="normal" title="Show Interstitial Video"/>
-<connections>
-<action selector="showAdWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h9C-TS-c6c"/>
-</connections>
-</button>
-<button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IOK-BV-ec3">
-<rect key="frame" x="95" y="190" width="184" height="30"/>
-<color key="backgroundColor" red="0.70409525299999998" green="0.84181162129999998" blue="0.95075696239999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-<constraints>
-<constraint firstAttribute="width" constant="184" id="7lq-33-g2d"/>
-</constraints>
-<state key="normal" title="Show Interstitial Ad"/>
-<connections>
-<action selector="showAdWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DLf-RN-Emd"/>
-</connections>
-</button>
-</subviews>
-<color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-<constraints>
-<constraint firstItem="azp-rM-9QQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0hA-3D-gNf"/>
-<constraint firstItem="azp-rM-9QQ" firstAttribute="top" secondItem="wyN-k3-2wf" secondAttribute="bottom" constant="33" id="6PC-g0-7SR"/>
-<constraint firstItem="wyN-k3-2wf" firstAttribute="trailing" secondItem="azp-rM-9QQ" secondAttribute="trailing" id="9t3-5U-Afd"/>
-<constraint firstItem="IOK-BV-ec3" firstAttribute="top" secondItem="azp-rM-9QQ" secondAttribute="bottom" constant="32" id="CIN-K1-kGs"/>
-<constraint firstItem="wyN-k3-2wf" firstAttribute="trailing" secondItem="IOK-BV-ec3" secondAttribute="trailing" id="D5C-ed-3eu"/>
-<constraint firstItem="wyN-k3-2wf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="P5Z-KY-1EI"/>
-<constraint firstItem="wyN-k3-2wf" firstAttribute="leading" secondItem="azp-rM-9QQ" secondAttribute="leading" id="XU7-ci-7FB"/>
-<constraint firstItem="wyN-k3-2wf" firstAttribute="leading" secondItem="IOK-BV-ec3" secondAttribute="leading" id="i36-fg-OsO"/>
-<constraint firstItem="wyN-k3-2wf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="45" id="jd0-Wj-J9T"/>
-<constraint firstItem="IOK-BV-ec3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="z3v-pK-Xeg"/>
-</constraints>
-</view>
-<connections>
-<outlet property="buttonInterstitialAd" destination="IOK-BV-ec3" id="CO7-5a-6DB"/>
-<outlet property="buttonRewardedVideo" destination="azp-rM-9QQ" id="HWu-gE-nmz"/>
-</connections>
-</viewController>
-<placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-</objects>
-<point key="canvasLocation" x="136.80000000000001" y="129.98500749625188"/>
-</scene>
-</scenes>
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="youappi_sdk_ios_demo_simple" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wyN-k3-2wf">
+                                <rect key="frame" x="95" y="65" width="184" height="30"/>
+                                <color key="backgroundColor" red="0.70409525296214581" green="0.84181162132239595" blue="0.95075696243523311" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="184" id="1mW-zb-qiS"/>
+                                </constraints>
+                                <state key="normal" title="Show Rewarded Video"/>
+                                <connections>
+                                    <action selector="showAdWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xEi-mH-8oM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="azp-rM-9QQ">
+                                <rect key="frame" x="95" y="128" width="184" height="30"/>
+                                <color key="backgroundColor" red="0.70409525299999998" green="0.84181162129999998" blue="0.95075696239999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="184" id="tdh-SD-E7w"/>
+                                </constraints>
+                                <state key="normal" title="Show Interstitial Video"/>
+                                <connections>
+                                    <action selector="showAdWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h9C-TS-c6c"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IOK-BV-ec3">
+                                <rect key="frame" x="95" y="190" width="184" height="30"/>
+                                <color key="backgroundColor" red="0.70409525299999998" green="0.84181162129999998" blue="0.95075696239999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="184" id="7lq-33-g2d"/>
+                                </constraints>
+                                <state key="normal" title="Show Interstitial Ad"/>
+                                <connections>
+                                    <action selector="showAdWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DLf-RN-Emd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="azp-rM-9QQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0hA-3D-gNf"/>
+                            <constraint firstItem="azp-rM-9QQ" firstAttribute="top" secondItem="wyN-k3-2wf" secondAttribute="bottom" constant="33" id="6PC-g0-7SR"/>
+                            <constraint firstItem="wyN-k3-2wf" firstAttribute="trailing" secondItem="azp-rM-9QQ" secondAttribute="trailing" id="9t3-5U-Afd"/>
+                            <constraint firstItem="IOK-BV-ec3" firstAttribute="top" secondItem="azp-rM-9QQ" secondAttribute="bottom" constant="32" id="CIN-K1-kGs"/>
+                            <constraint firstItem="wyN-k3-2wf" firstAttribute="trailing" secondItem="IOK-BV-ec3" secondAttribute="trailing" id="D5C-ed-3eu"/>
+                            <constraint firstItem="wyN-k3-2wf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="P5Z-KY-1EI"/>
+                            <constraint firstItem="wyN-k3-2wf" firstAttribute="leading" secondItem="azp-rM-9QQ" secondAttribute="leading" id="XU7-ci-7FB"/>
+                            <constraint firstItem="wyN-k3-2wf" firstAttribute="leading" secondItem="IOK-BV-ec3" secondAttribute="leading" id="i36-fg-OsO"/>
+                            <constraint firstItem="wyN-k3-2wf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="45" id="jd0-Wj-J9T"/>
+                            <constraint firstItem="IOK-BV-ec3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="z3v-pK-Xeg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="buttonInterstitialAd" destination="IOK-BV-ec3" id="CO7-5a-6DB"/>
+                        <outlet property="buttonInterstitialVideo" destination="azp-rM-9QQ" id="MB4-XY-Cdy"/>
+                        <outlet property="buttonRewardedVideo" destination="wyN-k3-2wf" id="Izr-eP-Vkc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="129.98500749625188"/>
+        </scene>
+    </scenes>
 </document>

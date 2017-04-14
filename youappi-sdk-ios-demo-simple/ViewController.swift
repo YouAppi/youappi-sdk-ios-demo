@@ -31,7 +31,7 @@ class ViewController: UIViewController, YAAdDelegate {
     
     private func updateLayout() {
         self.buttonRewardedVideo?.isEnabled = YouAppi.sharedInstance.rewardedVideo()!.isAvailable()
-        self.buttonInterstitialAd?.isEnabled = YouAppi.sharedInstance.interstitialVideo()!.isAvailable()
+        self.buttonInterstitialVideo?.isEnabled = YouAppi.sharedInstance.interstitialVideo()!.isAvailable()
         self.buttonInterstitialAd?.isEnabled = YouAppi.sharedInstance.cardAd()!.isAvailable()
     }
     
@@ -58,8 +58,6 @@ class ViewController: UIViewController, YAAdDelegate {
     
     internal func adDidInitialize(youAppi: YouAppi, adType: AdType) {
         print("\(adType) did initialize")
-        
-        self.updateLayout()
     }
     
     internal func adWillLeaveApplication(youAppi: YouAppi, adType: AdType) {
