@@ -14,8 +14,8 @@
 		8C2D83171E94758300E55A8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C2D83151E94758300E55A8B /* LaunchScreen.storyboard */; };
 		8C2D83221E94758300E55A8B /* youappi_sdk_ios_demo_simpleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2D83211E94758300E55A8B /* youappi_sdk_ios_demo_simpleTests.swift */; };
 		8C2D832D1E94758300E55A8B /* youappi_sdk_ios_demo_simpleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2D832C1E94758300E55A8B /* youappi_sdk_ios_demo_simpleUITests.swift */; };
-		8CCC754B1EA0251D00FBA764 /* YouAppi.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8CCC75481EA024FE00FBA764 /* YouAppi.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		8CCC754C1EA0253300FBA764 /* YouAppi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CCC75481EA024FE00FBA764 /* YouAppi.framework */; };
+		8CA57C681F30B20400E60A6F /* YouAppi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CA57C661F30B1DF00E60A6F /* YouAppi.framework */; };
+		8CA57C691F30B20400E60A6F /* YouAppi.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8CA57C661F30B1DF00E60A6F /* YouAppi.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,13 +36,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		8C2D833F1E94762700E55A8B /* Embed Frameworks */ = {
+		8CC1500C1EA6FB85008156D4 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				8CCC754B1EA0251D00FBA764 /* YouAppi.framework in Embed Frameworks */,
+				8CA57C691F30B20400E60A6F /* YouAppi.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -63,7 +63,7 @@
 		8C2D83281E94758300E55A8B /* youappi-sdk-ios-demo-simpleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "youappi-sdk-ios-demo-simpleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C2D832C1E94758300E55A8B /* youappi_sdk_ios_demo_simpleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = youappi_sdk_ios_demo_simpleUITests.swift; sourceTree = "<group>"; };
 		8C2D832E1E94758300E55A8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8CCC75481EA024FE00FBA764 /* YouAppi.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = YouAppi.framework; sourceTree = "<group>"; };
+		8CA57C661F30B1DF00E60A6F /* YouAppi.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = YouAppi.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CCC754C1EA0253300FBA764 /* YouAppi.framework in Frameworks */,
+				8CA57C681F30B20400E60A6F /* YouAppi.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,7 +147,7 @@
 		8C2D833A1E9475FE00E55A8B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8CCC75481EA024FE00FBA764 /* YouAppi.framework */,
+				8CA57C661F30B1DF00E60A6F /* YouAppi.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -162,7 +162,8 @@
 				8C2D83051E94758300E55A8B /* Sources */,
 				8C2D83061E94758300E55A8B /* Frameworks */,
 				8C2D83071E94758300E55A8B /* Resources */,
-				8C2D833F1E94762700E55A8B /* Embed Frameworks */,
+				8CC1500C1EA6FB85008156D4 /* Embed Frameworks */,
+				8CC1501C1EAC8368008156D4 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -221,7 +222,7 @@
 				TargetAttributes = {
 					8C2D83081E94758300E55A8B = {
 						CreatedOnToolsVersion = 8.3;
-						DevelopmentTeam = BS569XT53A;
+						DevelopmentTeam = 3RD42EKR43;
 						ProvisioningStyle = Automatic;
 					};
 					8C2D831C1E94758300E55A8B = {
@@ -284,6 +285,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8CC1501C1EAC8368008156D4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#This step is required to work around an App Store submission bug in swift when archiving universal binaries.\n#\"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/YouAppi.framework/strip-frameworks.sh\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8C2D83051E94758300E55A8B /* Sources */ = {
@@ -370,7 +387,10 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				DEBUG_ACTIVITY_MODE = "";
+				"DEBUG_ACTIVITY_MODE[sdk=iphonesimulator*]" = disable;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -387,7 +407,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -421,7 +441,9 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				DEBUG_ACTIVITY_MODE = "";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -432,7 +454,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -444,18 +466,19 @@
 		8C2D83321E94758300E55A8B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = BS569XT53A;
+				DEVELOPMENT_TEAM = 3RD42EKR43;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "youappi-sdk-ios-demo-simple/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "youappi.youappi-sdk-ios-demo-simple";
+				PRODUCT_BUNDLE_IDENTIFIER = com.youappi.sdk.demo.simple;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -463,18 +486,19 @@
 		8C2D83331E94758300E55A8B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = BS569XT53A;
+				DEVELOPMENT_TEAM = 3RD42EKR43;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "youappi-sdk-ios-demo-simple/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "youappi.youappi-sdk-ios-demo-simple";
+				PRODUCT_BUNDLE_IDENTIFIER = com.youappi.sdk.demo.simple;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

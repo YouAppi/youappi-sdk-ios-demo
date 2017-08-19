@@ -9,7 +9,7 @@
 import UIKit
 import YouAppi
 
-class ViewController: UIViewController, YAAdDelegate {
+class ViewController: UIViewController, YAAdDelegate, YALoggerDelegate {
     
     @IBOutlet weak var buttonRewardedVideo: UIButton!
     @IBOutlet weak var buttonInterstitialVideo: UIButton!
@@ -24,6 +24,7 @@ class ViewController: UIViewController, YAAdDelegate {
         YouAppi.sharedInstance.rewardedVideo()?.delegate = self
         YouAppi.sharedInstance.interstitialVideo()?.delegate = self
         YouAppi.sharedInstance.cardAd()?.delegate = self
+        YouAppi.sharedInstance.log()?.delegate = self
         
         self.updateLayout()
         
@@ -55,62 +56,68 @@ class ViewController: UIViewController, YAAdDelegate {
     }
     
     //MARK: YAAd delegate
-    
-    internal func adDidInitialize(youAppi: YouAppi, adType: AdType) {
-        print("\(adType) did initialize")
-    }
-    
-    internal func adWillLeaveApplication(youAppi: YouAppi, adType: AdType) {
-        print("\(adType) ad will leave application")
-    }
-    
-    internal func adDidChangeAvailability(youAppi: YouAppi, adType: AdType, isAvailable: Bool) {
-        print("\(adType) did Change availablity")
+    internal func adDidInitialize() {
+        print("did initialize")
         
         self.updateLayout()
     }
     
-    func adRetrievalFailed(youAppi: YouAppi, adType: AdType, error: Error) {
-        print("\(adType) Failed to retrieve ad: \(error)")
+    internal func adWillLeaveApplication() {
+        print("ad will leave application")
+    }
+    
+    internal func adDidChangeAvailability(isAvailable: Bool) {
+        print("did Change availablity")
+        
+        self.updateLayout()
+    }
+    
+    func adRetrievalFailed(error: Error) {
+        print("Failed to retrieve ad: \(error)")
     }
     
     // MARK: YouAppi Delegates
     
-    func adDidClicked(youAppi: YouAppi, adType: AdType) {
-        print("\(adType) did Clicked")
+    func adDidClicked() {
+        print("did Clicked")
     }
     
-    func adDidShown(youAppi: YouAppi, adType: AdType) {
-        print("\(adType) did Shown")
+    func adDidShown() {
+        print("did Shown")
         
     }
     
-    func adDidClose(youAppi: YouAppi, adType: AdType) {
-        print("\(adType) did Closed")
+    func adDidClose() {
+        print("did Closed")
         
     }
     
-    func adPreloadFailed(youAppi: YouAppi, adType: AdType, error: Error) {
-        print("\(adType) Failed preloading ad: \(error)")
+    func adPreloadFailed(error: Error) {
+        print("Failed preloading ad: \(error)")
     }
     
-    func adDidEnd(youAppi: YouAppi, adType: AdType) {
-        print("\(adType) did End")
+    func adDidEnd() {
+        print("did End")
         
     }
     
-    func adDidStarted(youAppi: YouAppi, adType: AdType) {
-        print("\(adType) did Started")
+    func adDidStarted() {
+        print("did Started")
         
     }
     
-    func adDidRewarded(youAppi: YouAppi, adType: AdType) {
-        
+    func adDidRewarded() {
+        print("ad was rewarded")
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func logDidReceivedInformation(message: String, error: Error?) {
+        let err = error?.localizedDescription ?? ""
+        print("\(message), error: \(err)")
     }
     
 }
