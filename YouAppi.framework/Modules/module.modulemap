@@ -7,5 +7,4 @@ framework module YouAppi {
 
 module YouAppi.Swift {
     header "YouAppi-Swift.h"
-    requires objc
 }

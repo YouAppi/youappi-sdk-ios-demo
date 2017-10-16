@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,12 +21,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wyN-k3-2wf">
+                                <rect key="frame" x="95" y="65" width="184" height="30"/>
+                                <color key="backgroundColor" red="0.70409525296214581" green="0.84181162132239595" blue="0.95075696243523311" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="184" id="1mW-zb-qiS"/>
+                                </constraints>
+                                <state key="normal" title="Show Rewarded Video"/>
+                                <connections>
+                                    <action selector="showAdWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xEi-mH-8oM"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="azp-rM-9QQ">
-                                <rect key="frame" x="87.5" y="123" width="200" height="30"/>
+                                <rect key="frame" x="95" y="128" width="184" height="30"/>
                                 <color key="backgroundColor" red="0.70409525299999998" green="0.84181162129999998" blue="0.95075696239999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="8YI-YJ-AdX"/>
-                                    <constraint firstAttribute="height" constant="30" id="v1t-9O-b8b"/>
+                                    <constraint firstAttribute="width" constant="184" id="tdh-SD-E7w"/>
                                 </constraints>
                                 <state key="normal" title="Show Interstitial Video"/>
                                 <connections>
@@ -34,74 +44,28 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IOK-BV-ec3">
-                                <rect key="frame" x="87" y="182" width="200" height="30"/>
+                                <rect key="frame" x="95" y="190" width="184" height="30"/>
                                 <color key="backgroundColor" red="0.70409525299999998" green="0.84181162129999998" blue="0.95075696239999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="aNo-O9-u7Q"/>
-                                    <constraint firstAttribute="height" constant="30" id="u7f-B1-gC0"/>
+                                    <constraint firstAttribute="width" constant="184" id="7lq-33-g2d"/>
                                 </constraints>
                                 <state key="normal" title="Show Interstitial Ad"/>
                                 <connections>
                                     <action selector="showAdWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DLf-RN-Emd"/>
                                 </connections>
                             </button>
-                            <activityIndicatorView hidden="YES" opaque="NO" tag="222" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="mit-LX-SgS">
-                                <rect key="frame" x="57" y="128" width="20" height="20"/>
-                            </activityIndicatorView>
-                            <activityIndicatorView hidden="YES" opaque="NO" tag="333" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="rCu-K4-r2b">
-                                <rect key="frame" x="57" y="187" width="20" height="20"/>
-                            </activityIndicatorView>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wyN-k3-2wf">
-                                <rect key="frame" x="87" y="65" width="200" height="30"/>
-                                <color key="backgroundColor" red="0.70409525296214581" green="0.84181162132239595" blue="0.95075696243523311" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="9DY-Ym-NEm"/>
-                                    <constraint firstAttribute="height" constant="30" id="tYd-jy-VVk"/>
-                                </constraints>
-                                <state key="normal" title="Show Rewarded Video"/>
-                                <connections>
-                                    <action selector="showAdWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xEi-mH-8oM"/>
-                                </connections>
-                            </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bSB-xm-xX8">
-                                <rect key="frame" x="5" y="562" width="365" height="100"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1R8-o0-EXR">
-                                        <rect key="frame" x="8" y="8" width="349" height="84"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" red="0.70409525299999998" green="0.84181162129999998" blue="0.95075696239999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstItem="1R8-o0-EXR" firstAttribute="leading" secondItem="bSB-xm-xX8" secondAttribute="leading" constant="8" id="209-Gf-Tlc"/>
-                                    <constraint firstItem="1R8-o0-EXR" firstAttribute="top" secondItem="bSB-xm-xX8" secondAttribute="top" constant="8" id="7G9-Wv-VQg"/>
-                                    <constraint firstAttribute="trailing" secondItem="1R8-o0-EXR" secondAttribute="trailing" constant="8" id="Qtl-zf-mOx"/>
-                                    <constraint firstAttribute="bottom" secondItem="1R8-o0-EXR" secondAttribute="bottom" constant="8" id="cH3-ob-gcp"/>
-                                    <constraint firstAttribute="height" constant="100" id="ihD-yZ-xzM"/>
-                                </constraints>
-                            </view>
-                            <activityIndicatorView hidden="YES" opaque="NO" tag="111" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="nW7-0P-uhG">
-                                <rect key="frame" x="57" y="70" width="20" height="20"/>
-                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="mit-LX-SgS" firstAttribute="centerY" secondItem="azp-rM-9QQ" secondAttribute="centerY" id="3j8-hY-cME"/>
-                            <constraint firstItem="wyN-k3-2wf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9dJ-oe-ilp"/>
-                            <constraint firstItem="nW7-0P-uhG" firstAttribute="centerY" secondItem="wyN-k3-2wf" secondAttribute="centerY" id="Kjd-jn-ueT"/>
-                            <constraint firstItem="IOK-BV-ec3" firstAttribute="top" secondItem="azp-rM-9QQ" secondAttribute="bottom" constant="29" id="OQA-1u-g2E"/>
-                            <constraint firstItem="azp-rM-9QQ" firstAttribute="top" secondItem="wyN-k3-2wf" secondAttribute="bottom" constant="28" id="QOi-yL-CWs"/>
-                            <constraint firstItem="azp-rM-9QQ" firstAttribute="leading" secondItem="mit-LX-SgS" secondAttribute="trailing" constant="10.5" id="VIP-iL-Fy0"/>
-                            <constraint firstItem="azp-rM-9QQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WzG-NB-aRX"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="bSB-xm-xX8" secondAttribute="bottom" constant="5" id="ZPp-pj-mi9"/>
-                            <constraint firstItem="wyN-k3-2wf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="45" id="fFR-SP-8Cq"/>
-                            <constraint firstItem="wyN-k3-2wf" firstAttribute="leading" secondItem="nW7-0P-uhG" secondAttribute="trailing" constant="10" id="i0a-D0-w30"/>
-                            <constraint firstAttribute="trailing" secondItem="bSB-xm-xX8" secondAttribute="trailing" constant="5" id="jS8-eA-5Vc"/>
-                            <constraint firstItem="rCu-K4-r2b" firstAttribute="centerY" secondItem="IOK-BV-ec3" secondAttribute="centerY" id="leF-c8-UfW"/>
-                            <constraint firstItem="IOK-BV-ec3" firstAttribute="leading" secondItem="rCu-K4-r2b" secondAttribute="trailing" constant="10" id="tTB-v9-Fmp"/>
-                            <constraint firstItem="bSB-xm-xX8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="5" id="v3B-rH-WSs"/>
+                            <constraint firstItem="azp-rM-9QQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0hA-3D-gNf"/>
+                            <constraint firstItem="azp-rM-9QQ" firstAttribute="top" secondItem="wyN-k3-2wf" secondAttribute="bottom" constant="33" id="6PC-g0-7SR"/>
+                            <constraint firstItem="wyN-k3-2wf" firstAttribute="trailing" secondItem="azp-rM-9QQ" secondAttribute="trailing" id="9t3-5U-Afd"/>
+                            <constraint firstItem="IOK-BV-ec3" firstAttribute="top" secondItem="azp-rM-9QQ" secondAttribute="bottom" constant="32" id="CIN-K1-kGs"/>
+                            <constraint firstItem="wyN-k3-2wf" firstAttribute="trailing" secondItem="IOK-BV-ec3" secondAttribute="trailing" id="D5C-ed-3eu"/>
+                            <constraint firstItem="wyN-k3-2wf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="P5Z-KY-1EI"/>
+                            <constraint firstItem="wyN-k3-2wf" firstAttribute="leading" secondItem="azp-rM-9QQ" secondAttribute="leading" id="XU7-ci-7FB"/>
+                            <constraint firstItem="wyN-k3-2wf" firstAttribute="leading" secondItem="IOK-BV-ec3" secondAttribute="leading" id="i36-fg-OsO"/>
+                            <constraint firstItem="wyN-k3-2wf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="45" id="jd0-Wj-J9T"/>
                             <constraint firstItem="IOK-BV-ec3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="z3v-pK-Xeg"/>
                         </constraints>
                     </view>
@@ -109,9 +73,6 @@
                         <outlet property="buttonInterstitialAd" destination="IOK-BV-ec3" id="CO7-5a-6DB"/>
                         <outlet property="buttonInterstitialVideo" destination="azp-rM-9QQ" id="MB4-XY-Cdy"/>
                         <outlet property="buttonRewardedVideo" destination="wyN-k3-2wf" id="Izr-eP-Vkc"/>
-                        <outlet property="lblMsg" destination="1R8-o0-EXR" id="17D-Ya-iun"/>
-                        <outlet property="viewMsg" destination="bSB-xm-xX8" id="dqE-dx-oAh"/>
-                        <outlet property="viewMsgCon" destination="ZPp-pj-mi9" id="Bf9-vh-BA7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
