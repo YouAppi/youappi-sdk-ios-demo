@@ -9,18 +9,25 @@
 import UIKit
 import YouAppi
 
+enum ButtonState {
+    case Load
+    case Show
+    case UnKnown
+   
+}
+
 class ViewController: UIViewController, YALoggerDelegate,YAAdCardDelegate  {
     
     
-     let rewardedVideoId = "rewardedVideo_Id"
-     let interstitialVideoId = "interstitialVideo_Id"
-     let interstitialAdId = "interstitialAd_Id"
+     let rewardedVideoId = "test_ios_rewarded_video"
+     let interstitialVideoId = "test_ios_interstitial_video"
+     let interstitialAdId = "test_ios_interstitial_ad"
     
     var rewardedVideo: YAAdRewardedVideo?
     var interstitialVideo: YAAdInterstitialVideo?
     var interstitialAd: YAAdCard?
     
-    var timer:Timer?
+    var alert:AlertToast?
     
     @IBOutlet weak var buttonRewardedVideo: UIButton!
     @IBOutlet weak var buttonInterstitialVideo: UIButton!
@@ -28,6 +35,10 @@ class ViewController: UIViewController, YALoggerDelegate,YAAdCardDelegate  {
     @IBOutlet weak var viewMsg: UIView!
     @IBOutlet weak var lblMsg: UILabel!
     @IBOutlet weak var viewMsgCon: NSLayoutConstraint!
+    
+    var buttonRewardedVideoState:ButtonState!
+    var buttonInterstitialVideoState:ButtonState!
+    var buttonInterstitialAdtate:ButtonState!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,6 +49,7 @@ class ViewController: UIViewController, YALoggerDelegate,YAAdCardDelegate  {
         YouAppi.sharedInstance.log()?.delegate = self
     }
     
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
@@ -45,10 +57,18 @@ class ViewController: UIViewController, YALoggerDelegate,YAAdCardDelegate  {
         self.setButtonText(tag:1,text:"Load ")
         self.setButtonText(tag:2,text:"Load ")
         self.setButtonText(tag:3,text:"Load ")
+        
+        buttonRewardedVideoState = .Load
+        buttonInterstitialVideoState = .Load
+        buttonInterstitialAdtate = .Load
+        
+        self.alert = AlertToast(view: self.view, viewMsg: self.viewMsg, lblMsg: self.lblMsg, viewMsgCon: self.viewMsgCon)
+        self.alert?.hideAlert()
+        
         self.showOrHideActivityIndictor(buttonTag: 1, flagShow: false)
         self.showOrHideActivityIndictor(buttonTag: 2, flagShow: false)
         self.showOrHideActivityIndictor(buttonTag: 3, flagShow: false)
-        self.hideAlert()
+        
         self.viewMsg.layer.cornerRadius = 15.0
         self.viewMsg.clipsToBounds = true
     }
@@ -60,6 +80,7 @@ class ViewController: UIViewController, YALoggerDelegate,YAAdCardDelegate  {
 
     //MARK: Private Functions delegate
     
+    
     private func enableOrDisableButton(flag:Bool){
         
         self.buttonRewardedVideo?.isEnabled = flag
@@ -70,6 +91,22 @@ class ViewController: UIViewController, YALoggerDelegate,YAAdCardDelegate  {
         self.buttonInterstitialVideo.alpha = flag ? 1.0 : 0.2
         self.buttonInterstitialVideo.alpha = flag ? 1.0 : 0.2
         
+    }
+    
+    private func setButtonStateByTag(tag:Int,state:ButtonState){
+        switch tag {
+        case 1:
+             self.buttonRewardedVideoState = state
+            break
+        case 2:
+             self.buttonInterstitialVideoState = state
+            break
+        case 3:
+             self.buttonInterstitialAdtate = state
+            break
+        default:
+            print("no state for this  button")
+        }
     }
     
     private func setButtonText(tag:Int,text:String) {
@@ -97,22 +134,25 @@ class ViewController: UIViewController, YALoggerDelegate,YAAdCardDelegate  {
     
     private func removeProduct(with adUnitID: String){
         
-        if adUnitID.contains(rewardedVideoId)
+        if adUnitID == rewardedVideoId
         {
             self.self.rewardedVideo = nil
             self.setButtonText(tag: 1, text: "Load ")
+            self.setButtonStateByTag(tag: 1, state: .Load)
         }
         else
-            if adUnitID.contains(interstitialVideoId)
+            if adUnitID == interstitialVideoId
             {
                 self.interstitialVideo = nil
                 self.setButtonText(tag: 2, text: "Load ")
+                self.setButtonStateByTag(tag: 2, state: .Load)
             }
             else
-                if adUnitID.contains(interstitialAdId)
+                if adUnitID == interstitialAdId
                 {
                     self.interstitialAd = nil
                     self.setButtonText(tag: 3, text: "Load ")
+                    self.setButtonStateByTag(tag: 3, state: .Load)
         }
     }
     
@@ -133,28 +173,14 @@ class ViewController: UIViewController, YALoggerDelegate,YAAdCardDelegate  {
         {
             return ""
         }
-        
-        let productPrefix: String = unitID.components(separatedBy: "_").first!
-        return productPrefix
+
+        let arr: [String] = unitID.components(separatedBy: "_")
+        return arr[2] + " " + arr[3]
     }
 
     private func showAlert(message: String)
     {
-        self.timer?.invalidate()
-        self.lblMsg.text = message
-        self.lblMsg.sizeToFit()
-        self.viewMsgCon.constant = 5
-        UIView.animate(withDuration: 0.4, animations: {
-            self.view.layoutIfNeeded()
-        }) {(comp ) in
-
-            self.timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: (#selector(self.hideAlert)), userInfo: nil, repeats: false)
-        }
-    }
-    
-    @objc private func hideAlert(){
-    
-        self.viewMsgCon.constant = ((-1) * self.viewMsg.frame.size.height)
+        self.alert?.showAlert(message: message)
     }
     
     private func showOrHideActivityIndictor(buttonTag:Int,flagShow:Bool){
@@ -189,6 +215,24 @@ class ViewController: UIViewController, YALoggerDelegate,YAAdCardDelegate  {
 
     }
     
+    private func getButtonStateByTag(tag:Int) -> ButtonState{
+        switch tag {
+        case 1:
+            return self.buttonRewardedVideoState
+
+        case 2:
+            return self.buttonInterstitialVideoState
+
+        case 3:
+            return self.buttonInterstitialAdtate
+
+        default:
+            print("no state for this  button")
+            
+        }
+        return .UnKnown
+    }
+    
     @IBAction func showAd(sender: UIButton) {
         
         var adOpt: YAAd?
@@ -196,7 +240,7 @@ class ViewController: UIViewController, YALoggerDelegate,YAAdCardDelegate  {
         switch sender.tag {
             
         case 1:
-            if sender.title(for: .normal)!.contains("Load"){
+            if self.buttonRewardedVideoState == .Load {
                 self.rewardedVideo = YouAppi.sharedInstance.rewardedVideo(rewardedVideoId)
                 self.rewardedVideo?.delegate = self
                 self.rewardedVideo?.load();
@@ -204,7 +248,7 @@ class ViewController: UIViewController, YALoggerDelegate,YAAdCardDelegate  {
             adOpt = self.rewardedVideo
             break
         case 2:
-            if sender.title(for: .normal)!.contains("Load"){
+            if buttonInterstitialVideoState == .Load {
                 self.interstitialVideo = YouAppi.sharedInstance.interstitialVideo(interstitialVideoId)
                 self.interstitialVideo?.delegate = self
                 self.interstitialVideo?.load();
@@ -212,7 +256,7 @@ class ViewController: UIViewController, YALoggerDelegate,YAAdCardDelegate  {
             adOpt = self.interstitialVideo
             break
         case 3:
-            if sender.title(for: .normal)!.contains("Load"){
+            if buttonInterstitialAdtate == .Load {
                 self.interstitialAd = YouAppi.sharedInstance.interstitialAd(interstitialAdId)
                 self.interstitialAd?.delegate = self
                 self.interstitialAd?.load();
@@ -222,11 +266,12 @@ class ViewController: UIViewController, YALoggerDelegate,YAAdCardDelegate  {
         default: return
         }
         
-        if sender.title(for: .normal)!.contains("Load"){
+        if self.getButtonStateByTag(tag: sender.tag) == .Load{
             if let ad = adOpt {
                 if (ad.isAvailable()) {
                     self.showOrHideActivityIndictor(buttonTag: sender.tag, flagShow: false)
                     self.setButtonText(tag: sender.tag, text:"Show ")
+                    self.setButtonStateByTag(tag: sender.tag, state: .Show)
                 }
                 else{
                     self.showOrHideActivityIndictor(buttonTag: sender.tag ,flagShow: true)
@@ -265,6 +310,7 @@ class ViewController: UIViewController, YALoggerDelegate,YAAdCardDelegate  {
         let buttonTag = self.getButtonTagByAdUnitId(with: adUnitID)
         self.showOrHideActivityIndictor(buttonTag: buttonTag, flagShow:false )
         self.setButtonText(tag: buttonTag, text: "Show ")
+        self.setButtonStateByTag(tag: buttonTag, state: .Show)
         
         print(message)
         self.showAlert(message: message)
@@ -288,6 +334,7 @@ class ViewController: UIViewController, YALoggerDelegate,YAAdCardDelegate  {
         let buttonTag = self.getButtonTagByAdUnitId(with: adUnitID)
         self.showOrHideActivityIndictor(buttonTag: buttonTag, flagShow: false)
         self.setButtonText(tag: buttonTag, text: "Load ")
+        self.setButtonStateByTag(tag: buttonTag, state: .Load)
 
         let errorCodeInfo = errorCode.description()
         let errorMessage = "Failed to retrieve \(productName), Error code: \(errorCodeInfo)"
@@ -314,7 +361,7 @@ class ViewController: UIViewController, YALoggerDelegate,YAAdCardDelegate  {
         let buttonTag = self.getButtonTagByAdUnitId(with: adUnitID)
         self.showOrHideActivityIndictor(buttonTag: buttonTag, flagShow: false)
         self.setButtonText(tag: buttonTag, text: "Load ")
-        
+        self.setButtonStateByTag(tag: buttonTag, state: .Load)
         let productName: String = self.productType(for: adUnitID)
         let errorCodeInfo = errorCode.description()
         let errorMessage = "\(productName) preload Failed, Error:, Error code: \(errorCodeInfo)"

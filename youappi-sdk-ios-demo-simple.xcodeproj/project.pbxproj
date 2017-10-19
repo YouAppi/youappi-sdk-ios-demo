@@ -16,6 +16,7 @@
 		8C2D83171E94758300E55A8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C2D83151E94758300E55A8B /* LaunchScreen.storyboard */; };
 		8C2D83221E94758300E55A8B /* youappi_sdk_ios_demo_simpleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2D83211E94758300E55A8B /* youappi_sdk_ios_demo_simpleTests.swift */; };
 		8C2D832D1E94758300E55A8B /* youappi_sdk_ios_demo_simpleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2D832C1E94758300E55A8B /* youappi_sdk_ios_demo_simpleUITests.swift */; };
+		BE6B062D1F9899AD003B11FB /* AlertToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6B062C1F9899AD003B11FB /* AlertToast.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		8C2D83281E94758300E55A8B /* youappi-sdk-ios-demo-simpleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "youappi-sdk-ios-demo-simpleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C2D832C1E94758300E55A8B /* youappi_sdk_ios_demo_simpleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = youappi_sdk_ios_demo_simpleUITests.swift; sourceTree = "<group>"; };
 		8C2D832E1E94758300E55A8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE6B062C1F9899AD003B11FB /* AlertToast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertToast.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 		8C2D830B1E94758300E55A8B /* youappi-sdk-ios-demo-simple */ = {
 			isa = PBXGroup;
 			children = (
+				BE6B062C1F9899AD003B11FB /* AlertToast.swift */,
 				8C2D830C1E94758300E55A8B /* AppDelegate.swift */,
 				8C2D830E1E94758300E55A8B /* ViewController.swift */,
 				8C2D83101E94758300E55A8B /* Main.storyboard */,
@@ -307,6 +310,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE6B062D1F9899AD003B11FB /* AlertToast.swift in Sources */,
 				8C2D830F1E94758300E55A8B /* ViewController.swift in Sources */,
 				8C2D830D1E94758300E55A8B /* AppDelegate.swift in Sources */,
 			);
