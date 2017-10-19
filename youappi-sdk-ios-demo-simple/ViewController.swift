@@ -18,16 +18,21 @@ enum ButtonState {
 
 class ViewController: UIViewController, YALoggerDelegate,YAAdCardDelegate  {
     
+     let product_rewarded_video = "rewarded video"
+     let product_interstitial_video = "interstitial video"
+     let product_interstitial_ad = "interstitial ad"
     
-     let rewardedVideoId = "test_ios_rewarded_video"
-     let interstitialVideoId = "test_ios_interstitial_video"
-     let interstitialAdId = "test_ios_interstitial_ad"
+     var rewardedVideoId = "rewarded_video_test_ios"
+     var interstitialVideoId = "interstitial_video_test_ios"
+     var interstitialAdId = "interstitial_ad_test_ios"
     
     var rewardedVideo: YAAdRewardedVideo?
     var interstitialVideo: YAAdInterstitialVideo?
     var interstitialAd: YAAdCard?
     
     var alert:AlertToast?
+    
+    var dictToKeepTrackOfProductTypeForEveryUnitAdID:[String:String]!
     
     @IBOutlet weak var buttonRewardedVideo: UIButton!
     @IBOutlet weak var buttonInterstitialVideo: UIButton!
@@ -40,6 +45,7 @@ class ViewController: UIViewController, YALoggerDelegate,YAAdCardDelegate  {
     var buttonInterstitialVideoState:ButtonState!
     var buttonInterstitialAdtate:ButtonState!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -47,10 +53,13 @@ class ViewController: UIViewController, YALoggerDelegate,YAAdCardDelegate  {
         YouAppi.sharedInstance.initialize(accessToken: "821cfa77-3127-42b5-9e6b-0afcecf77c67")
         
         YouAppi.sharedInstance.log()?.delegate = self
+        
+        self.dictToKeepTrackOfProductTypeForEveryUnitAdID = [String:String]()
     }
     
     
     override func viewWillAppear(_ animated: Bool) {
+        
         super.viewWillAppear(animated)
         
         self.enableOrDisableButton(flag: true)
@@ -111,28 +120,26 @@ class ViewController: UIViewController, YALoggerDelegate,YAAdCardDelegate  {
     
     private func setButtonText(tag:Int,text:String) {
         
-       var productName = ""
-        
         switch tag {
         case 1:
-             productName = self.productType(for: rewardedVideoId)
-             self.buttonRewardedVideo?.setTitle(text + productName, for: .normal)
+             self.buttonRewardedVideo?.setTitle(text + product_rewarded_video, for: .normal)
             break
         case 2:
-             productName = self.productType(for: interstitialVideoId)
             self.buttonInterstitialVideo?.setTitle(
-                text + productName, for: .normal)
+                text + product_interstitial_video, for: .normal)
             break
         case 3:
-            productName = self.productType(for: interstitialAdId)
-            self.buttonInterstitialAd?.setTitle(text + productName, for: .normal)
+            self.buttonInterstitialAd?.setTitle(text + product_interstitial_ad, for: .normal)
             break
         default:
             return
         }
     }
     
+    
     private func removeProduct(with adUnitID: String){
+        
+        self.dictToKeepTrackOfProductTypeForEveryUnitAdID.removeValue(forKey: adUnitID)
         
         if adUnitID == rewardedVideoId
         {
@@ -169,15 +176,76 @@ class ViewController: UIViewController, YALoggerDelegate,YAAdCardDelegate  {
     
     private func productType(for adUnitID: String?) -> String
     {
+        
         guard let unitID = adUnitID else
         {
             return ""
         }
-
-        let arr: [String] = unitID.components(separatedBy: "_")
-        return arr[2] + " " + arr[3]
+     
+        if let name = self.dictToKeepTrackOfProductTypeForEveryUnitAdID[unitID] {
+            return name
+        }
+        
+        return ""
     }
 
+    private func showSetAdUnitId(){
+        
+        let alertController = UIAlertController(title: "Enter Unit Ad ID", message: "", preferredStyle: UIAlertControllerStyle.alert)
+        
+        let saveAction = UIAlertAction(title: "Save", style: UIAlertActionStyle.default, handler: {
+            alert -> Void in
+            
+            let txt1 = alertController.textFields![0] as UITextField
+            let txt2 = alertController.textFields![1] as UITextField
+            let txt3 = alertController.textFields![2] as UITextField
+
+            let text1_trim = txt1.text!.trimmingCharacters(in:NSCharacterSet.whitespaces) as  String
+            let text2_trim = txt2.text!.trimmingCharacters(in:NSCharacterSet.whitespaces) as  String
+            let text3_trim = txt3.text!.trimmingCharacters(in:NSCharacterSet.whitespaces) as  String
+            
+            if text1_trim.count != 0{
+              
+                self.rewardedVideoId =  text1_trim
+               
+            }
+            if text2_trim.count != 0{
+                
+                self.interstitialVideoId = text2_trim
+                
+            }
+            if text3_trim.count != 0{
+       
+                self.interstitialAdId = text3_trim
+            }
+   
+        })
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.default, handler: {
+            (action : UIAlertAction!) -> Void in
+            
+        })
+        
+        alertController.addTextField { (textField : UITextField!) -> Void in
+            textField.placeholder = "test_ios_rewarded_video"
+            textField.text = self.rewardedVideoId
+            
+        }
+        alertController.addTextField { (textField : UITextField!) -> Void in
+            textField.placeholder = "test_ios_interstitial_video"
+            textField.text = self.interstitialVideoId
+        }
+        alertController.addTextField { (textField : UITextField!) -> Void in
+            textField.placeholder = "test_ios_interstitial_ad"
+            textField.text = self.interstitialAdId
+        }
+        
+        alertController.addAction(saveAction)
+        alertController.addAction(cancelAction)
+        
+        self.present(alertController, animated: true, completion: nil)
+    }
+    
     private func showAlert(message: String)
     {
         self.alert?.showAlert(message: message)
@@ -233,6 +301,14 @@ class ViewController: UIViewController, YALoggerDelegate,YAAdCardDelegate  {
         return .UnKnown
     }
     
+    //MARK: Actions
+    
+    
+    @IBAction func btnSetUnitsAdIDs(_ sender: UIButton) {
+        self.showSetAdUnitId()
+    }
+    
+    
     @IBAction func showAd(sender: UIButton) {
         
         var adOpt: YAAd?
@@ -242,6 +318,7 @@ class ViewController: UIViewController, YALoggerDelegate,YAAdCardDelegate  {
         case 1:
             if self.buttonRewardedVideoState == .Load {
                 self.rewardedVideo = YouAppi.sharedInstance.rewardedVideo(rewardedVideoId)
+                self.dictToKeepTrackOfProductTypeForEveryUnitAdID[rewardedVideoId] = self.product_rewarded_video
                 self.rewardedVideo?.delegate = self
                 self.rewardedVideo?.load();
             }
@@ -250,6 +327,7 @@ class ViewController: UIViewController, YALoggerDelegate,YAAdCardDelegate  {
         case 2:
             if buttonInterstitialVideoState == .Load {
                 self.interstitialVideo = YouAppi.sharedInstance.interstitialVideo(interstitialVideoId)
+                self.dictToKeepTrackOfProductTypeForEveryUnitAdID[interstitialVideoId] = self.product_interstitial_video
                 self.interstitialVideo?.delegate = self
                 self.interstitialVideo?.load();
             }
@@ -258,6 +336,7 @@ class ViewController: UIViewController, YALoggerDelegate,YAAdCardDelegate  {
         case 3:
             if buttonInterstitialAdtate == .Load {
                 self.interstitialAd = YouAppi.sharedInstance.interstitialAd(interstitialAdId)
+                self.dictToKeepTrackOfProductTypeForEveryUnitAdID[interstitialAdId] = self.product_interstitial_ad
                 self.interstitialAd?.delegate = self
                 self.interstitialAd?.load();
             }
@@ -289,7 +368,7 @@ class ViewController: UIViewController, YALoggerDelegate,YAAdCardDelegate  {
         }
     }
     
-    
+  
     //MARK: YAAd delegate
     
     func onAdStarted(adUnitID: String)
