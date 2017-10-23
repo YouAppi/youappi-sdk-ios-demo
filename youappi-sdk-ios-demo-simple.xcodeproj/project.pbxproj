@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8C25569F1F94DD9300BAD2B2 /* YouAppi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C25569E1F94DD8900BAD2B2 /* YouAppi.framework */; };
-		8C2556A01F94DD9300BAD2B2 /* YouAppi.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8C25569E1F94DD8900BAD2B2 /* YouAppi.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8C2D830D1E94758300E55A8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2D830C1E94758300E55A8B /* AppDelegate.swift */; };
 		8C2D830F1E94758300E55A8B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2D830E1E94758300E55A8B /* ViewController.swift */; };
 		8C2D83121E94758300E55A8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C2D83101E94758300E55A8B /* Main.storyboard */; };
@@ -16,6 +14,8 @@
 		8C2D83171E94758300E55A8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C2D83151E94758300E55A8B /* LaunchScreen.storyboard */; };
 		8C2D83221E94758300E55A8B /* youappi_sdk_ios_demo_simpleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2D83211E94758300E55A8B /* youappi_sdk_ios_demo_simpleTests.swift */; };
 		8C2D832D1E94758300E55A8B /* youappi_sdk_ios_demo_simpleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2D832C1E94758300E55A8B /* youappi_sdk_ios_demo_simpleUITests.swift */; };
+		BE511E001F9E1B1000B565FA /* YouAppiMoat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE511DFF1F9E1B1000B565FA /* YouAppiMoat.framework */; };
+		BE511E021F9E1B3100B565FA /* YouAppiMoat.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BE511DFF1F9E1B1000B565FA /* YouAppiMoat.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BE6B062D1F9899AD003B11FB /* AlertToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6B062C1F9899AD003B11FB /* AlertToast.swift */; };
 /* End PBXBuildFile section */
 
@@ -43,7 +43,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				8C2556A01F94DD9300BAD2B2 /* YouAppi.framework in Embed Frameworks */,
+				BE511E021F9E1B3100B565FA /* YouAppiMoat.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -51,7 +51,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		8C25569E1F94DD8900BAD2B2 /* YouAppi.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = YouAppi.framework; sourceTree = "<group>"; };
 		8C2D83091E94758300E55A8B /* youappi-sdk-ios-demo-simple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "youappi-sdk-ios-demo-simple.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C2D830C1E94758300E55A8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8C2D830E1E94758300E55A8B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -65,6 +64,7 @@
 		8C2D83281E94758300E55A8B /* youappi-sdk-ios-demo-simpleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "youappi-sdk-ios-demo-simpleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C2D832C1E94758300E55A8B /* youappi_sdk_ios_demo_simpleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = youappi_sdk_ios_demo_simpleUITests.swift; sourceTree = "<group>"; };
 		8C2D832E1E94758300E55A8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE511DFF1F9E1B1000B565FA /* YouAppiMoat.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = YouAppiMoat.framework; sourceTree = "<group>"; };
 		BE6B062C1F9899AD003B11FB /* AlertToast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertToast.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -73,7 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C25569F1F94DD9300BAD2B2 /* YouAppi.framework in Frameworks */,
+				BE511E001F9E1B1000B565FA /* YouAppiMoat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,7 +150,7 @@
 		8C2D833A1E9475FE00E55A8B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8C25569E1F94DD8900BAD2B2 /* YouAppi.framework */,
+				BE511DFF1F9E1B1000B565FA /* YouAppiMoat.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -499,6 +499,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
+				VALID_ARCHS = "arm64 armv7";
 			};
 			name = Debug;
 		};
@@ -516,10 +517,12 @@
 				);
 				INFOPLIST_FILE = "youappi-sdk-ios-demo-simple/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.youappi.sdk.demo.simple;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
+				VALID_ARCHS = "arm64 armv7";
 			};
 			name = Release;
 		};

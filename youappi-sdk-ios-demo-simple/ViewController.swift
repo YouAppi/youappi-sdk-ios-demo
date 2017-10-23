@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import YouAppi
+import YouAppiMoat
 
 enum ButtonState {
     case Load
@@ -51,6 +51,8 @@ class ViewController: UIViewController, YALoggerDelegate,YAAdCardDelegate  {
         
         // Please note this is a demo access token.
         YouAppi.sharedInstance.initialize(accessToken: "821cfa77-3127-42b5-9e6b-0afcecf77c67")
+        
+        print("environment" + YouAppi.sharedInstance.environment)
         
         YouAppi.sharedInstance.log()?.delegate = self
         
@@ -404,7 +406,7 @@ class ViewController: UIViewController, YALoggerDelegate,YAAdCardDelegate  {
     
     func onLoadFailure(adUnitID: String, errorCode: YAErrorCode, error: Error)
     {
-        if errorCode != .WARMING_UP && errorCode != .AD_IS_ALREADY_LOADED
+        if errorCode != .WARMING_UP //&& errorCode != .AD_IS_ALREADY_LOADED
         {
             self.removeProduct(with :adUnitID)
         }
