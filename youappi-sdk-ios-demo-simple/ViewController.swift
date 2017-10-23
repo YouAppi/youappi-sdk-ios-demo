@@ -57,6 +57,7 @@ class ViewController: UIViewController, YALoggerDelegate,YAAdCardDelegate  {
         YouAppi.sharedInstance.log()?.delegate = self
         
         self.dictToKeepTrackOfProductTypeForEveryUnitAdID = [String:String]()
+        
     }
     
     
