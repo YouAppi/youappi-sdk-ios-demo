@@ -1,4 +1,0 @@
-framework module YouAppiMoat {
-    header "YouAppiMoat-Swift.h"
-    requires objc
-}

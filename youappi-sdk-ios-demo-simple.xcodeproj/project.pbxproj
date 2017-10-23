@@ -14,8 +14,6 @@
 		8C2D83171E94758300E55A8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C2D83151E94758300E55A8B /* LaunchScreen.storyboard */; };
 		8C2D83221E94758300E55A8B /* youappi_sdk_ios_demo_simpleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2D83211E94758300E55A8B /* youappi_sdk_ios_demo_simpleTests.swift */; };
 		8C2D832D1E94758300E55A8B /* youappi_sdk_ios_demo_simpleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2D832C1E94758300E55A8B /* youappi_sdk_ios_demo_simpleUITests.swift */; };
-		BE511E001F9E1B1000B565FA /* YouAppiMoat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE511DFF1F9E1B1000B565FA /* YouAppiMoat.framework */; };
-		BE511E021F9E1B3100B565FA /* YouAppiMoat.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BE511DFF1F9E1B1000B565FA /* YouAppiMoat.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BE6B062D1F9899AD003B11FB /* AlertToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6B062C1F9899AD003B11FB /* AlertToast.swift */; };
 /* End PBXBuildFile section */
 
@@ -43,7 +41,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				BE511E021F9E1B3100B565FA /* YouAppiMoat.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -64,7 +61,6 @@
 		8C2D83281E94758300E55A8B /* youappi-sdk-ios-demo-simpleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "youappi-sdk-ios-demo-simpleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C2D832C1E94758300E55A8B /* youappi_sdk_ios_demo_simpleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = youappi_sdk_ios_demo_simpleUITests.swift; sourceTree = "<group>"; };
 		8C2D832E1E94758300E55A8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BE511DFF1F9E1B1000B565FA /* YouAppiMoat.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = YouAppiMoat.framework; sourceTree = "<group>"; };
 		BE6B062C1F9899AD003B11FB /* AlertToast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertToast.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -73,7 +69,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE511E001F9E1B1000B565FA /* YouAppiMoat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,7 +145,6 @@
 		8C2D833A1E9475FE00E55A8B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BE511DFF1F9E1B1000B565FA /* YouAppiMoat.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
