@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import youappi_sdk_ios_demo_simple
+//@testable import youappi_sdk_ios_demo_simple
 
 class youappi_sdk_ios_demo_simpleTests: XCTestCase {
     
