@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue-BoldItalic</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YOUAPPI AdMob Adapter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q3k-3B-Cfm">
+                                <rect key="frame" x="16" y="32" width="343" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="7bO-0P-qcN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a8U-6o-Fq0">
+                                <rect key="frame" x="16" y="164" width="343" height="30"/>
+                                <color key="backgroundColor" red="0.20392156859999999" green="0.4431372549" blue="0.6705882353" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="NB2-1O-ib5"/>
+                                </constraints>
+                                <state key="normal" title="Load Interstitial Video">
+                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnLoad:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YB4-Hd-DE7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fOo-z6-Bae">
+                                <rect key="frame" x="16" y="204" width="343" height="30"/>
+                                <color key="backgroundColor" red="0.20392156859999999" green="0.4431372549" blue="0.6705882353" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="auX-Lw-5uc"/>
+                                </constraints>
+                                <state key="normal" title="Show Interstitial Video">
+                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnShow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iNM-ie-ZPw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e42-K3-bfW">
+                                <rect key="frame" x="16" y="244" width="343" height="30"/>
+                                <color key="backgroundColor" red="0.20392156859999999" green="0.4431372549" blue="0.6705882353" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="3XT-ti-Rl4"/>
+                                </constraints>
+                                <state key="normal" title="Load Card Ad">
+                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnLoad:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iGz-Sl-2tA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tgu-be-ezn">
+                                <rect key="frame" x="16" y="284" width="343" height="30"/>
+                                <color key="backgroundColor" red="0.20392156859999999" green="0.4431372549" blue="0.6705882353" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="E2d-y1-iNA"/>
+                                </constraints>
+                                <state key="normal" title="Show Card Ad">
+                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnShow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nrU-pY-DxO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i3n-ox-TDp">
+                                <rect key="frame" x="16" y="84" width="343" height="30"/>
+                                <color key="backgroundColor" red="0.20392156859999999" green="0.4431372549" blue="0.6705882353" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="EXg-6u-DCA"/>
+                                </constraints>
+                                <state key="normal" title="Load Reworded Video">
+                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnLoad:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cf6-BL-3eJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ffq-I0-8JW">
+                                <rect key="frame" x="16" y="124" width="343" height="30"/>
+                                <color key="backgroundColor" red="0.20392156859999999" green="0.4431372549" blue="0.6705882353" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="lEW-aJ-08D"/>
+                                </constraints>
+                                <state key="normal" title="Show Rewarded Video">
+                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnShow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fWp-ys-KcC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Q3k-3B-Cfm" secondAttribute="trailing" constant="16" id="1MJ-DN-dQ6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="e42-K3-bfW" secondAttribute="trailing" constant="16" id="90k-wK-ygc"/>
+                            <constraint firstItem="Tgu-be-ezn" firstAttribute="top" secondItem="e42-K3-bfW" secondAttribute="bottom" constant="10" id="9o5-XN-G1Y"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Tgu-be-ezn" secondAttribute="trailing" constant="16" id="AJ3-tu-vHp"/>
+                            <constraint firstItem="Ffq-I0-8JW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Dht-ww-w0d"/>
+                            <constraint firstItem="fOo-z6-Bae" firstAttribute="top" secondItem="a8U-6o-Fq0" secondAttribute="bottom" constant="10" id="Eoy-e9-SPC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="i3n-ox-TDp" secondAttribute="trailing" constant="16" id="Fut-2c-RqM"/>
+                            <constraint firstItem="Tgu-be-ezn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="G3z-xV-pbx"/>
+                            <constraint firstItem="a8U-6o-Fq0" firstAttribute="top" secondItem="Ffq-I0-8JW" secondAttribute="bottom" constant="10" id="LOo-F6-tex"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fOo-z6-Bae" secondAttribute="trailing" constant="16" id="UeB-m8-AL6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="a8U-6o-Fq0" secondAttribute="trailing" constant="16" id="V48-ra-1jK"/>
+                            <constraint firstItem="fOo-z6-Bae" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="WjD-ca-LU2"/>
+                            <constraint firstItem="a8U-6o-Fq0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="XQd-8C-8yT"/>
+                            <constraint firstItem="Ffq-I0-8JW" firstAttribute="top" secondItem="i3n-ox-TDp" secondAttribute="bottom" constant="10" id="XxB-iP-Dad"/>
+                            <constraint firstItem="Q3k-3B-Cfm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="12" id="aPO-YL-0o0"/>
+                            <constraint firstItem="Q3k-3B-Cfm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="cWb-6a-n8i"/>
+                            <constraint firstItem="i3n-ox-TDp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="mAr-5u-y29"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ffq-I0-8JW" secondAttribute="trailing" constant="16" id="myb-kd-J5f"/>
+                            <constraint firstItem="i3n-ox-TDp" firstAttribute="centerX" secondItem="Q3k-3B-Cfm" secondAttribute="centerX" id="ogA-zT-UPc"/>
+                            <constraint firstItem="i3n-ox-TDp" firstAttribute="top" secondItem="Q3k-3B-Cfm" secondAttribute="bottom" constant="10" id="pcf-7C-6wJ"/>
+                            <constraint firstItem="e42-K3-bfW" firstAttribute="top" secondItem="fOo-z6-Bae" secondAttribute="bottom" constant="10" id="uIp-nl-VFl"/>
+                            <constraint firstItem="e42-K3-bfW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="wkO-GH-6Bd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="31.934032983508249"/>
+        </scene>
+    </scenes>
+</document>
