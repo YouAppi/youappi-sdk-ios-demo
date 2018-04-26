@@ -2,13 +2,13 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:TestLibAdMobAdapter/TestLibAdMobAdapter.xcodeproj">
+      location = "group:AppDemoAdMob/AppDemoAdMob.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:TestLibMopubAdapter/TestLibMopubAdapter.xcodeproj">
+      location = "group:AppDemoMoPub/AppDemoMoPub.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:youappi-sdk-ios-demo-simple/youappi-sdk-ios-demo-simple.xcodeproj">
+      location = "group:AppDemo/AppDemo.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
