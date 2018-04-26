@@ -3,21 +3,21 @@
 workspace 'SimpleYouAppiApp.xcworkspace'
 
 
-project 'TestLibMopubAdapter/TestLibMopubAdapter.xcodeproj'
-project 'TestLibAdMobAdapter/TestLibAdMobAdapter.xcodeproj'
+project 'AppDemoMoPub/AppDemoMoPub.xcodeproj'
+project 'AppDemoAdMob/AppDemoAdMob.xcodeproj'
 
-target 'youappi-sdk-ios-demo-simple' do
-project 'youappi-sdk-ios-demo-simple/youappi-sdk-ios-demo-simple.xcodeproj'
+target 'AppDemo' do
+project 'AppDemo/AppDemo.xcodeproj'
 pod 'YouAppi_Framework'
 end
 
-target 'TestLibMopubAdapter' do
-project 'TestLibMopubAdapter/TestLibMopubAdapter.xcodeproj'
+target 'AppDemoMoPub' do
+project 'AppDemoMoPub/AppDemoMoPub.xcodeproj'
 pod 'mopub-ios-sdk'
 pod 'YouAppi_Framework'
 end
-target 'TestLibAdMobAdapter' do
-    project 'TestLibAdMobAdapter/TestLibAdMobAdapter.xcodeproj'
+target 'AppDemoAdMob' do
+    project 'AppDemoAdMob/AppDemoAdMob.xcodeproj'
     pod 'Google-Mobile-Ads-SDK'
     pod 'YouAppi_Admob_Adapter'
     pod 'YouAppi_Framework'
