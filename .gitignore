@@ -1,1113 +1,239 @@
-Podfile.lock
-Pods/Manifest.lock
-Pods/Google-Mobile-Ads-SDK/README.txt
-Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/GoogleMobileAds
-Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/DFPBannerView.h
-Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/DFPBannerViewOptions.h
-Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/DFPCustomRenderedAd.h
-Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/DFPCustomRenderedBannerViewDelegate.h
-Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/DFPCustomRenderedInterstitialDelegate.h
-Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/DFPInterstitial.h
-Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/DFPRequest.h
-Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAdChoicesView.h
-Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAdLoader.h
-Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAdLoaderAdTypes.h
-Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAdLoaderDelegate.h
-Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAdNetworkExtras.h
-Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAdReward.h
-Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAdSize.h
-Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAdSizeDelegate.h
-Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAppEventDelegate.h
-Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAudioVideoManager.h
-Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAudioVideoManagerDelegate.h
-Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADBannerView.h
-Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADBannerViewDelegate.h
-Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCorrelator.h
-Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCorrelatorAdLoaderOptions.h
-Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCustomEventBanner.h
-Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCustomEventBannerDelegate.h
-Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCustomEventExtras.h
-Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCustomEventInterstitial.h
-Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCustomEventInterstitialDelegate.h
-Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCustomEventNativeAd.h
-Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCustomEventNativeAdDelegate.h
-Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCustomEventParameters.h
-Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCustomEventRequest.h
-Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADDebugOptionsViewController.h
-Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADDynamicHeightSearchRequest.h
-Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADExtras.h
-Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADInAppPurchase.h
-Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADInAppPurchaseDelegate.h
-Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADInterstitial.h
-Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADInterstitialDelegate.h
-Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADMediaView.h
-Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADMobileAds.h
-Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADMultipleAdsAdLoaderOptions.h
-Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeAd.h
-Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeAdDelegate.h
-Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeAdImage+Mediation.h
-Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeAdImage.h
-Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeAdImageAdLoaderOptions.h
-Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeAdViewAdOptions.h
-Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeAppInstallAd.h
-Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeAppInstallAdAssetIDs.h
-Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeContentAd.h
-Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeContentAdAssetIDs.h
-Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeCustomTemplateAd.h
-Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeExpressAdView.h
-Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeExpressAdViewDelegate.h
-Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADRequest.h
-Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADRequestError.h
-Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADRewardBasedVideoAd.h
-Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADRewardBasedVideoAdDelegate.h
-Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADSearchBannerView.h
-Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADSearchRequest.h
-Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADUnifiedNativeAd+ConfirmationClick.h
-Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADUnifiedNativeAd.h
-Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADUnifiedNativeAdAssetIdentifiers.h
-Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADUnifiedNativeAdDelegate.h
-Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADUnifiedNativeAdUnconfirmedClickDelegate.h
-Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADVideoController.h
-Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADVideoControllerDelegate.h
-Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADVideoOptions.h
-Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GoogleMobileAds.h
-Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GoogleMobileAdsDefines.h
-Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/Mediation/GADMAdNetworkAdapterProtocol.h
-Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/Mediation/GADMAdNetworkConnectorProtocol.h
-Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/Mediation/GADMediatedNativeAd.h
-Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/Mediation/GADMediatedNativeAdDelegate.h
-Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/Mediation/GADMediatedNativeAdNotificationSource.h
-Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/Mediation/GADMediatedNativeAppInstallAd.h
-Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/Mediation/GADMediatedNativeContentAd.h
-Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/Mediation/GADMediatedUnifiedNativeAd.h
-Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/Mediation/GADMediatedUnifiedNativeAdNotificationSource.h
-Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/Mediation/GADMediationAdRequest.h
-Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/Mediation/GADMEnums.h
-Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/Mediation/GADMRewardBasedVideoAdNetworkAdapterProtocol.h
-Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/Mediation/GADMRewardBasedVideoAdNetworkConnectorProtocol.h
-Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Modules/module.modulemap
-Pods/Headers/Private/mopub-ios-sdk/MoPub-Bridging-Header.h
-Pods/Headers/Private/mopub-ios-sdk/MoPub.h
-Pods/Headers/Private/mopub-ios-sdk/MoPub_AbstractAvidAdSession.h
-Pods/Headers/Private/mopub-ios-sdk/MoPub_AbstractAvidManagedAdSession.h
-Pods/Headers/Private/mopub-ios-sdk/MoPub_Avid.h
-Pods/Headers/Private/mopub-ios-sdk/MoPub_AvidAdSessionManager.h
-Pods/Headers/Private/mopub-ios-sdk/MoPub_AvidDeferredAdSessionListener.h
-Pods/Headers/Private/mopub-ios-sdk/MoPub_AvidDisplayAdSession.h
-Pods/Headers/Private/mopub-ios-sdk/MoPub_AvidManagedDisplayAdSession.h
-Pods/Headers/Private/mopub-ios-sdk/MoPub_AvidManagedVideoAdSession.h
-Pods/Headers/Private/mopub-ios-sdk/MoPub_AvidVideoAdSession.h
-Pods/Headers/Private/mopub-ios-sdk/MoPub_AvidVideoPlaybackListener.h
-Pods/Headers/Private/mopub-ios-sdk/MoPub_ExternalAvidAdSessionContext.h
-Pods/Headers/Private/mopub-ios-sdk/MOPUBActivityIndicatorView.h
-Pods/Headers/Private/mopub-ios-sdk/MOPUBAVPlayer.h
-Pods/Headers/Private/mopub-ios-sdk/MOPUBAVPlayerView.h
-Pods/Headers/Private/mopub-ios-sdk/MOPUBDisplayAgentType.h
-Pods/Headers/Private/mopub-ios-sdk/MOPUBExperimentProvider.h
-Pods/Headers/Private/mopub-ios-sdk/MOPUBFullscreenPlayerViewController.h
-Pods/Headers/Private/mopub-ios-sdk/MOPUBNativeVideoAdAdapter.h
-Pods/Headers/Private/mopub-ios-sdk/MOPUBNativeVideoAdConfigValues.h
-Pods/Headers/Private/mopub-ios-sdk/MOPUBNativeVideoAdRenderer.h
-Pods/Headers/Private/mopub-ios-sdk/MOPUBNativeVideoAdRendererSettings.h
-Pods/Headers/Private/mopub-ios-sdk/MOPUBNativeVideoCustomEvent.h
-Pods/Headers/Private/mopub-ios-sdk/MOPUBNativeVideoImpressionAgent.h
-Pods/Headers/Private/mopub-ios-sdk/MOPUBPlayerManager.h
-Pods/Headers/Private/mopub-ios-sdk/MOPUBPlayerView.h
-Pods/Headers/Private/mopub-ios-sdk/MOPUBPlayerViewController.h
-Pods/Headers/Private/mopub-ios-sdk/MOPUBReplayView.h
-Pods/Headers/Private/mopub-ios-sdk/MPActivityViewControllerHelper+TweetShare.h
-Pods/Headers/Private/mopub-ios-sdk/MPActivityViewControllerHelper.h
-Pods/Headers/Private/mopub-ios-sdk/MPAdAlertGestureRecognizer.h
-Pods/Headers/Private/mopub-ios-sdk/MPAdAlertManager.h
-Pods/Headers/Private/mopub-ios-sdk/MPAdBrowserController.h
-Pods/Headers/Private/mopub-ios-sdk/MPAdConfiguration.h
-Pods/Headers/Private/mopub-ios-sdk/MPAdConversionTracker.h
-Pods/Headers/Private/mopub-ios-sdk/MPAdDestinationDisplayAgent.h
-Pods/Headers/Private/mopub-ios-sdk/MPAdImpressionTimer.h
-Pods/Headers/Private/mopub-ios-sdk/MPAdPlacerInvocation.h
-Pods/Headers/Private/mopub-ios-sdk/MPAdPositioning.h
-Pods/Headers/Private/mopub-ios-sdk/MPAdServerCommunicator.h
-Pods/Headers/Private/mopub-ios-sdk/MPAdServerURLBuilder.h
-Pods/Headers/Private/mopub-ios-sdk/MPAdView.h
-Pods/Headers/Private/mopub-ios-sdk/MPAdWebViewAgent.h
-Pods/Headers/Private/mopub-ios-sdk/MPAnalyticsTracker.h
-Pods/Headers/Private/mopub-ios-sdk/MPAPIEndpoints.h
-Pods/Headers/Private/mopub-ios-sdk/MPBannerAdManager.h
-Pods/Headers/Private/mopub-ios-sdk/MPBannerAdManagerDelegate.h
-Pods/Headers/Private/mopub-ios-sdk/MPBannerCustomEvent+Internal.h
-Pods/Headers/Private/mopub-ios-sdk/MPBannerCustomEvent.h
-Pods/Headers/Private/mopub-ios-sdk/MPBannerCustomEventAdapter.h
-Pods/Headers/Private/mopub-ios-sdk/MPBannerCustomEventDelegate.h
-Pods/Headers/Private/mopub-ios-sdk/MPBaseBannerAdapter.h
-Pods/Headers/Private/mopub-ios-sdk/MPBaseInterstitialAdapter.h
-Pods/Headers/Private/mopub-ios-sdk/MPClientAdPositioning.h
-Pods/Headers/Private/mopub-ios-sdk/MPClosableView.h
-Pods/Headers/Private/mopub-ios-sdk/MPCollectionViewAdPlacer.h
-Pods/Headers/Private/mopub-ios-sdk/MPCollectionViewAdPlacerCell.h
-Pods/Headers/Private/mopub-ios-sdk/MPConstants.h
-Pods/Headers/Private/mopub-ios-sdk/MPCoreInstanceProvider.h
-Pods/Headers/Private/mopub-ios-sdk/MPCountdownTimerView.h
-Pods/Headers/Private/mopub-ios-sdk/MPDiskLRUCache.h
-Pods/Headers/Private/mopub-ios-sdk/MPEnhancedDeeplinkRequest.h
-Pods/Headers/Private/mopub-ios-sdk/MPError.h
-Pods/Headers/Private/mopub-ios-sdk/MPFacebookKeywordProvider.h
-Pods/Headers/Private/mopub-ios-sdk/MPForceableOrientationProtocol.h
-Pods/Headers/Private/mopub-ios-sdk/MPGeolocationProvider.h
-Pods/Headers/Private/mopub-ios-sdk/MPGlobal.h
-Pods/Headers/Private/mopub-ios-sdk/MPHTMLBannerCustomEvent.h
-Pods/Headers/Private/mopub-ios-sdk/MPHTMLInterstitialCustomEvent.h
-Pods/Headers/Private/mopub-ios-sdk/MPHTMLInterstitialViewController.h
-Pods/Headers/Private/mopub-ios-sdk/MPIdentityProvider.h
-Pods/Headers/Private/mopub-ios-sdk/MPImageDownloadQueue.h
-Pods/Headers/Private/mopub-ios-sdk/MPInstanceProvider.h
-Pods/Headers/Private/mopub-ios-sdk/MPInternalUtils.h
-Pods/Headers/Private/mopub-ios-sdk/MPInterstitialAdController.h
-Pods/Headers/Private/mopub-ios-sdk/MPInterstitialAdManager.h
-Pods/Headers/Private/mopub-ios-sdk/MPInterstitialAdManagerDelegate.h
-Pods/Headers/Private/mopub-ios-sdk/MPInterstitialCustomEvent.h
-Pods/Headers/Private/mopub-ios-sdk/MPInterstitialCustomEventAdapter.h
-Pods/Headers/Private/mopub-ios-sdk/MPInterstitialCustomEventDelegate.h
-Pods/Headers/Private/mopub-ios-sdk/MPInterstitialViewController.h
-Pods/Headers/Private/mopub-ios-sdk/MPKeywordProvider.h
-Pods/Headers/Private/mopub-ios-sdk/MPLastResortDelegate.h
-Pods/Headers/Private/mopub-ios-sdk/MPLogEvent+NativeVideo.h
-Pods/Headers/Private/mopub-ios-sdk/MPLogEvent.h
-Pods/Headers/Private/mopub-ios-sdk/MPLogEventCommunicator.h
-Pods/Headers/Private/mopub-ios-sdk/MPLogEventRecorder.h
-Pods/Headers/Private/mopub-ios-sdk/MPLogging.h
-Pods/Headers/Private/mopub-ios-sdk/MPLogLevel.h
-Pods/Headers/Private/mopub-ios-sdk/MPLogProvider.h
-Pods/Headers/Private/mopub-ios-sdk/MPMediationSettingsProtocol.h
-Pods/Headers/Private/mopub-ios-sdk/MPMoPubNativeAdAdapter.h
-Pods/Headers/Private/mopub-ios-sdk/MPMoPubNativeCustomEvent.h
-Pods/Headers/Private/mopub-ios-sdk/MPMoPubRewardedPlayableCustomEvent.h
-Pods/Headers/Private/mopub-ios-sdk/MPMoPubRewardedVideoCustomEvent.h
-Pods/Headers/Private/mopub-ios-sdk/MPMRAIDBannerCustomEvent.h
-Pods/Headers/Private/mopub-ios-sdk/MPMRAIDInterstitialCustomEvent.h
-Pods/Headers/Private/mopub-ios-sdk/MPMRAIDInterstitialViewController.h
-Pods/Headers/Private/mopub-ios-sdk/MPNativeAd+Internal.h
-Pods/Headers/Private/mopub-ios-sdk/MPNativeAd.h
-Pods/Headers/Private/mopub-ios-sdk/MPNativeAdAdapter.h
-Pods/Headers/Private/mopub-ios-sdk/MPNativeAdConfigValues+Internal.h
-Pods/Headers/Private/mopub-ios-sdk/MPNativeAdConfigValues.h
-Pods/Headers/Private/mopub-ios-sdk/MPNativeAdConstants.h
-Pods/Headers/Private/mopub-ios-sdk/MPNativeAdData.h
-Pods/Headers/Private/mopub-ios-sdk/MPNativeAdDelegate.h
-Pods/Headers/Private/mopub-ios-sdk/MPNativeAdError.h
-Pods/Headers/Private/mopub-ios-sdk/MPNativeAdRenderer.h
-Pods/Headers/Private/mopub-ios-sdk/MPNativeAdRendererConfiguration.h
-Pods/Headers/Private/mopub-ios-sdk/MPNativeAdRendererConstants.h
-Pods/Headers/Private/mopub-ios-sdk/MPNativeAdRendererImageHandler.h
-Pods/Headers/Private/mopub-ios-sdk/MPNativeAdRendererSettings.h
-Pods/Headers/Private/mopub-ios-sdk/MPNativeAdRendering.h
-Pods/Headers/Private/mopub-ios-sdk/MPNativeAdRenderingImageLoader.h
-Pods/Headers/Private/mopub-ios-sdk/MPNativeAdRequest+MPNativeAdSource.h
-Pods/Headers/Private/mopub-ios-sdk/MPNativeAdRequest.h
-Pods/Headers/Private/mopub-ios-sdk/MPNativeAdRequestTargeting.h
-Pods/Headers/Private/mopub-ios-sdk/MPNativeAdSource.h
-Pods/Headers/Private/mopub-ios-sdk/MPNativeAdSourceDelegate.h
-Pods/Headers/Private/mopub-ios-sdk/MPNativeAdSourceQueue.h
-Pods/Headers/Private/mopub-ios-sdk/MPNativeAdUtils.h
-Pods/Headers/Private/mopub-ios-sdk/MPNativeCache.h
-Pods/Headers/Private/mopub-ios-sdk/MPNativeCustomEvent.h
-Pods/Headers/Private/mopub-ios-sdk/MPNativeCustomEventDelegate.h
-Pods/Headers/Private/mopub-ios-sdk/MPNativePositionResponseDeserializer.h
-Pods/Headers/Private/mopub-ios-sdk/MPNativePositionSource.h
-Pods/Headers/Private/mopub-ios-sdk/MPNativeView.h
-Pods/Headers/Private/mopub-ios-sdk/MPNetworkManager.h
-Pods/Headers/Private/mopub-ios-sdk/MPPrivateBannerCustomEventDelegate.h
-Pods/Headers/Private/mopub-ios-sdk/MPPrivateInterstitialCustomEventDelegate.h
-Pods/Headers/Private/mopub-ios-sdk/MPPrivateRewardedVideoCustomEventDelegate.h
-Pods/Headers/Private/mopub-ios-sdk/MPProgressOverlayView.h
-Pods/Headers/Private/mopub-ios-sdk/MPQRunLoopOperation.h
-Pods/Headers/Private/mopub-ios-sdk/MPReachability.h
-Pods/Headers/Private/mopub-ios-sdk/MPRealTimeTimer.h
-Pods/Headers/Private/mopub-ios-sdk/MPRetryingHTTPOperation.h
-Pods/Headers/Private/mopub-ios-sdk/MPRewardedVideo+Internal.h
-Pods/Headers/Private/mopub-ios-sdk/MPRewardedVideo.h
-Pods/Headers/Private/mopub-ios-sdk/MPRewardedVideoAdapter.h
-Pods/Headers/Private/mopub-ios-sdk/MPRewardedVideoAdManager.h
-Pods/Headers/Private/mopub-ios-sdk/MPRewardedVideoConnection.h
-Pods/Headers/Private/mopub-ios-sdk/MPRewardedVideoCustomEvent+Caching.h
-Pods/Headers/Private/mopub-ios-sdk/MPRewardedVideoCustomEvent.h
-Pods/Headers/Private/mopub-ios-sdk/MPRewardedVideoError.h
-Pods/Headers/Private/mopub-ios-sdk/MPRewardedVideoNetwork.h
-Pods/Headers/Private/mopub-ios-sdk/MPRewardedVideoReward.h
-Pods/Headers/Private/mopub-ios-sdk/MPServerAdPositioning.h
-Pods/Headers/Private/mopub-ios-sdk/MPSessionTracker.h
-Pods/Headers/Private/mopub-ios-sdk/MPStaticNativeAdRenderer.h
-Pods/Headers/Private/mopub-ios-sdk/MPStaticNativeAdRendererSettings.h
-Pods/Headers/Private/mopub-ios-sdk/MPStoreKitProvider.h
-Pods/Headers/Private/mopub-ios-sdk/MPStreamAdPlacementData.h
-Pods/Headers/Private/mopub-ios-sdk/MPStreamAdPlacer.h
-Pods/Headers/Private/mopub-ios-sdk/MPTableViewAdPlacer.h
-Pods/Headers/Private/mopub-ios-sdk/MPTableViewAdPlacerCell.h
-Pods/Headers/Private/mopub-ios-sdk/MPTableViewCellImpressionTracker.h
-Pods/Headers/Private/mopub-ios-sdk/MPTimer.h
-Pods/Headers/Private/mopub-ios-sdk/MPURLActionInfo.h
-Pods/Headers/Private/mopub-ios-sdk/MPURLResolver.h
-Pods/Headers/Private/mopub-ios-sdk/MPUserInteractionGestureRecognizer.h
-Pods/Headers/Private/mopub-ios-sdk/MPVASTAd.h
-Pods/Headers/Private/mopub-ios-sdk/MPVASTCompanionAd.h
-Pods/Headers/Private/mopub-ios-sdk/MPVASTCreative.h
-Pods/Headers/Private/mopub-ios-sdk/MPVASTDurationOffset.h
-Pods/Headers/Private/mopub-ios-sdk/MPVASTIndustryIcon.h
-Pods/Headers/Private/mopub-ios-sdk/MPVASTInline.h
-Pods/Headers/Private/mopub-ios-sdk/MPVASTLinearAd.h
-Pods/Headers/Private/mopub-ios-sdk/MPVASTMacroProcessor.h
-Pods/Headers/Private/mopub-ios-sdk/MPVASTManager.h
-Pods/Headers/Private/mopub-ios-sdk/MPVASTMediaFile.h
-Pods/Headers/Private/mopub-ios-sdk/MPVASTModel.h
-Pods/Headers/Private/mopub-ios-sdk/MPVASTResource.h
-Pods/Headers/Private/mopub-ios-sdk/MPVASTResponse.h
-Pods/Headers/Private/mopub-ios-sdk/MPVASTStringUtilities.h
-Pods/Headers/Private/mopub-ios-sdk/MPVASTTracking.h
-Pods/Headers/Private/mopub-ios-sdk/MPVASTTrackingEvent.h
-Pods/Headers/Private/mopub-ios-sdk/MPVASTWrapper.h
-Pods/Headers/Private/mopub-ios-sdk/MPVideoConfig.h
-Pods/Headers/Private/mopub-ios-sdk/MPViewabilityAdapter.h
-Pods/Headers/Private/mopub-ios-sdk/MPViewabilityAdapterAvid.h
-Pods/Headers/Private/mopub-ios-sdk/MPViewabilityAdapterMoat.h
-Pods/Headers/Private/mopub-ios-sdk/MPViewabilityOption.h
-Pods/Headers/Private/mopub-ios-sdk/MPViewabilityTracker.h
-Pods/Headers/Private/mopub-ios-sdk/MPWebView+Viewability.h
-Pods/Headers/Private/mopub-ios-sdk/MPWebView.h
-Pods/Headers/Private/mopub-ios-sdk/MPXMLParser.h
-Pods/Headers/Private/mopub-ios-sdk/MRBridge.h
-Pods/Headers/Private/mopub-ios-sdk/MRBundleManager.h
-Pods/Headers/Private/mopub-ios-sdk/MRCommand.h
-Pods/Headers/Private/mopub-ios-sdk/MRConstants.h
-Pods/Headers/Private/mopub-ios-sdk/MRController.h
-Pods/Headers/Private/mopub-ios-sdk/MRError.h
-Pods/Headers/Private/mopub-ios-sdk/MRExpandModalViewController.h
-Pods/Headers/Private/mopub-ios-sdk/MRNativeCommandHandler.h
-Pods/Headers/Private/mopub-ios-sdk/MRProperty.h
-Pods/Headers/Private/mopub-ios-sdk/MRVideoPlayerManager.h
-Pods/Headers/Private/mopub-ios-sdk/NSBundle+MPAdditions.h
-Pods/Headers/Private/mopub-ios-sdk/NSHTTPURLResponse+MPAdditions.h
-Pods/Headers/Private/mopub-ios-sdk/NSJSONSerialization+MPAdditions.h
-Pods/Headers/Private/mopub-ios-sdk/NSString+MPAdditions.h
-Pods/Headers/Private/mopub-ios-sdk/NSURL+MPAdditions.h
-Pods/Headers/Private/mopub-ios-sdk/UIButton+MPAdditions.h
-Pods/Headers/Private/mopub-ios-sdk/UIColor+MPAdditions.h
-Pods/Headers/Private/mopub-ios-sdk/UIView+MPAdditions.h
-Pods/Headers/Private/mopub-ios-sdk/UIWebView+MPAdditions.h
-Pods/Headers/Private/YouAppi_Admob_Adapter/YAAd.h
-Pods/Headers/Private/YouAppi_Admob_Adapter/YAAdMobIntertitialAdEvent.h
-Pods/Headers/Private/YouAppi_Admob_Adapter/YAAdMobIntertitialVideoAdEvent.h
-Pods/Headers/Private/YouAppi_Admob_Adapter/YAAdMobRewardedVideoAdEvent.h
-Pods/Headers/Public/Google-Mobile-Ads-SDK/GoogleMobileAds/DFPBannerView.h
-Pods/Headers/Public/Google-Mobile-Ads-SDK/GoogleMobileAds/DFPBannerViewOptions.h
-Pods/Headers/Public/Google-Mobile-Ads-SDK/GoogleMobileAds/DFPCustomRenderedAd.h
-Pods/Headers/Public/Google-Mobile-Ads-SDK/GoogleMobileAds/DFPCustomRenderedBannerViewDelegate.h
-Pods/Headers/Public/Google-Mobile-Ads-SDK/GoogleMobileAds/DFPCustomRenderedInterstitialDelegate.h
-Pods/Headers/Public/Google-Mobile-Ads-SDK/GoogleMobileAds/DFPInterstitial.h
-Pods/Headers/Public/Google-Mobile-Ads-SDK/GoogleMobileAds/DFPRequest.h
-Pods/Headers/Public/Google-Mobile-Ads-SDK/GoogleMobileAds/GADAdChoicesView.h
-Pods/Headers/Public/Google-Mobile-Ads-SDK/GoogleMobileAds/GADAdLoader.h
-Pods/Headers/Public/Google-Mobile-Ads-SDK/GoogleMobileAds/GADAdLoaderAdTypes.h
-Pods/Headers/Public/Google-Mobile-Ads-SDK/GoogleMobileAds/GADAdLoaderDelegate.h
-Pods/Headers/Public/Google-Mobile-Ads-SDK/GoogleMobileAds/GADAdNetworkExtras.h
-Pods/Headers/Public/Google-Mobile-Ads-SDK/GoogleMobileAds/GADAdReward.h
-Pods/Headers/Public/Google-Mobile-Ads-SDK/GoogleMobileAds/GADAdSize.h
-Pods/Headers/Public/Google-Mobile-Ads-SDK/GoogleMobileAds/GADAdSizeDelegate.h
-Pods/Headers/Public/Google-Mobile-Ads-SDK/GoogleMobileAds/GADAppEventDelegate.h
-Pods/Headers/Public/Google-Mobile-Ads-SDK/GoogleMobileAds/GADAudioVideoManager.h
-Pods/Headers/Public/Google-Mobile-Ads-SDK/GoogleMobileAds/GADAudioVideoManagerDelegate.h
-Pods/Headers/Public/Google-Mobile-Ads-SDK/GoogleMobileAds/GADBannerView.h
-Pods/Headers/Public/Google-Mobile-Ads-SDK/GoogleMobileAds/GADBannerViewDelegate.h
-Pods/Headers/Public/Google-Mobile-Ads-SDK/GoogleMobileAds/GADCorrelator.h
-Pods/Headers/Public/Google-Mobile-Ads-SDK/GoogleMobileAds/GADCorrelatorAdLoaderOptions.h
-Pods/Headers/Public/Google-Mobile-Ads-SDK/GoogleMobileAds/GADCustomEventBanner.h
-Pods/Headers/Public/Google-Mobile-Ads-SDK/GoogleMobileAds/GADCustomEventBannerDelegate.h
-Pods/Headers/Public/Google-Mobile-Ads-SDK/GoogleMobileAds/GADCustomEventExtras.h
-Pods/Headers/Public/Google-Mobile-Ads-SDK/GoogleMobileAds/GADCustomEventInterstitial.h
-Pods/Headers/Public/Google-Mobile-Ads-SDK/GoogleMobileAds/GADCustomEventInterstitialDelegate.h
-Pods/Headers/Public/Google-Mobile-Ads-SDK/GoogleMobileAds/GADCustomEventNativeAd.h
-Pods/Headers/Public/Google-Mobile-Ads-SDK/GoogleMobileAds/GADCustomEventNativeAdDelegate.h
-Pods/Headers/Public/Google-Mobile-Ads-SDK/GoogleMobileAds/GADCustomEventParameters.h
-Pods/Headers/Public/Google-Mobile-Ads-SDK/GoogleMobileAds/GADCustomEventRequest.h
-Pods/Headers/Public/Google-Mobile-Ads-SDK/GoogleMobileAds/GADDebugOptionsViewController.h
-Pods/Headers/Public/Google-Mobile-Ads-SDK/GoogleMobileAds/GADDynamicHeightSearchRequest.h
-Pods/Headers/Public/Google-Mobile-Ads-SDK/GoogleMobileAds/GADExtras.h
-Pods/Headers/Public/Google-Mobile-Ads-SDK/GoogleMobileAds/GADInAppPurchase.h
-Pods/Headers/Public/Google-Mobile-Ads-SDK/GoogleMobileAds/GADInAppPurchaseDelegate.h
-Pods/Headers/Public/Google-Mobile-Ads-SDK/GoogleMobileAds/GADInterstitial.h
-Pods/Headers/Public/Google-Mobile-Ads-SDK/GoogleMobileAds/GADInterstitialDelegate.h
-Pods/Headers/Public/Google-Mobile-Ads-SDK/GoogleMobileAds/GADMediaView.h
-Pods/Headers/Public/Google-Mobile-Ads-SDK/GoogleMobileAds/GADMobileAds.h
-Pods/Headers/Public/Google-Mobile-Ads-SDK/GoogleMobileAds/GADMultipleAdsAdLoaderOptions.h
-Pods/Headers/Public/Google-Mobile-Ads-SDK/GoogleMobileAds/GADNativeAd.h
-Pods/Headers/Public/Google-Mobile-Ads-SDK/GoogleMobileAds/GADNativeAdDelegate.h
-Pods/Headers/Public/Google-Mobile-Ads-SDK/GoogleMobileAds/GADNativeAdImage+Mediation.h
-Pods/Headers/Public/Google-Mobile-Ads-SDK/GoogleMobileAds/GADNativeAdImage.h
-Pods/Headers/Public/Google-Mobile-Ads-SDK/GoogleMobileAds/GADNativeAdImageAdLoaderOptions.h
-Pods/Headers/Public/Google-Mobile-Ads-SDK/GoogleMobileAds/GADNativeAdViewAdOptions.h
-Pods/Headers/Public/Google-Mobile-Ads-SDK/GoogleMobileAds/GADNativeAppInstallAd.h
-Pods/Headers/Public/Google-Mobile-Ads-SDK/GoogleMobileAds/GADNativeAppInstallAdAssetIDs.h
-Pods/Headers/Public/Google-Mobile-Ads-SDK/GoogleMobileAds/GADNativeContentAd.h
-Pods/Headers/Public/Google-Mobile-Ads-SDK/GoogleMobileAds/GADNativeContentAdAssetIDs.h
-Pods/Headers/Public/Google-Mobile-Ads-SDK/GoogleMobileAds/GADNativeCustomTemplateAd.h
-Pods/Headers/Public/Google-Mobile-Ads-SDK/GoogleMobileAds/GADNativeExpressAdView.h
-Pods/Headers/Public/Google-Mobile-Ads-SDK/GoogleMobileAds/GADNativeExpressAdViewDelegate.h
-Pods/Headers/Public/Google-Mobile-Ads-SDK/GoogleMobileAds/GADRequest.h
-Pods/Headers/Public/Google-Mobile-Ads-SDK/GoogleMobileAds/GADRequestError.h
-Pods/Headers/Public/Google-Mobile-Ads-SDK/GoogleMobileAds/GADRewardBasedVideoAd.h
-Pods/Headers/Public/Google-Mobile-Ads-SDK/GoogleMobileAds/GADRewardBasedVideoAdDelegate.h
-Pods/Headers/Public/Google-Mobile-Ads-SDK/GoogleMobileAds/GADSearchBannerView.h
-Pods/Headers/Public/Google-Mobile-Ads-SDK/GoogleMobileAds/GADSearchRequest.h
-Pods/Headers/Public/Google-Mobile-Ads-SDK/GoogleMobileAds/GADUnifiedNativeAd+ConfirmationClick.h
-Pods/Headers/Public/Google-Mobile-Ads-SDK/GoogleMobileAds/GADUnifiedNativeAd.h
-Pods/Headers/Public/Google-Mobile-Ads-SDK/GoogleMobileAds/GADUnifiedNativeAdAssetIdentifiers.h
-Pods/Headers/Public/Google-Mobile-Ads-SDK/GoogleMobileAds/GADUnifiedNativeAdDelegate.h
-Pods/Headers/Public/Google-Mobile-Ads-SDK/GoogleMobileAds/GADUnifiedNativeAdUnconfirmedClickDelegate.h
-Pods/Headers/Public/Google-Mobile-Ads-SDK/GoogleMobileAds/GADVideoController.h
-Pods/Headers/Public/Google-Mobile-Ads-SDK/GoogleMobileAds/GADVideoControllerDelegate.h
-Pods/Headers/Public/Google-Mobile-Ads-SDK/GoogleMobileAds/GADVideoOptions.h
-Pods/Headers/Public/Google-Mobile-Ads-SDK/GoogleMobileAds/GoogleMobileAds.h
-Pods/Headers/Public/Google-Mobile-Ads-SDK/GoogleMobileAds/GoogleMobileAdsDefines.h
-Pods/Headers/Public/Google-Mobile-Ads-SDK/GoogleMobileAds/Mediation/GADMAdNetworkAdapterProtocol.h
-Pods/Headers/Public/Google-Mobile-Ads-SDK/GoogleMobileAds/Mediation/GADMAdNetworkConnectorProtocol.h
-Pods/Headers/Public/Google-Mobile-Ads-SDK/GoogleMobileAds/Mediation/GADMediatedNativeAd.h
-Pods/Headers/Public/Google-Mobile-Ads-SDK/GoogleMobileAds/Mediation/GADMediatedNativeAdDelegate.h
-Pods/Headers/Public/Google-Mobile-Ads-SDK/GoogleMobileAds/Mediation/GADMediatedNativeAdNotificationSource.h
-Pods/Headers/Public/Google-Mobile-Ads-SDK/GoogleMobileAds/Mediation/GADMediatedNativeAppInstallAd.h
-Pods/Headers/Public/Google-Mobile-Ads-SDK/GoogleMobileAds/Mediation/GADMediatedNativeContentAd.h
-Pods/Headers/Public/Google-Mobile-Ads-SDK/GoogleMobileAds/Mediation/GADMediatedUnifiedNativeAd.h
-Pods/Headers/Public/Google-Mobile-Ads-SDK/GoogleMobileAds/Mediation/GADMediatedUnifiedNativeAdNotificationSource.h
-Pods/Headers/Public/Google-Mobile-Ads-SDK/GoogleMobileAds/Mediation/GADMediationAdRequest.h
-Pods/Headers/Public/Google-Mobile-Ads-SDK/GoogleMobileAds/Mediation/GADMEnums.h
-Pods/Headers/Public/Google-Mobile-Ads-SDK/GoogleMobileAds/Mediation/GADMRewardBasedVideoAdNetworkAdapterProtocol.h
-Pods/Headers/Public/Google-Mobile-Ads-SDK/GoogleMobileAds/Mediation/GADMRewardBasedVideoAdNetworkConnectorProtocol.h
-Pods/Headers/Public/mopub-ios-sdk/MoPub-Bridging-Header.h
-Pods/Headers/Public/mopub-ios-sdk/MoPub.h
-Pods/Headers/Public/mopub-ios-sdk/MoPub_AbstractAvidAdSession.h
-Pods/Headers/Public/mopub-ios-sdk/MoPub_AbstractAvidManagedAdSession.h
-Pods/Headers/Public/mopub-ios-sdk/MoPub_Avid.h
-Pods/Headers/Public/mopub-ios-sdk/MoPub_AvidAdSessionManager.h
-Pods/Headers/Public/mopub-ios-sdk/MoPub_AvidDeferredAdSessionListener.h
-Pods/Headers/Public/mopub-ios-sdk/MoPub_AvidDisplayAdSession.h
-Pods/Headers/Public/mopub-ios-sdk/MoPub_AvidManagedDisplayAdSession.h
-Pods/Headers/Public/mopub-ios-sdk/MoPub_AvidManagedVideoAdSession.h
-Pods/Headers/Public/mopub-ios-sdk/MoPub_AvidVideoAdSession.h
-Pods/Headers/Public/mopub-ios-sdk/MoPub_AvidVideoPlaybackListener.h
-Pods/Headers/Public/mopub-ios-sdk/MoPub_ExternalAvidAdSessionContext.h
-Pods/Headers/Public/mopub-ios-sdk/MOPUBActivityIndicatorView.h
-Pods/Headers/Public/mopub-ios-sdk/MOPUBAVPlayer.h
-Pods/Headers/Public/mopub-ios-sdk/MOPUBAVPlayerView.h
-Pods/Headers/Public/mopub-ios-sdk/MOPUBDisplayAgentType.h
-Pods/Headers/Public/mopub-ios-sdk/MOPUBExperimentProvider.h
-Pods/Headers/Public/mopub-ios-sdk/MOPUBFullscreenPlayerViewController.h
-Pods/Headers/Public/mopub-ios-sdk/MOPUBNativeVideoAdAdapter.h
-Pods/Headers/Public/mopub-ios-sdk/MOPUBNativeVideoAdConfigValues.h
-Pods/Headers/Public/mopub-ios-sdk/MOPUBNativeVideoAdRenderer.h
-Pods/Headers/Public/mopub-ios-sdk/MOPUBNativeVideoAdRendererSettings.h
-Pods/Headers/Public/mopub-ios-sdk/MOPUBNativeVideoCustomEvent.h
-Pods/Headers/Public/mopub-ios-sdk/MOPUBNativeVideoImpressionAgent.h
-Pods/Headers/Public/mopub-ios-sdk/MOPUBPlayerManager.h
-Pods/Headers/Public/mopub-ios-sdk/MOPUBPlayerView.h
-Pods/Headers/Public/mopub-ios-sdk/MOPUBPlayerViewController.h
-Pods/Headers/Public/mopub-ios-sdk/MOPUBReplayView.h
-Pods/Headers/Public/mopub-ios-sdk/MPActivityViewControllerHelper+TweetShare.h
-Pods/Headers/Public/mopub-ios-sdk/MPActivityViewControllerHelper.h
-Pods/Headers/Public/mopub-ios-sdk/MPAdAlertGestureRecognizer.h
-Pods/Headers/Public/mopub-ios-sdk/MPAdAlertManager.h
-Pods/Headers/Public/mopub-ios-sdk/MPAdBrowserController.h
-Pods/Headers/Public/mopub-ios-sdk/MPAdConfiguration.h
-Pods/Headers/Public/mopub-ios-sdk/MPAdConversionTracker.h
-Pods/Headers/Public/mopub-ios-sdk/MPAdDestinationDisplayAgent.h
-Pods/Headers/Public/mopub-ios-sdk/MPAdImpressionTimer.h
-Pods/Headers/Public/mopub-ios-sdk/MPAdPlacerInvocation.h
-Pods/Headers/Public/mopub-ios-sdk/MPAdPositioning.h
-Pods/Headers/Public/mopub-ios-sdk/MPAdServerCommunicator.h
-Pods/Headers/Public/mopub-ios-sdk/MPAdServerURLBuilder.h
-Pods/Headers/Public/mopub-ios-sdk/MPAdView.h
-Pods/Headers/Public/mopub-ios-sdk/MPAdWebViewAgent.h
-Pods/Headers/Public/mopub-ios-sdk/MPAnalyticsTracker.h
-Pods/Headers/Public/mopub-ios-sdk/MPAPIEndpoints.h
-Pods/Headers/Public/mopub-ios-sdk/MPBannerAdManager.h
-Pods/Headers/Public/mopub-ios-sdk/MPBannerAdManagerDelegate.h
-Pods/Headers/Public/mopub-ios-sdk/MPBannerCustomEvent+Internal.h
-Pods/Headers/Public/mopub-ios-sdk/MPBannerCustomEvent.h
-Pods/Headers/Public/mopub-ios-sdk/MPBannerCustomEventAdapter.h
-Pods/Headers/Public/mopub-ios-sdk/MPBannerCustomEventDelegate.h
-Pods/Headers/Public/mopub-ios-sdk/MPBaseBannerAdapter.h
-Pods/Headers/Public/mopub-ios-sdk/MPBaseInterstitialAdapter.h
-Pods/Headers/Public/mopub-ios-sdk/MPClientAdPositioning.h
-Pods/Headers/Public/mopub-ios-sdk/MPClosableView.h
-Pods/Headers/Public/mopub-ios-sdk/MPCollectionViewAdPlacer.h
-Pods/Headers/Public/mopub-ios-sdk/MPCollectionViewAdPlacerCell.h
-Pods/Headers/Public/mopub-ios-sdk/MPConstants.h
-Pods/Headers/Public/mopub-ios-sdk/MPCoreInstanceProvider.h
-Pods/Headers/Public/mopub-ios-sdk/MPCountdownTimerView.h
-Pods/Headers/Public/mopub-ios-sdk/MPDiskLRUCache.h
-Pods/Headers/Public/mopub-ios-sdk/MPEnhancedDeeplinkRequest.h
-Pods/Headers/Public/mopub-ios-sdk/MPError.h
-Pods/Headers/Public/mopub-ios-sdk/MPFacebookKeywordProvider.h
-Pods/Headers/Public/mopub-ios-sdk/MPForceableOrientationProtocol.h
-Pods/Headers/Public/mopub-ios-sdk/MPGeolocationProvider.h
-Pods/Headers/Public/mopub-ios-sdk/MPGlobal.h
-Pods/Headers/Public/mopub-ios-sdk/MPHTMLBannerCustomEvent.h
-Pods/Headers/Public/mopub-ios-sdk/MPHTMLInterstitialCustomEvent.h
-Pods/Headers/Public/mopub-ios-sdk/MPHTMLInterstitialViewController.h
-Pods/Headers/Public/mopub-ios-sdk/MPIdentityProvider.h
-Pods/Headers/Public/mopub-ios-sdk/MPImageDownloadQueue.h
-Pods/Headers/Public/mopub-ios-sdk/MPInstanceProvider.h
-Pods/Headers/Public/mopub-ios-sdk/MPInternalUtils.h
-Pods/Headers/Public/mopub-ios-sdk/MPInterstitialAdController.h
-Pods/Headers/Public/mopub-ios-sdk/MPInterstitialAdManager.h
-Pods/Headers/Public/mopub-ios-sdk/MPInterstitialAdManagerDelegate.h
-Pods/Headers/Public/mopub-ios-sdk/MPInterstitialCustomEvent.h
-Pods/Headers/Public/mopub-ios-sdk/MPInterstitialCustomEventAdapter.h
-Pods/Headers/Public/mopub-ios-sdk/MPInterstitialCustomEventDelegate.h
-Pods/Headers/Public/mopub-ios-sdk/MPInterstitialViewController.h
-Pods/Headers/Public/mopub-ios-sdk/MPKeywordProvider.h
-Pods/Headers/Public/mopub-ios-sdk/MPLastResortDelegate.h
-Pods/Headers/Public/mopub-ios-sdk/MPLogEvent+NativeVideo.h
-Pods/Headers/Public/mopub-ios-sdk/MPLogEvent.h
-Pods/Headers/Public/mopub-ios-sdk/MPLogEventCommunicator.h
-Pods/Headers/Public/mopub-ios-sdk/MPLogEventRecorder.h
-Pods/Headers/Public/mopub-ios-sdk/MPLogging.h
-Pods/Headers/Public/mopub-ios-sdk/MPLogLevel.h
-Pods/Headers/Public/mopub-ios-sdk/MPLogProvider.h
-Pods/Headers/Public/mopub-ios-sdk/MPMediationSettingsProtocol.h
-Pods/Headers/Public/mopub-ios-sdk/MPMoPubNativeAdAdapter.h
-Pods/Headers/Public/mopub-ios-sdk/MPMoPubNativeCustomEvent.h
-Pods/Headers/Public/mopub-ios-sdk/MPMoPubRewardedPlayableCustomEvent.h
-Pods/Headers/Public/mopub-ios-sdk/MPMoPubRewardedVideoCustomEvent.h
-Pods/Headers/Public/mopub-ios-sdk/MPMRAIDBannerCustomEvent.h
-Pods/Headers/Public/mopub-ios-sdk/MPMRAIDInterstitialCustomEvent.h
-Pods/Headers/Public/mopub-ios-sdk/MPMRAIDInterstitialViewController.h
-Pods/Headers/Public/mopub-ios-sdk/MPNativeAd+Internal.h
-Pods/Headers/Public/mopub-ios-sdk/MPNativeAd.h
-Pods/Headers/Public/mopub-ios-sdk/MPNativeAdAdapter.h
-Pods/Headers/Public/mopub-ios-sdk/MPNativeAdConfigValues+Internal.h
-Pods/Headers/Public/mopub-ios-sdk/MPNativeAdConfigValues.h
-Pods/Headers/Public/mopub-ios-sdk/MPNativeAdConstants.h
-Pods/Headers/Public/mopub-ios-sdk/MPNativeAdData.h
-Pods/Headers/Public/mopub-ios-sdk/MPNativeAdDelegate.h
-Pods/Headers/Public/mopub-ios-sdk/MPNativeAdError.h
-Pods/Headers/Public/mopub-ios-sdk/MPNativeAdRenderer.h
-Pods/Headers/Public/mopub-ios-sdk/MPNativeAdRendererConfiguration.h
-Pods/Headers/Public/mopub-ios-sdk/MPNativeAdRendererConstants.h
-Pods/Headers/Public/mopub-ios-sdk/MPNativeAdRendererImageHandler.h
-Pods/Headers/Public/mopub-ios-sdk/MPNativeAdRendererSettings.h
-Pods/Headers/Public/mopub-ios-sdk/MPNativeAdRendering.h
-Pods/Headers/Public/mopub-ios-sdk/MPNativeAdRenderingImageLoader.h
-Pods/Headers/Public/mopub-ios-sdk/MPNativeAdRequest+MPNativeAdSource.h
-Pods/Headers/Public/mopub-ios-sdk/MPNativeAdRequest.h
-Pods/Headers/Public/mopub-ios-sdk/MPNativeAdRequestTargeting.h
-Pods/Headers/Public/mopub-ios-sdk/MPNativeAdSource.h
-Pods/Headers/Public/mopub-ios-sdk/MPNativeAdSourceDelegate.h
-Pods/Headers/Public/mopub-ios-sdk/MPNativeAdSourceQueue.h
-Pods/Headers/Public/mopub-ios-sdk/MPNativeAdUtils.h
-Pods/Headers/Public/mopub-ios-sdk/MPNativeCache.h
-Pods/Headers/Public/mopub-ios-sdk/MPNativeCustomEvent.h
-Pods/Headers/Public/mopub-ios-sdk/MPNativeCustomEventDelegate.h
-Pods/Headers/Public/mopub-ios-sdk/MPNativePositionResponseDeserializer.h
-Pods/Headers/Public/mopub-ios-sdk/MPNativePositionSource.h
-Pods/Headers/Public/mopub-ios-sdk/MPNativeView.h
-Pods/Headers/Public/mopub-ios-sdk/MPNetworkManager.h
-Pods/Headers/Public/mopub-ios-sdk/MPPrivateBannerCustomEventDelegate.h
-Pods/Headers/Public/mopub-ios-sdk/MPPrivateInterstitialCustomEventDelegate.h
-Pods/Headers/Public/mopub-ios-sdk/MPPrivateRewardedVideoCustomEventDelegate.h
-Pods/Headers/Public/mopub-ios-sdk/MPProgressOverlayView.h
-Pods/Headers/Public/mopub-ios-sdk/MPQRunLoopOperation.h
-Pods/Headers/Public/mopub-ios-sdk/MPReachability.h
-Pods/Headers/Public/mopub-ios-sdk/MPRealTimeTimer.h
-Pods/Headers/Public/mopub-ios-sdk/MPRetryingHTTPOperation.h
-Pods/Headers/Public/mopub-ios-sdk/MPRewardedVideo+Internal.h
-Pods/Headers/Public/mopub-ios-sdk/MPRewardedVideo.h
-Pods/Headers/Public/mopub-ios-sdk/MPRewardedVideoAdapter.h
-Pods/Headers/Public/mopub-ios-sdk/MPRewardedVideoAdManager.h
-Pods/Headers/Public/mopub-ios-sdk/MPRewardedVideoConnection.h
-Pods/Headers/Public/mopub-ios-sdk/MPRewardedVideoCustomEvent+Caching.h
-Pods/Headers/Public/mopub-ios-sdk/MPRewardedVideoCustomEvent.h
-Pods/Headers/Public/mopub-ios-sdk/MPRewardedVideoError.h
-Pods/Headers/Public/mopub-ios-sdk/MPRewardedVideoNetwork.h
-Pods/Headers/Public/mopub-ios-sdk/MPRewardedVideoReward.h
-Pods/Headers/Public/mopub-ios-sdk/MPServerAdPositioning.h
-Pods/Headers/Public/mopub-ios-sdk/MPSessionTracker.h
-Pods/Headers/Public/mopub-ios-sdk/MPStaticNativeAdRenderer.h
-Pods/Headers/Public/mopub-ios-sdk/MPStaticNativeAdRendererSettings.h
-Pods/Headers/Public/mopub-ios-sdk/MPStoreKitProvider.h
-Pods/Headers/Public/mopub-ios-sdk/MPStreamAdPlacementData.h
-Pods/Headers/Public/mopub-ios-sdk/MPStreamAdPlacer.h
-Pods/Headers/Public/mopub-ios-sdk/MPTableViewAdPlacer.h
-Pods/Headers/Public/mopub-ios-sdk/MPTableViewAdPlacerCell.h
-Pods/Headers/Public/mopub-ios-sdk/MPTableViewCellImpressionTracker.h
-Pods/Headers/Public/mopub-ios-sdk/MPTimer.h
-Pods/Headers/Public/mopub-ios-sdk/MPURLActionInfo.h
-Pods/Headers/Public/mopub-ios-sdk/MPURLResolver.h
-Pods/Headers/Public/mopub-ios-sdk/MPUserInteractionGestureRecognizer.h
-Pods/Headers/Public/mopub-ios-sdk/MPVASTAd.h
-Pods/Headers/Public/mopub-ios-sdk/MPVASTCompanionAd.h
-Pods/Headers/Public/mopub-ios-sdk/MPVASTCreative.h
-Pods/Headers/Public/mopub-ios-sdk/MPVASTDurationOffset.h
-Pods/Headers/Public/mopub-ios-sdk/MPVASTIndustryIcon.h
-Pods/Headers/Public/mopub-ios-sdk/MPVASTInline.h
-Pods/Headers/Public/mopub-ios-sdk/MPVASTLinearAd.h
-Pods/Headers/Public/mopub-ios-sdk/MPVASTMacroProcessor.h
-Pods/Headers/Public/mopub-ios-sdk/MPVASTManager.h
-Pods/Headers/Public/mopub-ios-sdk/MPVASTMediaFile.h
-Pods/Headers/Public/mopub-ios-sdk/MPVASTModel.h
-Pods/Headers/Public/mopub-ios-sdk/MPVASTResource.h
-Pods/Headers/Public/mopub-ios-sdk/MPVASTResponse.h
-Pods/Headers/Public/mopub-ios-sdk/MPVASTStringUtilities.h
-Pods/Headers/Public/mopub-ios-sdk/MPVASTTracking.h
-Pods/Headers/Public/mopub-ios-sdk/MPVASTTrackingEvent.h
-Pods/Headers/Public/mopub-ios-sdk/MPVASTWrapper.h
-Pods/Headers/Public/mopub-ios-sdk/MPVideoConfig.h
-Pods/Headers/Public/mopub-ios-sdk/MPViewabilityAdapter.h
-Pods/Headers/Public/mopub-ios-sdk/MPViewabilityAdapterAvid.h
-Pods/Headers/Public/mopub-ios-sdk/MPViewabilityAdapterMoat.h
-Pods/Headers/Public/mopub-ios-sdk/MPViewabilityOption.h
-Pods/Headers/Public/mopub-ios-sdk/MPViewabilityTracker.h
-Pods/Headers/Public/mopub-ios-sdk/MPWebView+Viewability.h
-Pods/Headers/Public/mopub-ios-sdk/MPWebView.h
-Pods/Headers/Public/mopub-ios-sdk/MPXMLParser.h
-Pods/Headers/Public/mopub-ios-sdk/MRBridge.h
-Pods/Headers/Public/mopub-ios-sdk/MRBundleManager.h
-Pods/Headers/Public/mopub-ios-sdk/MRCommand.h
-Pods/Headers/Public/mopub-ios-sdk/MRConstants.h
-Pods/Headers/Public/mopub-ios-sdk/MRController.h
-Pods/Headers/Public/mopub-ios-sdk/MRError.h
-Pods/Headers/Public/mopub-ios-sdk/MRExpandModalViewController.h
-Pods/Headers/Public/mopub-ios-sdk/MRNativeCommandHandler.h
-Pods/Headers/Public/mopub-ios-sdk/MRProperty.h
-Pods/Headers/Public/mopub-ios-sdk/MRVideoPlayerManager.h
-Pods/Headers/Public/mopub-ios-sdk/NSBundle+MPAdditions.h
-Pods/Headers/Public/mopub-ios-sdk/NSHTTPURLResponse+MPAdditions.h
-Pods/Headers/Public/mopub-ios-sdk/NSJSONSerialization+MPAdditions.h
-Pods/Headers/Public/mopub-ios-sdk/NSString+MPAdditions.h
-Pods/Headers/Public/mopub-ios-sdk/NSURL+MPAdditions.h
-Pods/Headers/Public/mopub-ios-sdk/UIButton+MPAdditions.h
-Pods/Headers/Public/mopub-ios-sdk/UIColor+MPAdditions.h
-Pods/Headers/Public/mopub-ios-sdk/UIView+MPAdditions.h
-Pods/Headers/Public/mopub-ios-sdk/UIWebView+MPAdditions.h
-Pods/Headers/Public/mopub-ios-sdk/MPUBMoatMobileAppKit/MPUBMoatAnalytics.h
-Pods/Headers/Public/mopub-ios-sdk/MPUBMoatMobileAppKit/MPUBMoatBaseTracker.h
-Pods/Headers/Public/mopub-ios-sdk/MPUBMoatMobileAppKit/MPUBMoatMobileAppKit.h
-Pods/Headers/Public/mopub-ios-sdk/MPUBMoatMobileAppKit/MPUBMoatNativeDisplayTracker.h
-Pods/Headers/Public/mopub-ios-sdk/MPUBMoatMobileAppKit/MPUBMoatVideoTracker.h
-Pods/Headers/Public/mopub-ios-sdk/MPUBMoatMobileAppKit/MPUBMoatWebTracker.h
-Pods/Headers/Public/YouAppi_Admob_Adapter/YAAd.h
-Pods/Headers/Public/YouAppi_Admob_Adapter/YAAdMobIntertitialAdEvent.h
-Pods/Headers/Public/YouAppi_Admob_Adapter/YAAdMobIntertitialVideoAdEvent.h
-Pods/Headers/Public/YouAppi_Admob_Adapter/YAAdMobRewardedVideoAdEvent.h
-Pods/Headers/Public/YouAppi_Framework/YouAppi/YouAppi-Swift.h
-Pods/Headers/Public/YouAppi_Framework/YouAppi/YouAppi.h
-Pods/mopub-ios-sdk/LICENSE
-Pods/mopub-ios-sdk/README.md
-Pods/mopub-ios-sdk/MoPubSDK/MoPub-Bridging-Header.h
-Pods/mopub-ios-sdk/MoPubSDK/MoPub.h
-Pods/mopub-ios-sdk/MoPubSDK/MoPub.m
-Pods/mopub-ios-sdk/MoPubSDK/MOPUBDisplayAgentType.h
-Pods/mopub-ios-sdk/MoPubSDK/MPAdConversionTracker.h
-Pods/mopub-ios-sdk/MoPubSDK/MPAdConversionTracker.m
-Pods/mopub-ios-sdk/MoPubSDK/MPAdView.h
-Pods/mopub-ios-sdk/MoPubSDK/MPAdView.m
-Pods/mopub-ios-sdk/MoPubSDK/MPBannerCustomEvent.h
-Pods/mopub-ios-sdk/MoPubSDK/MPBannerCustomEvent.m
-Pods/mopub-ios-sdk/MoPubSDK/MPBannerCustomEventDelegate.h
-Pods/mopub-ios-sdk/MoPubSDK/MPConstants.h
-Pods/mopub-ios-sdk/MoPubSDK/MPConstants.m
-Pods/mopub-ios-sdk/MoPubSDK/MPInterstitialAdController.h
-Pods/mopub-ios-sdk/MoPubSDK/MPInterstitialAdController.m
-Pods/mopub-ios-sdk/MoPubSDK/MPInterstitialCustomEvent.h
-Pods/mopub-ios-sdk/MoPubSDK/MPInterstitialCustomEvent.m
-Pods/mopub-ios-sdk/MoPubSDK/MPInterstitialCustomEventDelegate.h
-Pods/mopub-ios-sdk/MoPubSDK/MPLogLevel.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/MPCoreInstanceProvider.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/MPCoreInstanceProvider.m
-Pods/mopub-ios-sdk/MoPubSDK/Internal/MPInstanceProvider.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/MPInstanceProvider.m
-Pods/mopub-ios-sdk/MoPubSDK/Internal/MPVASTTracking.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/MPVASTTracking.m
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Banners/MPBannerAdManager.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Banners/MPBannerAdManager.m
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Banners/MPBannerAdManagerDelegate.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Banners/MPBannerCustomEvent+Internal.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Banners/MPBannerCustomEvent+Internal.m
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Banners/MPBannerCustomEventAdapter.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Banners/MPBannerCustomEventAdapter.m
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Banners/MPBaseBannerAdapter.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Banners/MPBaseBannerAdapter.m
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Banners/MPPrivateBannerCustomEventDelegate.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Common/MPActivityViewControllerHelper+TweetShare.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Common/MPActivityViewControllerHelper+TweetShare.m
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Common/MPActivityViewControllerHelper.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Common/MPActivityViewControllerHelper.m
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Common/MPAdBrowserController.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Common/MPAdBrowserController.m
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Common/MPAdBrowserController.xib
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Common/MPAdConfiguration.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Common/MPAdConfiguration.m
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Common/MPAdDestinationDisplayAgent.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Common/MPAdDestinationDisplayAgent.m
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Common/MPAdImpressionTimer.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Common/MPAdImpressionTimer.m
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Common/MPAdServerCommunicator.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Common/MPAdServerCommunicator.m
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Common/MPAdServerURLBuilder.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Common/MPAdServerURLBuilder.m
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Common/MPAPIEndpoints.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Common/MPAPIEndpoints.m
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Common/MPClosableView.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Common/MPClosableView.m
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Common/MPCountdownTimerView.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Common/MPCountdownTimerView.m
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Common/MPEnhancedDeeplinkRequest.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Common/MPEnhancedDeeplinkRequest.m
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Common/MPFacebookKeywordProvider.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Common/MPFacebookKeywordProvider.m
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Common/MPKeywordProvider.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Common/MPLastResortDelegate.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Common/MPLastResortDelegate.m
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Common/MPProgressOverlayView.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Common/MPProgressOverlayView.m
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Common/MPRealTimeTimer.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Common/MPRealTimeTimer.m
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Common/MPURLActionInfo.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Common/MPURLActionInfo.m
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Common/MPURLResolver.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Common/MPURLResolver.m
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Common/MPVideoConfig.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Common/MPVideoConfig.m
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Common/MPXMLParser.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Common/MPXMLParser.m
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Common/AdAlerts/MPAdAlertGestureRecognizer.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Common/AdAlerts/MPAdAlertGestureRecognizer.m
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Common/AdAlerts/MPAdAlertManager.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Common/AdAlerts/MPAdAlertManager.m
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Event Logging/MPLogEvent+NativeVideo.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Event Logging/MPLogEvent+NativeVideo.m
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Event Logging/MPLogEvent.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Event Logging/MPLogEvent.m
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Event Logging/MPLogEventCommunicator.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Event Logging/MPLogEventCommunicator.m
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Event Logging/MPLogEventRecorder.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Event Logging/MPLogEventRecorder.m
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Event Logging/MPNetworkManager.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Event Logging/MPNetworkManager.m
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Event Logging/MPQRunLoopOperation.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Event Logging/MPQRunLoopOperation.m
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Event Logging/MPRetryingHTTPOperation.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Event Logging/MPRetryingHTTPOperation.m
-Pods/mopub-ios-sdk/MoPubSDK/Internal/HTML/MPAdWebViewAgent.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/HTML/MPAdWebViewAgent.m
-Pods/mopub-ios-sdk/MoPubSDK/Internal/HTML/MPHTMLBannerCustomEvent.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/HTML/MPHTMLBannerCustomEvent.m
-Pods/mopub-ios-sdk/MoPubSDK/Internal/HTML/MPHTMLInterstitialCustomEvent.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/HTML/MPHTMLInterstitialCustomEvent.m
-Pods/mopub-ios-sdk/MoPubSDK/Internal/HTML/MPHTMLInterstitialViewController.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/HTML/MPHTMLInterstitialViewController.m
-Pods/mopub-ios-sdk/MoPubSDK/Internal/HTML/MPWebView.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/HTML/MPWebView.m
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Interstitials/MPBaseInterstitialAdapter.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Interstitials/MPBaseInterstitialAdapter.m
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Interstitials/MPInterstitialAdManager.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Interstitials/MPInterstitialAdManager.m
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Interstitials/MPInterstitialAdManagerDelegate.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Interstitials/MPInterstitialCustomEventAdapter.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Interstitials/MPInterstitialCustomEventAdapter.m
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Interstitials/MPInterstitialViewController.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Interstitials/MPInterstitialViewController.m
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Interstitials/MPPrivateInterstitialCustomEventDelegate.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/MRAID/MPForceableOrientationProtocol.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/MRAID/MPMRAIDBannerCustomEvent.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/MRAID/MPMRAIDBannerCustomEvent.m
-Pods/mopub-ios-sdk/MoPubSDK/Internal/MRAID/MPMRAIDInterstitialCustomEvent.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/MRAID/MPMRAIDInterstitialCustomEvent.m
-Pods/mopub-ios-sdk/MoPubSDK/Internal/MRAID/MPMRAIDInterstitialViewController.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/MRAID/MPMRAIDInterstitialViewController.m
-Pods/mopub-ios-sdk/MoPubSDK/Internal/MRAID/MRBridge.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/MRAID/MRBridge.m
-Pods/mopub-ios-sdk/MoPubSDK/Internal/MRAID/MRBundleManager.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/MRAID/MRBundleManager.m
-Pods/mopub-ios-sdk/MoPubSDK/Internal/MRAID/MRCommand.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/MRAID/MRCommand.m
-Pods/mopub-ios-sdk/MoPubSDK/Internal/MRAID/MRConstants.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/MRAID/MRConstants.m
-Pods/mopub-ios-sdk/MoPubSDK/Internal/MRAID/MRController.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/MRAID/MRController.m
-Pods/mopub-ios-sdk/MoPubSDK/Internal/MRAID/MRError.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/MRAID/MRError.m
-Pods/mopub-ios-sdk/MoPubSDK/Internal/MRAID/MRExpandModalViewController.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/MRAID/MRExpandModalViewController.m
-Pods/mopub-ios-sdk/MoPubSDK/Internal/MRAID/MRNativeCommandHandler.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/MRAID/MRNativeCommandHandler.m
-Pods/mopub-ios-sdk/MoPubSDK/Internal/MRAID/MRProperty.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/MRAID/MRProperty.m
-Pods/mopub-ios-sdk/MoPubSDK/Internal/MRAID/MRVideoPlayerManager.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/MRAID/MRVideoPlayerManager.m
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Utility/MOPUBExperimentProvider.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Utility/MOPUBExperimentProvider.m
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Utility/MPAnalyticsTracker.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Utility/MPAnalyticsTracker.m
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Utility/MPError.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Utility/MPError.m
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Utility/MPGeolocationProvider.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Utility/MPGeolocationProvider.m
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Utility/MPGlobal.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Utility/MPGlobal.m
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Utility/MPIdentityProvider.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Utility/MPIdentityProvider.m
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Utility/MPInternalUtils.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Utility/MPInternalUtils.m
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Utility/MPLogging.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Utility/MPLogging.m
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Utility/MPLogProvider.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Utility/MPLogProvider.m
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Utility/MPReachability.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Utility/MPReachability.m
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Utility/MPSessionTracker.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Utility/MPSessionTracker.m
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Utility/MPStoreKitProvider.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Utility/MPStoreKitProvider.m
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Utility/MPTimer.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Utility/MPTimer.m
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Utility/MPUserInteractionGestureRecognizer.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Utility/MPUserInteractionGestureRecognizer.m
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Utility/Categories/NSBundle+MPAdditions.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Utility/Categories/NSBundle+MPAdditions.m
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Utility/Categories/NSHTTPURLResponse+MPAdditions.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Utility/Categories/NSHTTPURLResponse+MPAdditions.m
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Utility/Categories/NSJSONSerialization+MPAdditions.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Utility/Categories/NSJSONSerialization+MPAdditions.m
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Utility/Categories/NSString+MPAdditions.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Utility/Categories/NSString+MPAdditions.m
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Utility/Categories/NSURL+MPAdditions.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Utility/Categories/NSURL+MPAdditions.m
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Utility/Categories/UIButton+MPAdditions.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Utility/Categories/UIButton+MPAdditions.m
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Utility/Categories/UIColor+MPAdditions.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Utility/Categories/UIColor+MPAdditions.m
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Utility/Categories/UIView+MPAdditions.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Utility/Categories/UIView+MPAdditions.m
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Utility/Categories/UIWebView+MPAdditions.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/Utility/Categories/UIWebView+MPAdditions.m
-Pods/mopub-ios-sdk/MoPubSDK/Internal/VAST/MPVASTAd.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/VAST/MPVASTAd.m
-Pods/mopub-ios-sdk/MoPubSDK/Internal/VAST/MPVASTCompanionAd.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/VAST/MPVASTCompanionAd.m
-Pods/mopub-ios-sdk/MoPubSDK/Internal/VAST/MPVASTCreative.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/VAST/MPVASTCreative.m
-Pods/mopub-ios-sdk/MoPubSDK/Internal/VAST/MPVASTDurationOffset.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/VAST/MPVASTDurationOffset.m
-Pods/mopub-ios-sdk/MoPubSDK/Internal/VAST/MPVASTIndustryIcon.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/VAST/MPVASTIndustryIcon.m
-Pods/mopub-ios-sdk/MoPubSDK/Internal/VAST/MPVASTInline.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/VAST/MPVASTInline.m
-Pods/mopub-ios-sdk/MoPubSDK/Internal/VAST/MPVASTLinearAd.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/VAST/MPVASTLinearAd.m
-Pods/mopub-ios-sdk/MoPubSDK/Internal/VAST/MPVASTMacroProcessor.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/VAST/MPVASTMacroProcessor.m
-Pods/mopub-ios-sdk/MoPubSDK/Internal/VAST/MPVASTManager.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/VAST/MPVASTManager.m
-Pods/mopub-ios-sdk/MoPubSDK/Internal/VAST/MPVASTMediaFile.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/VAST/MPVASTMediaFile.m
-Pods/mopub-ios-sdk/MoPubSDK/Internal/VAST/MPVASTModel.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/VAST/MPVASTModel.m
-Pods/mopub-ios-sdk/MoPubSDK/Internal/VAST/MPVASTResource.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/VAST/MPVASTResource.m
-Pods/mopub-ios-sdk/MoPubSDK/Internal/VAST/MPVASTResponse.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/VAST/MPVASTResponse.m
-Pods/mopub-ios-sdk/MoPubSDK/Internal/VAST/MPVASTStringUtilities.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/VAST/MPVASTStringUtilities.m
-Pods/mopub-ios-sdk/MoPubSDK/Internal/VAST/MPVASTTrackingEvent.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/VAST/MPVASTTrackingEvent.m
-Pods/mopub-ios-sdk/MoPubSDK/Internal/VAST/MPVASTWrapper.h
-Pods/mopub-ios-sdk/MoPubSDK/Internal/VAST/MPVASTWrapper.m
-Pods/mopub-ios-sdk/MoPubSDK/Native Ads/MPAdPositioning.h
-Pods/mopub-ios-sdk/MoPubSDK/Native Ads/MPAdPositioning.m
-Pods/mopub-ios-sdk/MoPubSDK/Native Ads/MPClientAdPositioning.h
-Pods/mopub-ios-sdk/MoPubSDK/Native Ads/MPClientAdPositioning.m
-Pods/mopub-ios-sdk/MoPubSDK/Native Ads/MPCollectionViewAdPlacer.h
-Pods/mopub-ios-sdk/MoPubSDK/Native Ads/MPCollectionViewAdPlacer.m
-Pods/mopub-ios-sdk/MoPubSDK/Native Ads/MPNativeAd.h
-Pods/mopub-ios-sdk/MoPubSDK/Native Ads/MPNativeAd.m
-Pods/mopub-ios-sdk/MoPubSDK/Native Ads/MPNativeAdAdapter.h
-Pods/mopub-ios-sdk/MoPubSDK/Native Ads/MPNativeAdConstants.h
-Pods/mopub-ios-sdk/MoPubSDK/Native Ads/MPNativeAdConstants.m
-Pods/mopub-ios-sdk/MoPubSDK/Native Ads/MPNativeAdData.h
-Pods/mopub-ios-sdk/MoPubSDK/Native Ads/MPNativeAdData.m
-Pods/mopub-ios-sdk/MoPubSDK/Native Ads/MPNativeAdDelegate.h
-Pods/mopub-ios-sdk/MoPubSDK/Native Ads/MPNativeAdError.h
-Pods/mopub-ios-sdk/MoPubSDK/Native Ads/MPNativeAdError.m
-Pods/mopub-ios-sdk/MoPubSDK/Native Ads/MPNativeAdRenderer.h
-Pods/mopub-ios-sdk/MoPubSDK/Native Ads/MPNativeAdRendererConfiguration.h
-Pods/mopub-ios-sdk/MoPubSDK/Native Ads/MPNativeAdRendererConfiguration.m
-Pods/mopub-ios-sdk/MoPubSDK/Native Ads/MPNativeAdRendererSettings.h
-Pods/mopub-ios-sdk/MoPubSDK/Native Ads/MPNativeAdRendering.h
-Pods/mopub-ios-sdk/MoPubSDK/Native Ads/MPNativeAdRenderingImageLoader.h
-Pods/mopub-ios-sdk/MoPubSDK/Native Ads/MPNativeAdRenderingImageLoader.m
-Pods/mopub-ios-sdk/MoPubSDK/Native Ads/MPNativeAdRequest.h
-Pods/mopub-ios-sdk/MoPubSDK/Native Ads/MPNativeAdRequest.m
-Pods/mopub-ios-sdk/MoPubSDK/Native Ads/MPNativeAdRequestTargeting.h
-Pods/mopub-ios-sdk/MoPubSDK/Native Ads/MPNativeAdRequestTargeting.m
-Pods/mopub-ios-sdk/MoPubSDK/Native Ads/MPNativeAdSource.h
-Pods/mopub-ios-sdk/MoPubSDK/Native Ads/MPNativeAdSource.m
-Pods/mopub-ios-sdk/MoPubSDK/Native Ads/MPNativeAdSourceDelegate.h
-Pods/mopub-ios-sdk/MoPubSDK/Native Ads/MPNativeCustomEvent.h
-Pods/mopub-ios-sdk/MoPubSDK/Native Ads/MPNativeCustomEvent.m
-Pods/mopub-ios-sdk/MoPubSDK/Native Ads/MPNativeCustomEventDelegate.h
-Pods/mopub-ios-sdk/MoPubSDK/Native Ads/MPServerAdPositioning.h
-Pods/mopub-ios-sdk/MoPubSDK/Native Ads/MPServerAdPositioning.m
-Pods/mopub-ios-sdk/MoPubSDK/Native Ads/MPStaticNativeAdRenderer.h
-Pods/mopub-ios-sdk/MoPubSDK/Native Ads/MPStaticNativeAdRenderer.m
-Pods/mopub-ios-sdk/MoPubSDK/Native Ads/MPStaticNativeAdRendererSettings.h
-Pods/mopub-ios-sdk/MoPubSDK/Native Ads/MPStaticNativeAdRendererSettings.m
-Pods/mopub-ios-sdk/MoPubSDK/Native Ads/MPStreamAdPlacementData.h
-Pods/mopub-ios-sdk/MoPubSDK/Native Ads/MPStreamAdPlacementData.m
-Pods/mopub-ios-sdk/MoPubSDK/Native Ads/MPStreamAdPlacer.h
-Pods/mopub-ios-sdk/MoPubSDK/Native Ads/MPStreamAdPlacer.m
-Pods/mopub-ios-sdk/MoPubSDK/Native Ads/MPTableViewAdPlacer.h
-Pods/mopub-ios-sdk/MoPubSDK/Native Ads/MPTableViewAdPlacer.m
-Pods/mopub-ios-sdk/MoPubSDK/Native Ads/Internal/MPAdPlacerInvocation.h
-Pods/mopub-ios-sdk/MoPubSDK/Native Ads/Internal/MPAdPlacerInvocation.m
-Pods/mopub-ios-sdk/MoPubSDK/Native Ads/Internal/MPCollectionViewAdPlacerCell.h
-Pods/mopub-ios-sdk/MoPubSDK/Native Ads/Internal/MPCollectionViewAdPlacerCell.m
-Pods/mopub-ios-sdk/MoPubSDK/Native Ads/Internal/MPDiskLRUCache.h
-Pods/mopub-ios-sdk/MoPubSDK/Native Ads/Internal/MPDiskLRUCache.m
-Pods/mopub-ios-sdk/MoPubSDK/Native Ads/Internal/MPImageDownloadQueue.h
-Pods/mopub-ios-sdk/MoPubSDK/Native Ads/Internal/MPImageDownloadQueue.m
-Pods/mopub-ios-sdk/MoPubSDK/Native Ads/Internal/MPMoPubNativeAdAdapter.h
-Pods/mopub-ios-sdk/MoPubSDK/Native Ads/Internal/MPMoPubNativeAdAdapter.m
-Pods/mopub-ios-sdk/MoPubSDK/Native Ads/Internal/MPMoPubNativeCustomEvent.h
-Pods/mopub-ios-sdk/MoPubSDK/Native Ads/Internal/MPMoPubNativeCustomEvent.m
-Pods/mopub-ios-sdk/MoPubSDK/Native Ads/Internal/MPNativeAd+Internal.h
-Pods/mopub-ios-sdk/MoPubSDK/Native Ads/Internal/MPNativeAd+Internal.m
-Pods/mopub-ios-sdk/MoPubSDK/Native Ads/Internal/MPNativeAdConfigValues+Internal.h
-Pods/mopub-ios-sdk/MoPubSDK/Native Ads/Internal/MPNativeAdConfigValues+Internal.m
-Pods/mopub-ios-sdk/MoPubSDK/Native Ads/Internal/MPNativeAdConfigValues.h
-Pods/mopub-ios-sdk/MoPubSDK/Native Ads/Internal/MPNativeAdConfigValues.m
-Pods/mopub-ios-sdk/MoPubSDK/Native Ads/Internal/MPNativeAdRendererConstants.h
-Pods/mopub-ios-sdk/MoPubSDK/Native Ads/Internal/MPNativeAdRendererImageHandler.h
-Pods/mopub-ios-sdk/MoPubSDK/Native Ads/Internal/MPNativeAdRendererImageHandler.m
-Pods/mopub-ios-sdk/MoPubSDK/Native Ads/Internal/MPNativeAdSourceQueue.h
-Pods/mopub-ios-sdk/MoPubSDK/Native Ads/Internal/MPNativeAdSourceQueue.m
-Pods/mopub-ios-sdk/MoPubSDK/Native Ads/Internal/MPNativeAdUtils.h
-Pods/mopub-ios-sdk/MoPubSDK/Native Ads/Internal/MPNativeAdUtils.m
-Pods/mopub-ios-sdk/MoPubSDK/Native Ads/Internal/MPNativeCache.h
-Pods/mopub-ios-sdk/MoPubSDK/Native Ads/Internal/MPNativeCache.m
-Pods/mopub-ios-sdk/MoPubSDK/Native Ads/Internal/MPNativePositionResponseDeserializer.h
-Pods/mopub-ios-sdk/MoPubSDK/Native Ads/Internal/MPNativePositionResponseDeserializer.m
-Pods/mopub-ios-sdk/MoPubSDK/Native Ads/Internal/MPNativePositionSource.h
-Pods/mopub-ios-sdk/MoPubSDK/Native Ads/Internal/MPNativePositionSource.m
-Pods/mopub-ios-sdk/MoPubSDK/Native Ads/Internal/MPNativeView.h
-Pods/mopub-ios-sdk/MoPubSDK/Native Ads/Internal/MPNativeView.m
-Pods/mopub-ios-sdk/MoPubSDK/Native Ads/Internal/MPTableViewAdPlacerCell.h
-Pods/mopub-ios-sdk/MoPubSDK/Native Ads/Internal/MPTableViewAdPlacerCell.m
-Pods/mopub-ios-sdk/MoPubSDK/Native Ads/Internal/MPTableViewCellImpressionTracker.h
-Pods/mopub-ios-sdk/MoPubSDK/Native Ads/Internal/MPTableViewCellImpressionTracker.m
-Pods/mopub-ios-sdk/MoPubSDK/Native Ads/Internal/Categories/MPNativeAdRequest+MPNativeAdSource.h
-Pods/mopub-ios-sdk/MoPubSDK/NativeVideo/MOPUBNativeVideoAdRenderer.h
-Pods/mopub-ios-sdk/MoPubSDK/NativeVideo/MOPUBNativeVideoAdRenderer.m
-Pods/mopub-ios-sdk/MoPubSDK/NativeVideo/MOPUBNativeVideoAdRendererSettings.h
-Pods/mopub-ios-sdk/MoPubSDK/NativeVideo/MOPUBNativeVideoAdRendererSettings.m
-Pods/mopub-ios-sdk/MoPubSDK/NativeVideo/Internal/MOPUBActivityIndicatorView.h
-Pods/mopub-ios-sdk/MoPubSDK/NativeVideo/Internal/MOPUBActivityIndicatorView.m
-Pods/mopub-ios-sdk/MoPubSDK/NativeVideo/Internal/MOPUBAVPlayer.h
-Pods/mopub-ios-sdk/MoPubSDK/NativeVideo/Internal/MOPUBAVPlayer.m
-Pods/mopub-ios-sdk/MoPubSDK/NativeVideo/Internal/MOPUBAVPlayerView.h
-Pods/mopub-ios-sdk/MoPubSDK/NativeVideo/Internal/MOPUBAVPlayerView.m
-Pods/mopub-ios-sdk/MoPubSDK/NativeVideo/Internal/MOPUBFullscreenPlayerViewController.h
-Pods/mopub-ios-sdk/MoPubSDK/NativeVideo/Internal/MOPUBFullscreenPlayerViewController.m
-Pods/mopub-ios-sdk/MoPubSDK/NativeVideo/Internal/MOPUBNativeVideoAdAdapter.h
-Pods/mopub-ios-sdk/MoPubSDK/NativeVideo/Internal/MOPUBNativeVideoAdAdapter.m
-Pods/mopub-ios-sdk/MoPubSDK/NativeVideo/Internal/MOPUBNativeVideoAdConfigValues.h
-Pods/mopub-ios-sdk/MoPubSDK/NativeVideo/Internal/MOPUBNativeVideoAdConfigValues.m
-Pods/mopub-ios-sdk/MoPubSDK/NativeVideo/Internal/MOPUBNativeVideoCustomEvent.h
-Pods/mopub-ios-sdk/MoPubSDK/NativeVideo/Internal/MOPUBNativeVideoCustomEvent.m
-Pods/mopub-ios-sdk/MoPubSDK/NativeVideo/Internal/MOPUBNativeVideoImpressionAgent.h
-Pods/mopub-ios-sdk/MoPubSDK/NativeVideo/Internal/MOPUBNativeVideoImpressionAgent.m
-Pods/mopub-ios-sdk/MoPubSDK/NativeVideo/Internal/MOPUBPlayerManager.h
-Pods/mopub-ios-sdk/MoPubSDK/NativeVideo/Internal/MOPUBPlayerManager.m
-Pods/mopub-ios-sdk/MoPubSDK/NativeVideo/Internal/MOPUBPlayerView.h
-Pods/mopub-ios-sdk/MoPubSDK/NativeVideo/Internal/MOPUBPlayerView.m
-Pods/mopub-ios-sdk/MoPubSDK/NativeVideo/Internal/MOPUBPlayerViewController.h
-Pods/mopub-ios-sdk/MoPubSDK/NativeVideo/Internal/MOPUBPlayerViewController.m
-Pods/mopub-ios-sdk/MoPubSDK/NativeVideo/Internal/MOPUBReplayView.h
-Pods/mopub-ios-sdk/MoPubSDK/NativeVideo/Internal/MOPUBReplayView.m
-Pods/mopub-ios-sdk/MoPubSDK/Resources/MPCloseBtn.png
-Pods/mopub-ios-sdk/MoPubSDK/Resources/MPCloseBtn@2x.png
-Pods/mopub-ios-sdk/MoPubSDK/Resources/MPCloseBtn@3x.png
-Pods/mopub-ios-sdk/MoPubSDK/Resources/MPCloseButtonX.png
-Pods/mopub-ios-sdk/MoPubSDK/Resources/MPCloseButtonX@2x.png
-Pods/mopub-ios-sdk/MoPubSDK/Resources/MPCloseButtonX@3x.png
-Pods/mopub-ios-sdk/MoPubSDK/Resources/MPCountdownTimer.html
-Pods/mopub-ios-sdk/MoPubSDK/Resources/MPDAAIcon.png
-Pods/mopub-ios-sdk/MoPubSDK/Resources/MPDAAIcon@2x.png
-Pods/mopub-ios-sdk/MoPubSDK/Resources/MPDAAIcon@3x.png
-Pods/mopub-ios-sdk/MoPubSDK/Resources/MPMutedBtn.png
-Pods/mopub-ios-sdk/MoPubSDK/Resources/MPMutedBtn@2x.png
-Pods/mopub-ios-sdk/MoPubSDK/Resources/MPMutedBtn@3x.png
-Pods/mopub-ios-sdk/MoPubSDK/Resources/MPPlayBtn.png
-Pods/mopub-ios-sdk/MoPubSDK/Resources/MPPlayBtn@2x.png
-Pods/mopub-ios-sdk/MoPubSDK/Resources/MPPlayBtn@3x.png
-Pods/mopub-ios-sdk/MoPubSDK/Resources/MPUnmutedBtn.png
-Pods/mopub-ios-sdk/MoPubSDK/Resources/MPUnmutedBtn@2x.png
-Pods/mopub-ios-sdk/MoPubSDK/Resources/MPUnmutedBtn@3x.png
-Pods/mopub-ios-sdk/MoPubSDK/Resources/MRAID.bundle/mraid.js
-Pods/mopub-ios-sdk/MoPubSDK/RewardedVideo/MPMediationSettingsProtocol.h
-Pods/mopub-ios-sdk/MoPubSDK/RewardedVideo/MPRewardedVideo.h
-Pods/mopub-ios-sdk/MoPubSDK/RewardedVideo/MPRewardedVideo.m
-Pods/mopub-ios-sdk/MoPubSDK/RewardedVideo/MPRewardedVideoCustomEvent+Caching.h
-Pods/mopub-ios-sdk/MoPubSDK/RewardedVideo/MPRewardedVideoCustomEvent+Caching.m
-Pods/mopub-ios-sdk/MoPubSDK/RewardedVideo/MPRewardedVideoCustomEvent.h
-Pods/mopub-ios-sdk/MoPubSDK/RewardedVideo/MPRewardedVideoCustomEvent.m
-Pods/mopub-ios-sdk/MoPubSDK/RewardedVideo/MPRewardedVideoError.h
-Pods/mopub-ios-sdk/MoPubSDK/RewardedVideo/MPRewardedVideoError.m
-Pods/mopub-ios-sdk/MoPubSDK/RewardedVideo/MPRewardedVideoNetwork.h
-Pods/mopub-ios-sdk/MoPubSDK/RewardedVideo/MPRewardedVideoNetwork.m
-Pods/mopub-ios-sdk/MoPubSDK/RewardedVideo/MPRewardedVideoReward.h
-Pods/mopub-ios-sdk/MoPubSDK/RewardedVideo/MPRewardedVideoReward.m
-Pods/mopub-ios-sdk/MoPubSDK/RewardedVideo/Internal/MPMoPubRewardedPlayableCustomEvent.h
-Pods/mopub-ios-sdk/MoPubSDK/RewardedVideo/Internal/MPMoPubRewardedPlayableCustomEvent.m
-Pods/mopub-ios-sdk/MoPubSDK/RewardedVideo/Internal/MPMoPubRewardedVideoCustomEvent.h
-Pods/mopub-ios-sdk/MoPubSDK/RewardedVideo/Internal/MPMoPubRewardedVideoCustomEvent.m
-Pods/mopub-ios-sdk/MoPubSDK/RewardedVideo/Internal/MPPrivateRewardedVideoCustomEventDelegate.h
-Pods/mopub-ios-sdk/MoPubSDK/RewardedVideo/Internal/MPRewardedVideo+Internal.h
-Pods/mopub-ios-sdk/MoPubSDK/RewardedVideo/Internal/MPRewardedVideoAdapter.h
-Pods/mopub-ios-sdk/MoPubSDK/RewardedVideo/Internal/MPRewardedVideoAdapter.m
-Pods/mopub-ios-sdk/MoPubSDK/RewardedVideo/Internal/MPRewardedVideoAdManager.h
-Pods/mopub-ios-sdk/MoPubSDK/RewardedVideo/Internal/MPRewardedVideoAdManager.m
-Pods/mopub-ios-sdk/MoPubSDK/RewardedVideo/Internal/MPRewardedVideoConnection.h
-Pods/mopub-ios-sdk/MoPubSDK/RewardedVideo/Internal/MPRewardedVideoConnection.m
-Pods/mopub-ios-sdk/MoPubSDK/Viewability/MPViewabilityAdapter.h
-Pods/mopub-ios-sdk/MoPubSDK/Viewability/MPViewabilityOption.h
-Pods/mopub-ios-sdk/MoPubSDK/Viewability/MPViewabilityTracker.h
-Pods/mopub-ios-sdk/MoPubSDK/Viewability/MPViewabilityTracker.m
-Pods/mopub-ios-sdk/MoPubSDK/Viewability/MPWebView+Viewability.h
-Pods/mopub-ios-sdk/MoPubSDK/Viewability/MPWebView+Viewability.m
-Pods/mopub-ios-sdk/MoPubSDK/Viewability/Avid/libAvid-mopub-3.6.1.a
-Pods/mopub-ios-sdk/MoPubSDK/Viewability/Avid/MoPub_AbstractAvidAdSession.h
-Pods/mopub-ios-sdk/MoPubSDK/Viewability/Avid/MoPub_AbstractAvidManagedAdSession.h
-Pods/mopub-ios-sdk/MoPubSDK/Viewability/Avid/MoPub_Avid.h
-Pods/mopub-ios-sdk/MoPubSDK/Viewability/Avid/MoPub_AvidAdSessionManager.h
-Pods/mopub-ios-sdk/MoPubSDK/Viewability/Avid/MoPub_AvidDeferredAdSessionListener.h
-Pods/mopub-ios-sdk/MoPubSDK/Viewability/Avid/MoPub_AvidDisplayAdSession.h
-Pods/mopub-ios-sdk/MoPubSDK/Viewability/Avid/MoPub_AvidManagedDisplayAdSession.h
-Pods/mopub-ios-sdk/MoPubSDK/Viewability/Avid/MoPub_AvidManagedVideoAdSession.h
-Pods/mopub-ios-sdk/MoPubSDK/Viewability/Avid/MoPub_AvidVideoAdSession.h
-Pods/mopub-ios-sdk/MoPubSDK/Viewability/Avid/MoPub_AvidVideoPlaybackListener.h
-Pods/mopub-ios-sdk/MoPubSDK/Viewability/Avid/MoPub_ExternalAvidAdSessionContext.h
-Pods/mopub-ios-sdk/MoPubSDK/Viewability/Avid/MPViewabilityAdapterAvid.h
-Pods/mopub-ios-sdk/MoPubSDK/Viewability/Avid/MPViewabilityAdapterAvid.m
-Pods/mopub-ios-sdk/MoPubSDK/Viewability/MOAT/MPViewabilityAdapterMoat.h
-Pods/mopub-ios-sdk/MoPubSDK/Viewability/MOAT/MPViewabilityAdapterMoat.m
-Pods/mopub-ios-sdk/MoPubSDK/Viewability/MOAT/MPUBMoatMobileAppKit.framework/Headers
-Pods/mopub-ios-sdk/MoPubSDK/Viewability/MOAT/MPUBMoatMobileAppKit.framework/MPUBMoatMobileAppKit
-Pods/mopub-ios-sdk/MoPubSDK/Viewability/MOAT/MPUBMoatMobileAppKit.framework/Versions/Current
-Pods/mopub-ios-sdk/MoPubSDK/Viewability/MOAT/MPUBMoatMobileAppKit.framework/Versions/A/MPUBMoatMobileAppKit
-Pods/mopub-ios-sdk/MoPubSDK/Viewability/MOAT/MPUBMoatMobileAppKit.framework/Versions/A/Headers/MPUBMoatAnalytics.h
-Pods/mopub-ios-sdk/MoPubSDK/Viewability/MOAT/MPUBMoatMobileAppKit.framework/Versions/A/Headers/MPUBMoatBaseTracker.h
-Pods/mopub-ios-sdk/MoPubSDK/Viewability/MOAT/MPUBMoatMobileAppKit.framework/Versions/A/Headers/MPUBMoatMobileAppKit.h
-Pods/mopub-ios-sdk/MoPubSDK/Viewability/MOAT/MPUBMoatMobileAppKit.framework/Versions/A/Headers/MPUBMoatNativeDisplayTracker.h
-Pods/mopub-ios-sdk/MoPubSDK/Viewability/MOAT/MPUBMoatMobileAppKit.framework/Versions/A/Headers/MPUBMoatVideoTracker.h
-Pods/mopub-ios-sdk/MoPubSDK/Viewability/MOAT/MPUBMoatMobileAppKit.framework/Versions/A/Headers/MPUBMoatWebTracker.h
-Pods/Pods.xcodeproj/project.pbxproj
-Pods/Pods.xcodeproj/xcuserdata/stasberkman.xcuserdatad/xcschemes/mopub-ios-sdk.xcscheme
-Pods/Pods.xcodeproj/xcuserdata/stasberkman.xcuserdatad/xcschemes/Pods-TestLibAdMobAdapter.xcscheme
-Pods/Pods.xcodeproj/xcuserdata/stasberkman.xcuserdatad/xcschemes/Pods-TestLibMopubAdapter.xcscheme
-Pods/Pods.xcodeproj/xcuserdata/stasberkman.xcuserdatad/xcschemes/Pods-youappi-sdk-ios-demo-simple.xcscheme
-Pods/Pods.xcodeproj/xcuserdata/stasberkman.xcuserdatad/xcschemes/xcschememanagement.plist
-Pods/Target Support Files/mopub-ios-sdk/mopub-ios-sdk-dummy.m
-Pods/Target Support Files/mopub-ios-sdk/mopub-ios-sdk-prefix.pch
-Pods/Target Support Files/mopub-ios-sdk/mopub-ios-sdk.xcconfig
-Pods/Target Support Files/Pods-TestLibAdMobAdapter/Pods-TestLibAdMobAdapter-acknowledgements.markdown
-Pods/Target Support Files/Pods-TestLibAdMobAdapter/Pods-TestLibAdMobAdapter-acknowledgements.plist
-Pods/Target Support Files/Pods-TestLibAdMobAdapter/Pods-TestLibAdMobAdapter-dummy.m
-Pods/Target Support Files/Pods-TestLibAdMobAdapter/Pods-TestLibAdMobAdapter-frameworks.sh
-Pods/Target Support Files/Pods-TestLibAdMobAdapter/Pods-TestLibAdMobAdapter-resources.sh
-Pods/Target Support Files/Pods-TestLibAdMobAdapter/Pods-TestLibAdMobAdapter.debug.xcconfig
-Pods/Target Support Files/Pods-TestLibAdMobAdapter/Pods-TestLibAdMobAdapter.release.xcconfig
-Pods/Target Support Files/Pods-TestLibMopubAdapter/Pods-TestLibMopubAdapter-acknowledgements.markdown
-Pods/Target Support Files/Pods-TestLibMopubAdapter/Pods-TestLibMopubAdapter-acknowledgements.plist
-Pods/Target Support Files/Pods-TestLibMopubAdapter/Pods-TestLibMopubAdapter-dummy.m
-Pods/Target Support Files/Pods-TestLibMopubAdapter/Pods-TestLibMopubAdapter-frameworks.sh
-Pods/Target Support Files/Pods-TestLibMopubAdapter/Pods-TestLibMopubAdapter-resources.sh
-Pods/Target Support Files/Pods-TestLibMopubAdapter/Pods-TestLibMopubAdapter.debug.xcconfig
-Pods/Target Support Files/Pods-TestLibMopubAdapter/Pods-TestLibMopubAdapter.release.xcconfig
-Pods/Target Support Files/Pods-youappi-sdk-ios-demo-simple/Pods-youappi-sdk-ios-demo-simple-acknowledgements.markdown
-Pods/Target Support Files/Pods-youappi-sdk-ios-demo-simple/Pods-youappi-sdk-ios-demo-simple-acknowledgements.plist
-Pods/Target Support Files/Pods-youappi-sdk-ios-demo-simple/Pods-youappi-sdk-ios-demo-simple-dummy.m
-Pods/Target Support Files/Pods-youappi-sdk-ios-demo-simple/Pods-youappi-sdk-ios-demo-simple-frameworks.sh
-Pods/Target Support Files/Pods-youappi-sdk-ios-demo-simple/Pods-youappi-sdk-ios-demo-simple-resources.sh
-Pods/Target Support Files/Pods-youappi-sdk-ios-demo-simple/Pods-youappi-sdk-ios-demo-simple.debug.xcconfig
-Pods/Target Support Files/Pods-youappi-sdk-ios-demo-simple/Pods-youappi-sdk-ios-demo-simple.release.xcconfig
-Pods/YouAppi_Admob_Adapter/libAdmobYouAppiAdapter.a
-Pods/YouAppi_Admob_Adapter/include/AdmobYouAppiAdapter/YAAd.h
-Pods/YouAppi_Admob_Adapter/include/AdmobYouAppiAdapter/YAAdMobIntertitialAdEvent.h
-Pods/YouAppi_Admob_Adapter/include/AdmobYouAppiAdapter/YAAdMobIntertitialVideoAdEvent.h
-Pods/YouAppi_Admob_Adapter/include/AdmobYouAppiAdapter/YAAdMobRewardedVideoAdEvent.h
-Pods/YouAppi_Framework/LICENSE
-Pods/YouAppi_Framework/YouAppi.framework/Assets.car
-Pods/YouAppi_Framework/YouAppi.framework/Info.plist
-Pods/YouAppi_Framework/YouAppi.framework/LICENSE
-Pods/YouAppi_Framework/YouAppi.framework/strip-frameworks.sh
-Pods/YouAppi_Framework/YouAppi.framework/YouAppi
-Pods/YouAppi_Framework/YouAppi.framework/Headers/YouAppi-Swift.h
-Pods/YouAppi_Framework/YouAppi.framework/Headers/YouAppi.h
-Pods/YouAppi_Framework/YouAppi.framework/Modules/module.modulemap
-Pods/YouAppi_Framework/YouAppi.framework/Modules/YouAppi.swiftmodule/arm.swiftdoc
-Pods/YouAppi_Framework/YouAppi.framework/Modules/YouAppi.swiftmodule/arm.swiftmodule
-Pods/YouAppi_Framework/YouAppi.framework/Modules/YouAppi.swiftmodule/arm64.swiftdoc
-Pods/YouAppi_Framework/YouAppi.framework/Modules/YouAppi.swiftmodule/arm64.swiftmodule
-Pods/YouAppi_Framework/YouAppi.framework/Modules/YouAppi.swiftmodule/i386.swiftdoc
-Pods/YouAppi_Framework/YouAppi.framework/Modules/YouAppi.swiftmodule/i386.swiftmodule
-Pods/YouAppi_Framework/YouAppi.framework/Modules/YouAppi.swiftmodule/x86_64.swiftdoc
-Pods/YouAppi_Framework/YouAppi.framework/Modules/YouAppi.swiftmodule/x86_64.swiftmodule
-SimpleYouAppiApp.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
-SimpleYouAppiApp.xcworkspace/xcuserdata/stasberkman.xcuserdatad/UserInterfaceState.xcuserstate
-SimpleYouAppiApp.xcworkspace/xcuserdata/stasberkman.xcuserdatad/xcdebugger/Expressions.xcexplist
-TestLibAdMobAdapter/TestLibAdMobAdapter.xcodeproj/xcuserdata/stasberkman.xcuserdatad/xcschemes/xcschememanagement.plist
-TestLibMopubAdapter/TestLibMopubAdapter.xcodeproj/xcuserdata/stasberkman.xcuserdatad/xcschemes/xcschememanagement.plist
-youappi-sdk-ios-demo-simple/youappi-sdk-ios-demo-simple.xcodeproj/xcuserdata/stasberkman.xcuserdatad/xcschemes/xcschememanagement.plist
-youappi-sdk-ios-demo-simple/YouAppi.framework/Assets.car
-youappi-sdk-ios-demo-simple/YouAppi.framework/Info.plist
-youappi-sdk-ios-demo-simple/YouAppi.framework/LICENSE
-youappi-sdk-ios-demo-simple/YouAppi.framework/strip-frameworks.sh
-youappi-sdk-ios-demo-simple/YouAppi.framework/YouAppi
-youappi-sdk-ios-demo-simple/YouAppi.framework/Headers/YouAppi-Swift.h
-youappi-sdk-ios-demo-simple/YouAppi.framework/Headers/YouAppi.h
-youappi-sdk-ios-demo-simple/YouAppi.framework/Modules/module.modulemap
-youappi-sdk-ios-demo-simple/YouAppi.framework/Modules/YouAppi.swiftmodule/arm.swiftdoc
-youappi-sdk-ios-demo-simple/YouAppi.framework/Modules/YouAppi.swiftmodule/arm.swiftmodule
-youappi-sdk-ios-demo-simple/YouAppi.framework/Modules/YouAppi.swiftmodule/arm64.swiftdoc
-youappi-sdk-ios-demo-simple/YouAppi.framework/Modules/YouAppi.swiftmodule/arm64.swiftmodule
-youappi-sdk-ios-demo-simple/YouAppi.framework/Modules/YouAppi.swiftmodule/i386.swiftdoc
-youappi-sdk-ios-demo-simple/YouAppi.framework/Modules/YouAppi.swiftmodule/i386.swiftmodule
-youappi-sdk-ios-demo-simple/YouAppi.framework/Modules/YouAppi.swiftmodule/x86_64.swiftdoc
-youappi-sdk-ios-demo-simple/YouAppi.framework/Modules/YouAppi.swiftmodule/x86_64.swiftmodule
-AppDemoAdMob/AppDemoAdMob.xcodeproj/xcuserdata/stasberkman.xcuserdatad/xcschemes/AppDemoAdMob.xcscheme
-AppDemoAdMob/AppDemoAdMob.xcodeproj/xcuserdata/stasberkman.xcuserdatad/xcschemes/xcschememanagement.plist
-AppDemoMoPub/AppDemoMoPub.xcodeproj/xcuserdata/stasberkman.xcuserdatad/xcschemes/AppDemoMoPub.xcscheme
-AppDemoMoPub/AppDemoMoPub.xcodeproj/xcuserdata/stasberkman.xcuserdatad/xcschemes/xcschememanagement.plist
-Pods/Pods.xcodeproj/xcuserdata/stasberkman.xcuserdatad/xcschemes/Pods-AppDemo.xcscheme
-Pods/Pods.xcodeproj/xcuserdata/stasberkman.xcuserdatad/xcschemes/Pods-AppDemoAdMob.xcscheme
-Pods/Pods.xcodeproj/xcuserdata/stasberkman.xcuserdatad/xcschemes/Pods-AppDemoMoPub.xcscheme
-Pods/Target Support Files/Pods-AppDemo/Pods-AppDemo-acknowledgements.markdown
-Pods/Target Support Files/Pods-AppDemo/Pods-AppDemo-acknowledgements.plist
-Pods/Target Support Files/Pods-AppDemo/Pods-AppDemo-dummy.m
-Pods/Target Support Files/Pods-AppDemo/Pods-AppDemo-frameworks.sh
-Pods/Target Support Files/Pods-AppDemo/Pods-AppDemo-resources.sh
-Pods/Target Support Files/Pods-AppDemo/Pods-AppDemo.debug.xcconfig
-Pods/Target Support Files/Pods-AppDemo/Pods-AppDemo.release.xcconfig
-Pods/Target Support Files/Pods-AppDemoAdMob/Pods-AppDemoAdMob-acknowledgements.markdown
-Pods/Target Support Files/Pods-AppDemoAdMob/Pods-AppDemoAdMob-acknowledgements.plist
-Pods/Target Support Files/Pods-AppDemoAdMob/Pods-AppDemoAdMob-dummy.m
-Pods/Target Support Files/Pods-AppDemoAdMob/Pods-AppDemoAdMob-frameworks.sh
-Pods/Target Support Files/Pods-AppDemoAdMob/Pods-AppDemoAdMob-resources.sh
-Pods/Target Support Files/Pods-AppDemoAdMob/Pods-AppDemoAdMob.debug.xcconfig
-Pods/Target Support Files/Pods-AppDemoAdMob/Pods-AppDemoAdMob.release.xcconfig
-Pods/Target Support Files/Pods-AppDemoMoPub/Pods-AppDemoMoPub-acknowledgements.markdown
-Pods/Target Support Files/Pods-AppDemoMoPub/Pods-AppDemoMoPub-acknowledgements.plist
-Pods/Target Support Files/Pods-AppDemoMoPub/Pods-AppDemoMoPub-dummy.m
-Pods/Target Support Files/Pods-AppDemoMoPub/Pods-AppDemoMoPub-frameworks.sh
-Pods/Target Support Files/Pods-AppDemoMoPub/Pods-AppDemoMoPub-resources.sh
-Pods/Target Support Files/Pods-AppDemoMoPub/Pods-AppDemoMoPub.debug.xcconfig
-Pods/Target Support Files/Pods-AppDemoMoPub/Pods-AppDemoMoPub.release.xcconfig
-SimpleYouAppiApp.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings
-SimpleYouAppiApp.xcworkspace/xcuserdata/stasberkman.xcuserdatad/WorkspaceSettings.xcsettings
+
+
+# Created by https://www.gitignore.io/api/swift,xcode
+
+### Swift ###
+# Xcode
+#
+# gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
+
+## Build generated
+build/
+DerivedData/
+
+## Various settings
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata/
+
+## Other
+*.moved-aside
+*.xccheckout
+*.xcscmblueprint
+
+## Obj-C/Swift specific
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+## Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+# Swift Package Manager
+#
+# Add this line if you want to avoid checking in source code from Swift Package Manager dependencies.
+# Packages/
+# Package.pins
+.build/
+
+# CocoaPods - Refactored to standalone file
+
+# Carthage - Refactored to standalone file
+
+# fastlane
+#
+# It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the
+# screenshots whenever they are needed.
+# For more information about the recommended setup visit:
+# https://docs.fastlane.tools/best-practices/source-control/#source-control
+
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+
+### Xcode ###
+# Xcode
+#
+# gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
+
+## Build generated
+
+## Various settings
+
+## Other
+
+### Xcode Patch ###
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/
+!*.xcworkspace/contents.xcworkspacedata
+/*.gcno
+
+# End of https://www.gitignore.io/api/swift,xcode
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+# Created by https://www.gitignore.io/api/swift,xcode
+ 
+### Swift ###
+# Xcode
+#
+# gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
+ 
+## Build generated
+build/
+DerivedData/
+ 
+## Various settings
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata/
+ 
+## Other
+*.moved-aside
+*.xccheckout
+*.xcscmblueprint
+ 
+## Obj-C/Swift specific
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+ 
+## Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+ 
+# Swift Package Manager
+#
+# Add this line if you want to avoid checking in source code from Swift Package Manager dependencies.
+# Packages/
+# Package.pins
+.build/
+ 
+# CocoaPods - Refactored to standalone file
+Pods
+# Carthage - Refactored to standalone file
+ 
+# fastlane
+#
+# It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the
+# screenshots whenever they are needed.
+# For more information about the recommended setup visit:
+# https://docs.fastlane.tools/best-practices/source-control/#source-control
+ 
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+ 
+### Xcode ###
+# Xcode
+#
+# gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
+ 
+## Build generated
+ 
+## Various settings
+ 
+## Other
+ 
+### Xcode Patch ###
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/
+!*.xcworkspace/contents.xcworkspacedata
+/*.gcno
+ 
+# End of https://www.gitignore.io/api/swift,xcode
