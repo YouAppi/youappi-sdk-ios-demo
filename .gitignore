@@ -1081,3 +1081,33 @@ youappi-sdk-ios-demo-simple/YouAppi.framework/Modules/YouAppi.swiftmodule/i386.s
 youappi-sdk-ios-demo-simple/YouAppi.framework/Modules/YouAppi.swiftmodule/i386.swiftmodule
 youappi-sdk-ios-demo-simple/YouAppi.framework/Modules/YouAppi.swiftmodule/x86_64.swiftdoc
 youappi-sdk-ios-demo-simple/YouAppi.framework/Modules/YouAppi.swiftmodule/x86_64.swiftmodule
+AppDemoAdMob/AppDemoAdMob.xcodeproj/xcuserdata/stasberkman.xcuserdatad/xcschemes/AppDemoAdMob.xcscheme
+AppDemoAdMob/AppDemoAdMob.xcodeproj/xcuserdata/stasberkman.xcuserdatad/xcschemes/xcschememanagement.plist
+AppDemoMoPub/AppDemoMoPub.xcodeproj/xcuserdata/stasberkman.xcuserdatad/xcschemes/AppDemoMoPub.xcscheme
+AppDemoMoPub/AppDemoMoPub.xcodeproj/xcuserdata/stasberkman.xcuserdatad/xcschemes/xcschememanagement.plist
+Pods/Pods.xcodeproj/xcuserdata/stasberkman.xcuserdatad/xcschemes/Pods-AppDemo.xcscheme
+Pods/Pods.xcodeproj/xcuserdata/stasberkman.xcuserdatad/xcschemes/Pods-AppDemoAdMob.xcscheme
+Pods/Pods.xcodeproj/xcuserdata/stasberkman.xcuserdatad/xcschemes/Pods-AppDemoMoPub.xcscheme
+Pods/Target Support Files/Pods-AppDemo/Pods-AppDemo-acknowledgements.markdown
+Pods/Target Support Files/Pods-AppDemo/Pods-AppDemo-acknowledgements.plist
+Pods/Target Support Files/Pods-AppDemo/Pods-AppDemo-dummy.m
+Pods/Target Support Files/Pods-AppDemo/Pods-AppDemo-frameworks.sh
+Pods/Target Support Files/Pods-AppDemo/Pods-AppDemo-resources.sh
+Pods/Target Support Files/Pods-AppDemo/Pods-AppDemo.debug.xcconfig
+Pods/Target Support Files/Pods-AppDemo/Pods-AppDemo.release.xcconfig
+Pods/Target Support Files/Pods-AppDemoAdMob/Pods-AppDemoAdMob-acknowledgements.markdown
+Pods/Target Support Files/Pods-AppDemoAdMob/Pods-AppDemoAdMob-acknowledgements.plist
+Pods/Target Support Files/Pods-AppDemoAdMob/Pods-AppDemoAdMob-dummy.m
+Pods/Target Support Files/Pods-AppDemoAdMob/Pods-AppDemoAdMob-frameworks.sh
+Pods/Target Support Files/Pods-AppDemoAdMob/Pods-AppDemoAdMob-resources.sh
+Pods/Target Support Files/Pods-AppDemoAdMob/Pods-AppDemoAdMob.debug.xcconfig
+Pods/Target Support Files/Pods-AppDemoAdMob/Pods-AppDemoAdMob.release.xcconfig
+Pods/Target Support Files/Pods-AppDemoMoPub/Pods-AppDemoMoPub-acknowledgements.markdown
+Pods/Target Support Files/Pods-AppDemoMoPub/Pods-AppDemoMoPub-acknowledgements.plist
+Pods/Target Support Files/Pods-AppDemoMoPub/Pods-AppDemoMoPub-dummy.m
+Pods/Target Support Files/Pods-AppDemoMoPub/Pods-AppDemoMoPub-frameworks.sh
+Pods/Target Support Files/Pods-AppDemoMoPub/Pods-AppDemoMoPub-resources.sh
+Pods/Target Support Files/Pods-AppDemoMoPub/Pods-AppDemoMoPub.debug.xcconfig
+Pods/Target Support Files/Pods-AppDemoMoPub/Pods-AppDemoMoPub.release.xcconfig
+SimpleYouAppiApp.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings
+SimpleYouAppiApp.xcworkspace/xcuserdata/stasberkman.xcuserdatad/WorkspaceSettings.xcsettings
