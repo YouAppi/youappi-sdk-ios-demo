@@ -8,9 +8,6 @@
 
 #import "ViewController.h"
 
-
-#import <GoogleMobileAds/GoogleMobileAds.h>
-
 #define AdMobAppID @"ca-app-pub-9942448998483932~7115477466"
 
 #define RewardedUnitIDAdMob @"ca-app-pub-9942448998483932/1723549982"
@@ -147,10 +144,8 @@ didFailToReceiveAdWithError:(GADRequestError *)error {
 - (void)rewardBasedVideoAd:(GADRewardBasedVideoAd *)rewardBasedVideoAd
    didRewardUserWithReward:(GADAdReward *)reward {
     NSString *rewardMessage =
-    [NSString stringWithFormat:@"Reward received with currency %@ , amount %lf",
-     reward.type,
-     [reward.amount doubleValue]];
-    NSLog(rewardMessage);
+    [NSString stringWithFormat:@"Reward received with currency %@ , amount %lf", reward.type, [reward.amount doubleValue]];
+    NSLog(@"%@", rewardMessage);
 }
 
 - (void)rewardBasedVideoAdDidReceiveAd:(GADRewardBasedVideoAd *)rewardBasedVideoAd {

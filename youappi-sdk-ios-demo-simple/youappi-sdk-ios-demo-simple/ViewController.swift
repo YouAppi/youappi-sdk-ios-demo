@@ -16,8 +16,8 @@ enum ButtonState {
    
 }
 
-class ViewController: UIViewController, YALoggerDelegate  {
-    
+class ViewController: UIViewController, YALoggerDelegate, YAAdInterstitialAdDelegate, YAAdRewardedVideoDelegate, YAAdInterstitialVideoDelegate
+{
      let product_rewarded_video = "rewarded video"
      let product_interstitial_video = "interstitial video"
      let product_interstitial_ad = "interstitial ad"
@@ -54,12 +54,12 @@ class ViewController: UIViewController, YALoggerDelegate  {
         
         print("environment" + YouAppi.sharedInstance.environment)
         
+        YouAppi.sharedInstance.logLevel(.all)
         YouAppi.sharedInstance.log()?.delegate = self
         
         self.dictToKeepTrackOfProductTypeForEveryUnitAdID = [String:String]()
         
     }
-    
     
     override func viewWillAppear(_ animated: Bool) {
         
@@ -323,7 +323,7 @@ class ViewController: UIViewController, YALoggerDelegate  {
                 self.rewardedVideo = YouAppi.sharedInstance.rewardedVideo(rewardedVideoId)
                 self.dictToKeepTrackOfProductTypeForEveryUnitAdID[rewardedVideoId] = self.product_rewarded_video
                 self.rewardedVideo?.delegate = self
-                self.rewardedVideo?.load();
+                self.rewardedVideo?.load()
             }
             adOpt = self.rewardedVideo
             break
@@ -332,7 +332,7 @@ class ViewController: UIViewController, YALoggerDelegate  {
                 self.interstitialVideo = YouAppi.sharedInstance.interstitialVideo(interstitialVideoId)
                 self.dictToKeepTrackOfProductTypeForEveryUnitAdID[interstitialVideoId] = self.product_interstitial_video
                 self.interstitialVideo?.delegate = self
-                self.interstitialVideo?.load();
+                self.interstitialVideo?.load()
             }
             adOpt = self.interstitialVideo
             break
@@ -341,7 +341,7 @@ class ViewController: UIViewController, YALoggerDelegate  {
                 self.interstitialAd = YouAppi.sharedInstance.interstitialAd(interstitialAdId)
                 self.dictToKeepTrackOfProductTypeForEveryUnitAdID[interstitialAdId] = self.product_interstitial_ad
                 self.interstitialAd?.delegate = self
-                self.interstitialAd?.load();
+                self.interstitialAd?.load()
             }
             adOpt = self.interstitialAd
             break
@@ -370,18 +370,24 @@ class ViewController: UIViewController, YALoggerDelegate  {
             }
         }
     }
-    
   
     //MARK: YAAd delegate
     
     func onAdStarted(adUnitID: String)
     {
-        print("Ad Show Started - Unit ID: \(adUnitID)")
+        print("*** Ad Show Started - Unit ID: \(adUnitID)")
     }
     
     func onAdEnded(adUnitID: String)
     {
-        print("Ad Show Ended - Unit ID: \(adUnitID)")
+        self.removeProduct(with: adUnitID)
+
+        print("*** Ad Show Ended - Unit ID: \(adUnitID)")
+    }
+    
+    func onAdClick(adUnitID: String)
+    {
+        print("*** onAdClick: \(adUnitID)")
     }
     
     internal func onLoadSuccess(adUnitID: String)
@@ -394,18 +400,18 @@ class ViewController: UIViewController, YALoggerDelegate  {
         self.setButtonText(tag: buttonTag, text: "Show ")
         self.setButtonStateByTag(tag: buttonTag, state: .Show)
         
-        print(message)
+        print("*** \(message)")
         self.showAlert(message: message)
     }
     
     internal func onCardWillLeaveApplication(adUnitID: String)
     {
-        print("Interstitial Ad will leave application - Unit ID: \(adUnitID)")
+        print("*** Interstitial Ad will leave application - Unit ID: \(adUnitID)")
     }
     
     // MARK: YouAppi Delegates
     
-    func onLoadFailure(adUnitID: String, errorCode: YAErrorCode, error: Error)
+    func onLoadFailure(adUnitID: String, errorCode: YAErrorCode, error: Error?)
     {
         if errorCode != .WARMING_UP //&& errorCode != .AD_IS_ALREADY_LOADED
         {
@@ -427,29 +433,14 @@ class ViewController: UIViewController, YALoggerDelegate  {
 
     func onCardShow(adUnitID: String)
     {
-        print("Interstitial Ad did Shown - Unit ID: \(adUnitID)")
+        print("*** Interstitial Ad did Shown - Unit ID: \(adUnitID)")
     }
     
     func onCardClose(adUnitID: String)
     {
         self.removeProduct(with: adUnitID)
-        print("Interstitial Ad did Closed - Unit ID: \(adUnitID)")
-    }
-    
-    func onPreloadFailed(adUnitID: String, errorCode: YAErrorCode, error: Error)
-    {
-        self.removeProduct(with: adUnitID)
         
-        let buttonTag = self.getButtonTagByAdUnitId(with: adUnitID)
-        self.showOrHideActivityIndictor(buttonTag: buttonTag, flagShow: false)
-        self.setButtonText(tag: buttonTag, text: "Load ")
-        self.setButtonStateByTag(tag: buttonTag, state: .Load)
-        let productName: String = self.productType(for: adUnitID)
-        let errorCodeInfo = errorCode.description()
-        let errorMessage = "\(productName) preload Failed, Error:, Error code: \(errorCodeInfo)"
-        print(errorMessage)
-        
-        self.showAlert(message: errorMessage)
+        print("*** Interstitial Ad did Closed - Unit ID: \(adUnitID)")
     }
     
     func onRewarded(adUnitID: String)
@@ -457,20 +448,20 @@ class ViewController: UIViewController, YALoggerDelegate  {
         self.removeProduct(with: adUnitID)
         
         self.showAlert(message: "Rewarded Video granted!")
-        print("Rewarded Video granted")
+        print("*** Rewarded Video granted")
     }
     
     func onVideoStarted(adUnitID: String)
     {
-        print("Video Did Started - Unit ID: \(adUnitID)")
+        print("*** Video Did Started - Unit ID: \(adUnitID)")
     }
     
     func onVideoEnded(adUnitID: String)
     {
-        print("Video Did End - Unit ID: \(adUnitID)")
+        print("*** Video Did End - Unit ID: \(adUnitID)")
     }
     
-    func onShowFailure(adUnitID: String, errorCode: YAErrorCode, error: Error)
+    func onShowFailure(adUnitID: String,errorCode: YAErrorCode,error: Error?)
     {
         if errorCode != .WARMING_UP
         {
@@ -480,7 +471,7 @@ class ViewController: UIViewController, YALoggerDelegate  {
         
         let errorCodeInfo = errorCode.description()
         let errorMessage = "Failed to show \(productName), Error code: \(errorCodeInfo)"
-        print(errorMessage)
+        print("*** \(errorMessage)")
         
         self.showAlert(message: errorMessage)
     }
