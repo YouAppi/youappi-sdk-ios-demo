@@ -7,10 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <GoogleMobileAds/GoogleMobileAds.h>
 
-
-
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <GADRewardBasedVideoAdDelegate, GADInterstitialDelegate>
 
 - (IBAction)btnLoad:(UIButton *)sender;
 

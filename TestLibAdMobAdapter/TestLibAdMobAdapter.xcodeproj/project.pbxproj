@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1D6B94D34657C865DC6A8BCC /* libPods-TestLibAdMobAdapter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 77EE54A156B9B4624602A1A8 /* libPods-TestLibAdMobAdapter.a */; };
+		2AFC2BA60659DE6084515933 /* libPods-TestLibAdMobAdapter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 77EE54A156B9B4624602A1A8 /* libPods-TestLibAdMobAdapter.a */; };
 		BE71B3BA20346A0500024D2B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BE71B3B920346A0500024D2B /* AppDelegate.m */; };
 		BE71B3BD20346A0500024D2B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE71B3BC20346A0500024D2B /* ViewController.m */; };
 		BE71B3C020346A0500024D2B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE71B3BE20346A0500024D2B /* Main.storyboard */; };
@@ -16,8 +16,6 @@
 		BE71B3C820346A0500024D2B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BE71B3C720346A0500024D2B /* main.m */; };
 		BE71B3D220346A0500024D2B /* TestLibAdMobAdapterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BE71B3D120346A0500024D2B /* TestLibAdMobAdapterTests.m */; };
 		BE71B3DD20346A0500024D2B /* TestLibAdMobAdapterUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BE71B3DC20346A0500024D2B /* TestLibAdMobAdapterUITests.m */; };
-		BE8A03D92042F65D0079C0BE /* YouAppi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE8A03D72042F6560079C0BE /* YouAppi.framework */; };
-		BE8A03DA2042F65D0079C0BE /* YouAppi.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BE8A03D72042F6560079C0BE /* YouAppi.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +42,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				BE8A03DA2042F65D0079C0BE /* YouAppi.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -71,7 +68,6 @@
 		BE71B3D820346A0500024D2B /* TestLibAdMobAdapterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestLibAdMobAdapterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE71B3DC20346A0500024D2B /* TestLibAdMobAdapterUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestLibAdMobAdapterUITests.m; sourceTree = "<group>"; };
 		BE71B3DE20346A0500024D2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BE8A03D72042F6560079C0BE /* YouAppi.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = YouAppi.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,8 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE8A03D92042F65D0079C0BE /* YouAppi.framework in Frameworks */,
-				1D6B94D34657C865DC6A8BCC /* libPods-TestLibAdMobAdapter.a in Frameworks */,
+				2AFC2BA60659DE6084515933 /* libPods-TestLibAdMobAdapter.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,7 +164,6 @@
 		BE71B3EA20346A1700024D2B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BE8A03D72042F6560079C0BE /* YouAppi.framework */,
 				77EE54A156B9B4624602A1A8 /* libPods-TestLibAdMobAdapter.a */,
 			);
 			name = Frameworks;
@@ -329,9 +323,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/../Pods/Target Support Files/Pods-TestLibAdMobAdapter/Pods-TestLibAdMobAdapter-frameworks.sh",
+				"${PODS_ROOT}/YouAppi_Framework/YouAppi.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YouAppi.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

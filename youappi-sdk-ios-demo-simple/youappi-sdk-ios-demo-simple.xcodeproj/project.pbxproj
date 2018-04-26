@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4BDD7CD3B704AD528E7B4699 /* libPods-youappi-sdk-ios-demo-simple.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E701A9B8FAC2860903A4E658 /* libPods-youappi-sdk-ios-demo-simple.a */; };
 		8C2D830D1E94758300E55A8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2D830C1E94758300E55A8B /* AppDelegate.swift */; };
 		8C2D830F1E94758300E55A8B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2D830E1E94758300E55A8B /* ViewController.swift */; };
 		8C2D83121E94758300E55A8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C2D83101E94758300E55A8B /* Main.storyboard */; };
@@ -14,8 +15,6 @@
 		8C2D83171E94758300E55A8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C2D83151E94758300E55A8B /* LaunchScreen.storyboard */; };
 		8C2D83221E94758300E55A8B /* youappi_sdk_ios_demo_simpleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2D83211E94758300E55A8B /* youappi_sdk_ios_demo_simpleTests.swift */; };
 		8C2D832D1E94758300E55A8B /* youappi_sdk_ios_demo_simpleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2D832C1E94758300E55A8B /* youappi_sdk_ios_demo_simpleUITests.swift */; };
-		BE37D460204D4F4E00D1A4AA /* YouAppi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE37D45E204D4F4700D1A4AA /* YouAppi.framework */; };
-		BE37D461204D4F4E00D1A4AA /* YouAppi.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BE37D45E204D4F4700D1A4AA /* YouAppi.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BE6B062D1F9899AD003B11FB /* AlertToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6B062C1F9899AD003B11FB /* AlertToast.swift */; };
 /* End PBXBuildFile section */
 
@@ -36,21 +35,10 @@
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		8C7A2A391F9387CD00A3158F /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				BE37D461204D4F4E00D1A4AA /* YouAppi.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
+		07D5B460DBCC745A0C45136E /* Pods-youappi-sdk-ios-demo-simple.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-youappi-sdk-ios-demo-simple.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-youappi-sdk-ios-demo-simple/Pods-youappi-sdk-ios-demo-simple.debug.xcconfig"; sourceTree = "<group>"; };
+		4DEFC9742091B9F800F25221 /* YouAppi.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = YouAppi.framework; sourceTree = "<group>"; };
+		81882999BEF423C2567AC2BC /* Pods-youappi-sdk-ios-demo-simple.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-youappi-sdk-ios-demo-simple.release.xcconfig"; path = "../Pods/Target Support Files/Pods-youappi-sdk-ios-demo-simple/Pods-youappi-sdk-ios-demo-simple.release.xcconfig"; sourceTree = "<group>"; };
 		8C2D83091E94758300E55A8B /* youappi-sdk-ios-demo-simple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "youappi-sdk-ios-demo-simple.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C2D830C1E94758300E55A8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8C2D830E1E94758300E55A8B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -64,8 +52,8 @@
 		8C2D83281E94758300E55A8B /* youappi-sdk-ios-demo-simpleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "youappi-sdk-ios-demo-simpleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C2D832C1E94758300E55A8B /* youappi_sdk_ios_demo_simpleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = youappi_sdk_ios_demo_simpleUITests.swift; sourceTree = "<group>"; };
 		8C2D832E1E94758300E55A8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BE37D45E204D4F4700D1A4AA /* YouAppi.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = YouAppi.framework; sourceTree = "<group>"; };
 		BE6B062C1F9899AD003B11FB /* AlertToast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertToast.swift; sourceTree = "<group>"; };
+		E701A9B8FAC2860903A4E658 /* libPods-youappi-sdk-ios-demo-simple.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-youappi-sdk-ios-demo-simple.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE37D460204D4F4E00D1A4AA /* YouAppi.framework in Frameworks */,
+				4BDD7CD3B704AD528E7B4699 /* libPods-youappi-sdk-ios-demo-simple.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,14 +82,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		074111A6597506804488915D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				07D5B460DBCC745A0C45136E /* Pods-youappi-sdk-ios-demo-simple.debug.xcconfig */,
+				81882999BEF423C2567AC2BC /* Pods-youappi-sdk-ios-demo-simple.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8C2D83001E94758300E55A8B = {
 			isa = PBXGroup;
 			children = (
+				4DEFC9742091B9F800F25221 /* YouAppi.framework */,
 				8C2D830B1E94758300E55A8B /* youappi-sdk-ios-demo-simple */,
 				8C2D83201E94758300E55A8B /* youappi-sdk-ios-demo-simpleTests */,
 				8C2D832B1E94758300E55A8B /* youappi-sdk-ios-demo-simpleUITests */,
 				8C2D830A1E94758300E55A8B /* Products */,
 				8C2D833A1E9475FE00E55A8B /* Frameworks */,
+				074111A6597506804488915D /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -150,7 +149,7 @@
 		8C2D833A1E9475FE00E55A8B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BE37D45E204D4F4700D1A4AA /* YouAppi.framework */,
+				E701A9B8FAC2860903A4E658 /* libPods-youappi-sdk-ios-demo-simple.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -162,11 +161,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8C2D83311E94758300E55A8B /* Build configuration list for PBXNativeTarget "youappi-sdk-ios-demo-simple" */;
 			buildPhases = (
+				CAE478F60564AF4F48DB1CE3 /* [CP] Check Pods Manifest.lock */,
 				8C2D83051E94758300E55A8B /* Sources */,
 				8C2D83061E94758300E55A8B /* Frameworks */,
 				8C2D83071E94758300E55A8B /* Resources */,
 				8CC1501C1EAC8368008156D4 /* ShellScript */,
-				8C7A2A391F9387CD00A3158F /* Embed Frameworks */,
+				11BA4201ADF233B3A6BD52FA /* [CP] Embed Pods Frameworks */,
+				172ECECDCBC99989EE759CB0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -290,6 +291,39 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		11BA4201ADF233B3A6BD52FA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/../Pods/Target Support Files/Pods-youappi-sdk-ios-demo-simple/Pods-youappi-sdk-ios-demo-simple-frameworks.sh",
+				"${PODS_ROOT}/YouAppi_Framework/YouAppi.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YouAppi.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-youappi-sdk-ios-demo-simple/Pods-youappi-sdk-ios-demo-simple-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		172ECECDCBC99989EE759CB0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-youappi-sdk-ios-demo-simple/Pods-youappi-sdk-ios-demo-simple-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		8CC1501C1EAC8368008156D4 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -302,6 +336,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "#This step is required to work around an App Store submission bug in swift when archiving universal binaries.\n#\"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/YouAppi.framework/strip-frameworks.sh\"";
+		};
+		CAE478F60564AF4F48DB1CE3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-youappi-sdk-ios-demo-simple-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -483,8 +535,8 @@
 		};
 		8C2D83321E94758300E55A8B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07D5B460DBCC745A0C45136E /* Pods-youappi-sdk-ios-demo-simple.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
@@ -507,8 +559,8 @@
 		};
 		8C2D83331E94758300E55A8B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81882999BEF423C2567AC2BC /* Pods-youappi-sdk-ios-demo-simple.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: YouAppi Inc. (3RD42EKR43)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: YouAppi Inc. (3RD42EKR43)";
