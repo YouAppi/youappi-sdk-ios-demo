@@ -61,7 +61,6 @@ class ViewController: UIViewController, YALoggerDelegate, YAAdInterstitialAdDele
         
     }
     
-    
     override func viewWillAppear(_ animated: Bool) {
         
         super.viewWillAppear(animated)
@@ -376,12 +375,14 @@ class ViewController: UIViewController, YALoggerDelegate, YAAdInterstitialAdDele
     
     func onAdStarted(adUnitID: String)
     {
-        print("Ad Show Started - Unit ID: \(adUnitID)")
+        print("*** Ad Show Started - Unit ID: \(adUnitID)")
     }
     
     func onAdEnded(adUnitID: String)
     {
-        print("Ad Show Ended - Unit ID: \(adUnitID)")
+        self.removeProduct(with: adUnitID)
+
+        print("*** Ad Show Ended - Unit ID: \(adUnitID)")
     }
     
     func onAdClick(adUnitID: String)
@@ -399,13 +400,13 @@ class ViewController: UIViewController, YALoggerDelegate, YAAdInterstitialAdDele
         self.setButtonText(tag: buttonTag, text: "Show ")
         self.setButtonStateByTag(tag: buttonTag, state: .Show)
         
-        print(message)
+        print("*** \(message)")
         self.showAlert(message: message)
     }
     
     internal func onCardWillLeaveApplication(adUnitID: String)
     {
-        print("Interstitial Ad will leave application - Unit ID: \(adUnitID)")
+        print("*** Interstitial Ad will leave application - Unit ID: \(adUnitID)")
     }
     
     // MARK: YouAppi Delegates
@@ -432,13 +433,14 @@ class ViewController: UIViewController, YALoggerDelegate, YAAdInterstitialAdDele
 
     func onCardShow(adUnitID: String)
     {
-        print("Interstitial Ad did Shown - Unit ID: \(adUnitID)")
+        print("*** Interstitial Ad did Shown - Unit ID: \(adUnitID)")
     }
     
     func onCardClose(adUnitID: String)
     {
         self.removeProduct(with: adUnitID)
-        print("Interstitial Ad did Closed - Unit ID: \(adUnitID)")
+        
+        print("*** Interstitial Ad did Closed - Unit ID: \(adUnitID)")
     }
     
     func onRewarded(adUnitID: String)
@@ -446,17 +448,17 @@ class ViewController: UIViewController, YALoggerDelegate, YAAdInterstitialAdDele
         self.removeProduct(with: adUnitID)
         
         self.showAlert(message: "Rewarded Video granted!")
-        print("Rewarded Video granted")
+        print("*** Rewarded Video granted")
     }
     
     func onVideoStarted(adUnitID: String)
     {
-        print("Video Did Started - Unit ID: \(adUnitID)")
+        print("*** Video Did Started - Unit ID: \(adUnitID)")
     }
     
     func onVideoEnded(adUnitID: String)
     {
-        print("Video Did End - Unit ID: \(adUnitID)")
+        print("*** Video Did End - Unit ID: \(adUnitID)")
     }
     
     func onShowFailure(adUnitID: String,errorCode: YAErrorCode,error: Error?)
@@ -469,7 +471,7 @@ class ViewController: UIViewController, YALoggerDelegate, YAAdInterstitialAdDele
         
         let errorCodeInfo = errorCode.description()
         let errorMessage = "Failed to show \(productName), Error code: \(errorCodeInfo)"
-        print(errorMessage)
+        print("*** \(errorMessage)")
         
         self.showAlert(message: errorMessage)
     }
