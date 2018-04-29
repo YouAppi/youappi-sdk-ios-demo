@@ -461,6 +461,11 @@ class ViewController: UIViewController, YALoggerDelegate, YAAdInterstitialAdDele
         print("*** Video Did End - Unit ID: \(adUnitID)")
     }
     
+    func onAdLeftApplication(adUnitID: String)
+    {
+        print("*** onAdLeftApplication: \(adUnitID)")
+    }
+    
     func onShowFailure(adUnitID: String,errorCode: YAErrorCode,error: Error?)
     {
         if errorCode != .WARMING_UP
