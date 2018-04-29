@@ -1,7 +1,4 @@
-
-
 workspace 'SimpleYouAppiApp.xcworkspace'
-
 
 project 'AppDemoMoPub/AppDemoMoPub.xcodeproj'
 project 'AppDemoAdMob/AppDemoAdMob.xcodeproj'
@@ -16,6 +13,7 @@ project 'AppDemoMoPub/AppDemoMoPub.xcodeproj'
 pod 'mopub-ios-sdk'
 pod 'YouAppi_Framework'
 end
+
 target 'AppDemoAdMob' do
     project 'AppDemoAdMob/AppDemoAdMob.xcodeproj'
     pod 'Google-Mobile-Ads-SDK'
