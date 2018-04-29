@@ -21,6 +21,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wyN-k3-2wf">
+                                <rect key="frame" x="87" y="120" width="200" height="30"/>
+                                <color key="backgroundColor" red="0.70409525296214581" green="0.84181162132239595" blue="0.95075696243523311" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="9DY-Ym-NEm"/>
+                                    <constraint firstAttribute="height" constant="30" id="tYd-jy-VVk"/>
+                                </constraints>
+                                <state key="normal" title="Show Rewarded Video"/>
+                                <connections>
+                                    <action selector="showAdWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xEi-mH-8oM"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="azp-rM-9QQ">
                                 <rect key="frame" x="87.5" y="178" width="200" height="30"/>
                                 <color key="backgroundColor" red="0.70409525299999998" green="0.84181162129999998" blue="0.95075696239999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -45,26 +57,14 @@
                                     <action selector="showAdWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DLf-RN-Emd"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" tag="111" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="nW7-0P-uhG">
+                                <rect key="frame" x="57" y="125" width="20" height="20"/>
+                            </activityIndicatorView>
                             <activityIndicatorView hidden="YES" opaque="NO" tag="222" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="mit-LX-SgS">
                                 <rect key="frame" x="57" y="183" width="20" height="20"/>
                             </activityIndicatorView>
                             <activityIndicatorView hidden="YES" opaque="NO" tag="333" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="rCu-K4-r2b">
                                 <rect key="frame" x="57" y="241" width="20" height="20"/>
-                            </activityIndicatorView>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wyN-k3-2wf">
-                                <rect key="frame" x="87" y="120" width="200" height="30"/>
-                                <color key="backgroundColor" red="0.70409525296214581" green="0.84181162132239595" blue="0.95075696243523311" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="9DY-Ym-NEm"/>
-                                    <constraint firstAttribute="height" constant="30" id="tYd-jy-VVk"/>
-                                </constraints>
-                                <state key="normal" title="Show Rewarded Video"/>
-                                <connections>
-                                    <action selector="showAdWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xEi-mH-8oM"/>
-                                </connections>
-                            </button>
-                            <activityIndicatorView hidden="YES" opaque="NO" tag="111" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="nW7-0P-uhG">
-                                <rect key="frame" x="57" y="125" width="20" height="20"/>
                             </activityIndicatorView>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cPx-Jq-DkJ">
                                 <rect key="frame" x="87" y="294" width="200" height="30"/>
