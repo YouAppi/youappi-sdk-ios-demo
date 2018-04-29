@@ -37,7 +37,6 @@
 
 /* Begin PBXFileReference section */
 		07D5B460DBCC745A0C45136E /* Pods-youappi-sdk-ios-demo-simple.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-youappi-sdk-ios-demo-simple.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-youappi-sdk-ios-demo-simple/Pods-youappi-sdk-ios-demo-simple.debug.xcconfig"; sourceTree = "<group>"; };
-		4DEFC9742091B9F800F25221 /* YouAppi.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = YouAppi.framework; sourceTree = "<group>"; };
 		81882999BEF423C2567AC2BC /* Pods-youappi-sdk-ios-demo-simple.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-youappi-sdk-ios-demo-simple.release.xcconfig"; path = "../Pods/Target Support Files/Pods-youappi-sdk-ios-demo-simple/Pods-youappi-sdk-ios-demo-simple.release.xcconfig"; sourceTree = "<group>"; };
 		8C2D83091E94758300E55A8B /* AppDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C2D830C1E94758300E55A8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -98,7 +97,6 @@
 		8C2D83001E94758300E55A8B = {
 			isa = PBXGroup;
 			children = (
-				4DEFC9742091B9F800F25221 /* YouAppi.framework */,
 				8C2D830B1E94758300E55A8B /* AppDemo */,
 				8C2D83201E94758300E55A8B /* AppDemoTests */,
 				8C2D832B1E94758300E55A8B /* AppDemoUITests */,
