@@ -54,7 +54,6 @@ class ViewController: UIViewController, YALoggerDelegate, YAAdInterstitialAdDele
     var buttonInterstitialVideoState: ButtonState!
     var buttonInterstitialAdtate: ButtonState!
     
-    
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -75,9 +74,9 @@ class ViewController: UIViewController, YALoggerDelegate, YAAdInterstitialAdDele
         super.viewWillAppear(animated)
         
         self.enableOrDisableButton(flag: true)
-        self.updateButtonText(adType: .RewardedVideo,text: "Load ")
-        self.updateButtonText(adType: .InterstitialVideo,text: "Load ")
-        self.updateButtonText(adType: .InterstitialAd,text: "Load ")
+        self.updateButtonText(adType: .RewardedVideo, text: "Load ")
+        self.updateButtonText(adType: .InterstitialVideo, text: "Load ")
+        self.updateButtonText(adType: .InterstitialAd, text: "Load ")
         
         buttonRewardedVideoState = .Load
         buttonInterstitialVideoState = .Load
@@ -155,7 +154,7 @@ class ViewController: UIViewController, YALoggerDelegate, YAAdInterstitialAdDele
         
         if adUnitID == rewardedVideoId
         {
-            self.self.rewardedVideo = nil
+            self.rewardedVideo = nil
             self.updateButtonText(adType: .RewardedVideo, text: "Load ")
             self.updateButtonState(by: .RewardedVideo, state: .Load)
         }

@@ -112,23 +112,23 @@
                             <constraint firstItem="mit-LX-SgS" firstAttribute="centerY" secondItem="azp-rM-9QQ" secondAttribute="centerY" id="3j8-hY-cME"/>
                             <constraint firstItem="wyN-k3-2wf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9dJ-oe-ilp"/>
                             <constraint firstItem="cPx-Jq-DkJ" firstAttribute="top" secondItem="IOK-BV-ec3" secondAttribute="bottom" constant="28" id="EzS-AN-Clq"/>
+                            <constraint firstItem="wyN-k3-2wf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="FD4-Ro-gEe"/>
                             <constraint firstItem="nW7-0P-uhG" firstAttribute="centerY" secondItem="wyN-k3-2wf" secondAttribute="centerY" id="Kjd-jn-ueT"/>
                             <constraint firstItem="IOK-BV-ec3" firstAttribute="top" secondItem="azp-rM-9QQ" secondAttribute="bottom" constant="28" id="OQA-1u-g2E"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="bSB-xm-xX8" secondAttribute="bottom" constant="5" id="OmS-kk-JYM"/>
                             <constraint firstItem="azp-rM-9QQ" firstAttribute="top" secondItem="wyN-k3-2wf" secondAttribute="bottom" constant="28" id="QOi-yL-CWs"/>
                             <constraint firstItem="cPx-Jq-DkJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Rnq-Sk-Wzf"/>
                             <constraint firstItem="azp-rM-9QQ" firstAttribute="leading" secondItem="mit-LX-SgS" secondAttribute="trailing" constant="10.5" id="VIP-iL-Fy0"/>
                             <constraint firstItem="azp-rM-9QQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WzG-NB-aRX"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="bSB-xm-xX8" secondAttribute="bottom" constant="5" id="ZPp-pj-mi9"/>
                             <constraint firstAttribute="trailing" secondItem="F9a-eF-LEk" secondAttribute="trailing" constant="16" id="eoL-LH-5yE"/>
                             <constraint firstItem="F9a-eF-LEk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="f8g-c6-T4Q"/>
-                            <constraint firstItem="wyN-k3-2wf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="fFR-SP-8Cq"/>
                             <constraint firstItem="wyN-k3-2wf" firstAttribute="leading" secondItem="nW7-0P-uhG" secondAttribute="trailing" constant="10" id="i0a-D0-w30"/>
                             <constraint firstAttribute="trailing" secondItem="bSB-xm-xX8" secondAttribute="trailing" constant="5" id="jS8-eA-5Vc"/>
                             <constraint firstItem="rCu-K4-r2b" firstAttribute="centerY" secondItem="IOK-BV-ec3" secondAttribute="centerY" id="leF-c8-UfW"/>
-                            <constraint firstItem="F9a-eF-LEk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="m25-dn-k7y"/>
                             <constraint firstItem="IOK-BV-ec3" firstAttribute="leading" secondItem="rCu-K4-r2b" secondAttribute="trailing" constant="10" id="tTB-v9-Fmp"/>
                             <constraint firstItem="bSB-xm-xX8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="5" id="v3B-rH-WSs"/>
                             <constraint firstItem="IOK-BV-ec3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="z3v-pK-Xeg"/>
+                            <constraint firstItem="F9a-eF-LEk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="zzY-W3-oNU"/>
                         </constraints>
                     </view>
                     <connections>
@@ -137,7 +137,6 @@
                         <outlet property="buttonRewardedVideo" destination="wyN-k3-2wf" id="Izr-eP-Vkc"/>
                         <outlet property="lblMsg" destination="1R8-o0-EXR" id="17D-Ya-iun"/>
                         <outlet property="viewMsg" destination="bSB-xm-xX8" id="dqE-dx-oAh"/>
-                        <outlet property="viewMsgCon" destination="ZPp-pj-mi9" id="Bf9-vh-BA7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
