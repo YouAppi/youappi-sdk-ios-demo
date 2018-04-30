@@ -56,16 +56,10 @@ typedef NS_ENUM(NSUInteger, ButtonAdType)
     BOOL _isAlertShown;
 }
     
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-    [self initAdMob];
-}
-    
-- (void)viewWillAppear:(BOOL)animated
+- (void)viewDidLoad
 {
-    [super viewWillAppear:animated];
-     
+    [super viewDidLoad];
+
     [self updateButtonText:RewardedVideo text:@"Load"];
     [self updateButtonText:InterstitialVideo text:@"Load"];
     [self updateButtonText:InterstitialAd text:@"Load"];
@@ -73,7 +67,14 @@ typedef NS_ENUM(NSUInteger, ButtonAdType)
     _rewardedVideoState = Load;
     _interstitialVideoState = Load;
     _interstitialAdState = Load;
-
+    
+    [self initAdMob];
+}
+    
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
     [self showOrHideActivityIndicator:RewardedVideo flagShow:NO];
     [self showOrHideActivityIndicator:InterstitialVideo flagShow:NO];
     [self showOrHideActivityIndicator:InterstitialAd flagShow:NO];
@@ -360,7 +361,7 @@ typedef NS_ENUM(NSUInteger, ButtonAdType)
     _isAlertShown = YES;
     _messageViewBottomConstraint.constant = 5;
     
-    [UIView animateWithDuration:0.7 animations:^{
+    [UIView animateWithDuration:0.5 animations:^{
         [self.view layoutIfNeeded];
     } completion:^(BOOL finished) {
         [self performSelector:@selector(hideAlert) withObject:nil afterDelay:2];
@@ -374,7 +375,7 @@ typedef NS_ENUM(NSUInteger, ButtonAdType)
     _isAlertShown = NO;
     _messageViewBottomConstraint.constant = -MESSAGE_VIEW_HEIGHT;
     
-    [UIView animateWithDuration:0.7 animations:^{
+    [UIView animateWithDuration:0.4 animations:^{
         [self.view layoutIfNeeded];
     } completion:^(BOOL finished) {
         _messageLabel.text = nil;
@@ -389,7 +390,7 @@ typedef NS_ENUM(NSUInteger, ButtonAdType)
     [self updateButtonState:adType state:Show];
 }
     
-- (void)layoutAdFailed:(NSString *)unitID
+- (void)layoutAdReset:(NSString *)unitID
 {
     ButtonAdType adType = [self adTypeForUnitID:unitID];
     [self showOrHideActivityIndicator:adType flagShow:NO];
@@ -430,8 +431,11 @@ didFailToReceiveAdWithError:(GADRequestError *)error {
 }
 
 /// Tells the delegate the interstitial is to be animated off the screen.
-- (void)interstitialWillDismissScreen:(GADInterstitial *)ad {
+- (void)interstitialWillDismissScreen:(GADInterstitial *)ad
+{
     NSLog(@"interstitialWillDismissScreen");
+     
+    [self layoutAdReset:ad.adUnitID];
 }
 
 /// Tells the delegate the interstitial had been animated off the screen.
@@ -474,6 +478,8 @@ didFailToReceiveAdWithError:(GADRequestError *)error {
 
 - (void)rewardBasedVideoAdDidClose:(GADRewardBasedVideoAd *)rewardBasedVideoAd {
     NSLog(@"Reward based video ad is closed.");
+    
+    [self layoutAdReset:RewardedUnitIDAdMob];
 }
 
 - (void)rewardBasedVideoAdWillLeaveApplication:(GADRewardBasedVideoAd *)rewardBasedVideoAd {

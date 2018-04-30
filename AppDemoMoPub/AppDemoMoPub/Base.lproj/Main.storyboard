@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -14,139 +15,152 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yfU-yF-3PV"/>
+                        <viewControllerLayoutGuide type="bottom" id="VVM-xi-V6f"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YouAppi-MoPub SDK Demo App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XR9-B5-Hvs">
-                                <rect key="frame" x="16" y="26" width="343" height="24"/>
+                                <rect key="frame" x="16" y="26" width="343" height="75"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="24" id="jJ1-rP-rxU"/>
+                                    <constraint firstAttribute="height" constant="75" id="jJ1-rP-rxU"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Prl-kp-QN2">
-                                <rect key="frame" x="16" y="125" width="343" height="40"/>
-                                <color key="backgroundColor" red="0.20392156859999999" green="0.4431372549" blue="0.6705882353" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6BD-lL-vwz" userLabel="Rewarded Video View">
+                                <rect key="frame" x="0.0" y="100" width="375" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cVw-tK-RJz">
+                                        <rect key="frame" x="75" y="0.0" width="225" height="30"/>
+                                        <color key="backgroundColor" red="0.20392156859999999" green="0.4431372549" blue="0.6705882353" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Load Rewarded Video">
+                                            <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="loadOrShowButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cyM-yN-Zgy"/>
+                                        </connections>
+                                    </button>
+                                    <activityIndicatorView opaque="NO" tag="111" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="nob-Nr-ZuU">
+                                        <rect key="frame" x="45" y="5" width="20" height="20"/>
+                                    </activityIndicatorView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="zb2-fe-YZX"/>
+                                    <constraint firstItem="nob-Nr-ZuU" firstAttribute="centerY" secondItem="6BD-lL-vwz" secondAttribute="centerY" id="Hgh-gM-tab"/>
+                                    <constraint firstAttribute="height" constant="30" id="YNX-MT-yYU"/>
+                                    <constraint firstItem="cVw-tK-RJz" firstAttribute="width" secondItem="6BD-lL-vwz" secondAttribute="width" multiplier="0.6" id="eiL-t2-Ydm"/>
+                                    <constraint firstItem="cVw-tK-RJz" firstAttribute="centerY" secondItem="6BD-lL-vwz" secondAttribute="centerY" id="hlo-RK-SED"/>
+                                    <constraint firstItem="cVw-tK-RJz" firstAttribute="centerX" secondItem="6BD-lL-vwz" secondAttribute="centerX" id="rIG-rR-TQi"/>
+                                    <constraint firstItem="cVw-tK-RJz" firstAttribute="height" secondItem="6BD-lL-vwz" secondAttribute="height" id="t14-Fv-FPS"/>
+                                    <constraint firstItem="cVw-tK-RJz" firstAttribute="leading" secondItem="nob-Nr-ZuU" secondAttribute="trailing" constant="10" id="vZW-Cx-8G8"/>
                                 </constraints>
-                                <state key="normal" title="Show Rewarded Video">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="btnShow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mCw-mD-QLl"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F49-Pq-Pp7">
-                                <rect key="frame" x="16" y="181" width="343" height="40"/>
-                                <color key="backgroundColor" red="0.20392156859999999" green="0.4431372549" blue="0.6705882353" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jM3-YP-BX4" userLabel="Interstitial Video View">
+                                <rect key="frame" x="0.0" y="158" width="375" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qVq-cC-583">
+                                        <rect key="frame" x="75" y="0.0" width="225" height="30"/>
+                                        <color key="backgroundColor" red="0.20392156859999999" green="0.4431372549" blue="0.6705882353" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Load Interstitial Video">
+                                            <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="loadOrShowButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7rO-no-aMJ"/>
+                                        </connections>
+                                    </button>
+                                    <activityIndicatorView opaque="NO" tag="222" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Tt3-hw-EE2">
+                                        <rect key="frame" x="45" y="5" width="20" height="20"/>
+                                    </activityIndicatorView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="1i1-Bd-yiS"/>
+                                    <constraint firstItem="qVq-cC-583" firstAttribute="height" secondItem="jM3-YP-BX4" secondAttribute="height" id="Gfm-l5-j7H"/>
+                                    <constraint firstItem="qVq-cC-583" firstAttribute="centerY" secondItem="jM3-YP-BX4" secondAttribute="centerY" id="Ru8-wX-D8b"/>
+                                    <constraint firstItem="Tt3-hw-EE2" firstAttribute="centerY" secondItem="jM3-YP-BX4" secondAttribute="centerY" id="UsX-yU-RJy"/>
+                                    <constraint firstItem="qVq-cC-583" firstAttribute="width" secondItem="jM3-YP-BX4" secondAttribute="width" multiplier="0.6" id="kEM-sT-dv5"/>
+                                    <constraint firstItem="qVq-cC-583" firstAttribute="leading" secondItem="Tt3-hw-EE2" secondAttribute="trailing" constant="10" id="tO2-sz-z1O"/>
+                                    <constraint firstItem="qVq-cC-583" firstAttribute="centerX" secondItem="jM3-YP-BX4" secondAttribute="centerX" id="xq2-tG-DMs"/>
                                 </constraints>
-                                <state key="normal" title="Load Interstitial Video">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="btnLoad:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ity-Xc-HEZ"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hkR-xO-iTt">
-                                <rect key="frame" x="16" y="238" width="343" height="40"/>
-                                <color key="backgroundColor" red="0.20392156859999999" green="0.4431372549" blue="0.6705882353" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ymo-Aa-p86" userLabel="Interstitial Ad View">
+                                <rect key="frame" x="0.0" y="216" width="375" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rf0-GO-NfB">
+                                        <rect key="frame" x="75" y="0.0" width="225" height="30"/>
+                                        <color key="backgroundColor" red="0.20392156859999999" green="0.4431372549" blue="0.6705882353" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Load Card Ad">
+                                            <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="loadOrShowButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kai-na-mKW"/>
+                                        </connections>
+                                    </button>
+                                    <activityIndicatorView opaque="NO" tag="333" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="dOa-YF-51i">
+                                        <rect key="frame" x="45" y="5" width="20" height="20"/>
+                                    </activityIndicatorView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="Bzz-M6-se2"/>
+                                    <constraint firstItem="dOa-YF-51i" firstAttribute="centerY" secondItem="ymo-Aa-p86" secondAttribute="centerY" id="3JG-VN-AcJ"/>
+                                    <constraint firstItem="Rf0-GO-NfB" firstAttribute="centerY" secondItem="ymo-Aa-p86" secondAttribute="centerY" id="BUX-kd-kY1"/>
+                                    <constraint firstItem="Rf0-GO-NfB" firstAttribute="centerX" secondItem="ymo-Aa-p86" secondAttribute="centerX" id="bg6-Ul-H1l"/>
+                                    <constraint firstItem="Rf0-GO-NfB" firstAttribute="height" secondItem="ymo-Aa-p86" secondAttribute="height" id="e2F-yY-Nok"/>
+                                    <constraint firstItem="Rf0-GO-NfB" firstAttribute="leading" secondItem="dOa-YF-51i" secondAttribute="trailing" constant="10" id="gGl-Wo-zbx"/>
+                                    <constraint firstItem="Rf0-GO-NfB" firstAttribute="width" secondItem="ymo-Aa-p86" secondAttribute="width" multiplier="0.6" id="rx9-JA-6OQ"/>
                                 </constraints>
-                                <state key="normal" title="Show Interstitial Video">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="btnShow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uje-wi-kDq"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r93-1r-kOJ">
-                                <rect key="frame" x="16" y="297" width="343" height="40"/>
-                                <color key="backgroundColor" red="0.20392156859999999" green="0.4431372549" blue="0.6705882353" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h3O-4P-yV5" userLabel="Message View">
+                                <rect key="frame" x="5" y="667" width="365" height="100"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l6h-9x-nNn" userLabel="Message Label">
+                                        <rect key="frame" x="8" y="8" width="349" height="84"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.20392156859999999" green="0.4431372549" blue="0.6705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="fcJ-pX-PO6"/>
+                                    <constraint firstAttribute="trailing" secondItem="l6h-9x-nNn" secondAttribute="trailing" constant="8" id="0hI-Tf-e4S"/>
+                                    <constraint firstAttribute="bottom" secondItem="l6h-9x-nNn" secondAttribute="bottom" constant="8" id="58Q-uy-OQs"/>
+                                    <constraint firstItem="l6h-9x-nNn" firstAttribute="top" secondItem="h3O-4P-yV5" secondAttribute="top" constant="8" id="F2A-5s-sGi"/>
+                                    <constraint firstAttribute="height" constant="100" id="Mwc-Nb-KkJ"/>
+                                    <constraint firstItem="l6h-9x-nNn" firstAttribute="leading" secondItem="h3O-4P-yV5" secondAttribute="leading" constant="8" id="ysT-Ix-3kn"/>
                                 </constraints>
-                                <state key="normal" title="Load Card Ad">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="btnLoad:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1dD-km-DXs"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jeB-M4-fJr">
-                                <rect key="frame" x="16" y="353" width="343" height="40"/>
-                                <color key="backgroundColor" red="0.20392156859999999" green="0.4431372549" blue="0.6705882353" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="v9I-gG-Va1"/>
-                                </constraints>
-                                <state key="normal" title="Show Card Ad">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="btnShow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HOb-cD-7r5"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P2z-XH-Awg">
-                                <rect key="frame" x="16" y="69" width="343" height="40"/>
-                                <color key="backgroundColor" red="0.20392156859999999" green="0.4431372549" blue="0.6705882353" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="n1r-Fp-cZY"/>
-                                </constraints>
-                                <state key="normal" title="Load Rewarded Video">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="btnLoad:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mmu-yB-02g"/>
-                                </connections>
-                            </button>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Prl-kp-QN2" secondAttribute="trailing" constant="16" id="4Zs-H2-mb0"/>
-                            <constraint firstItem="P2z-XH-Awg" firstAttribute="centerX" secondItem="XR9-B5-Hvs" secondAttribute="centerX" id="5qd-Sn-HmE"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XR9-B5-Hvs" secondAttribute="trailing" constant="16" id="7sQ-oA-TsU"/>
-                            <constraint firstItem="hkR-xO-iTt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="APP-jx-GG6"/>
-                            <constraint firstItem="P2z-XH-Awg" firstAttribute="top" secondItem="XR9-B5-Hvs" secondAttribute="bottom" constant="19" id="Aba-RT-BdU"/>
-                            <constraint firstItem="Prl-kp-QN2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="DC7-ub-kjf"/>
-                            <constraint firstItem="Prl-kp-QN2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="HDk-rE-BTe"/>
-                            <constraint firstItem="F49-Pq-Pp7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="HH1-58-7dF"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="r93-1r-kOJ" secondAttribute="trailing" constant="16" id="If7-O3-moW"/>
-                            <constraint firstItem="P2z-XH-Awg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ImL-mw-7fx"/>
-                            <constraint firstItem="Prl-kp-QN2" firstAttribute="top" secondItem="P2z-XH-Awg" secondAttribute="bottom" constant="16" id="Jpe-Pu-xdX"/>
-                            <constraint firstItem="XR9-B5-Hvs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="6" id="Kc4-eW-ian"/>
-                            <constraint firstItem="jeB-M4-fJr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="P2z-9s-h9N"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hkR-xO-iTt" secondAttribute="trailing" constant="16" id="SQ3-Xf-Gwo"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="P2z-XH-Awg" secondAttribute="trailing" constant="16" id="Uht-vz-K4C"/>
-                            <constraint firstItem="F49-Pq-Pp7" firstAttribute="top" secondItem="Prl-kp-QN2" secondAttribute="bottom" constant="16" id="Ute-gx-f8j"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Prl-kp-QN2" secondAttribute="trailing" constant="16" id="Uxz-wg-xat"/>
-                            <constraint firstItem="XR9-B5-Hvs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="VsA-ea-jnf"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="F49-Pq-Pp7" secondAttribute="trailing" constant="16" id="WAS-Jh-PRU"/>
-                            <constraint firstItem="hkR-xO-iTt" firstAttribute="top" secondItem="F49-Pq-Pp7" secondAttribute="bottom" constant="17" id="Yh7-fr-iUM"/>
-                            <constraint firstItem="r93-1r-kOJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="aGX-Qa-MY2"/>
-                            <constraint firstItem="jeB-M4-fJr" firstAttribute="top" secondItem="r93-1r-kOJ" secondAttribute="bottom" constant="16" id="buT-Ub-oPK"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hkR-xO-iTt" secondAttribute="trailing" constant="16" id="gRx-Bz-GEk"/>
-                            <constraint firstItem="hkR-xO-iTt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="i0z-45-8TG"/>
-                            <constraint firstItem="r93-1r-kOJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="jAj-4M-cOH"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jeB-M4-fJr" secondAttribute="trailing" constant="16" id="jyM-FN-Lc1"/>
-                            <constraint firstItem="F49-Pq-Pp7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="kGi-cv-gvn"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="r93-1r-kOJ" secondAttribute="trailing" constant="16" id="kHj-xO-n8o"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hkR-xO-iTt" secondAttribute="trailing" constant="16" id="kpu-p8-X7w"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="F49-Pq-Pp7" secondAttribute="trailing" constant="16" id="mca-xc-zhc"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jeB-M4-fJr" secondAttribute="trailing" constant="16" id="msE-Hq-RWo"/>
-                            <constraint firstItem="r93-1r-kOJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="p0G-8V-tMR"/>
-                            <constraint firstItem="jeB-M4-fJr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="pjR-Af-T8I"/>
-                            <constraint firstItem="r93-1r-kOJ" firstAttribute="top" secondItem="hkR-xO-iTt" secondAttribute="bottom" constant="19" id="rVw-ms-wtn"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="r93-1r-kOJ" secondAttribute="trailing" constant="16" id="xyM-Tp-qeX"/>
-                            <constraint firstItem="hkR-xO-iTt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ylJ-iI-po3"/>
+                            <constraint firstItem="jM3-YP-BX4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="3yO-RW-YpH"/>
+                            <constraint firstAttribute="trailing" secondItem="XR9-B5-Hvs" secondAttribute="trailing" constant="16" id="7sQ-oA-TsU"/>
+                            <constraint firstItem="jM3-YP-BX4" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="Dqh-ts-fs6"/>
+                            <constraint firstItem="jM3-YP-BX4" firstAttribute="top" secondItem="6BD-lL-vwz" secondAttribute="bottom" constant="28" id="E6g-Bh-W3R"/>
+                            <constraint firstItem="6BD-lL-vwz" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="FoA-Xo-BB8"/>
+                            <constraint firstItem="XR9-B5-Hvs" firstAttribute="top" secondItem="yfU-yF-3PV" secondAttribute="bottom" constant="6" id="Kc4-eW-ian"/>
+                            <constraint firstItem="XR9-B5-Hvs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="VsA-ea-jnf"/>
+                            <constraint firstAttribute="trailing" secondItem="h3O-4P-yV5" secondAttribute="trailing" constant="5" id="eLz-eY-0QW"/>
+                            <constraint firstItem="6BD-lL-vwz" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="100" id="gq8-zi-3OX"/>
+                            <constraint firstItem="ymo-Aa-p86" firstAttribute="top" secondItem="jM3-YP-BX4" secondAttribute="bottom" constant="28" id="iCX-l9-t2Y"/>
+                            <constraint firstItem="ymo-Aa-p86" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="jRs-Y5-7C1"/>
+                            <constraint firstItem="VVM-xi-V6f" firstAttribute="top" secondItem="h3O-4P-yV5" secondAttribute="bottom" constant="-100" id="kBm-fv-CHI"/>
+                            <constraint firstItem="ymo-Aa-p86" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="nlq-dy-viF"/>
+                            <constraint firstItem="6BD-lL-vwz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="yct-jh-dW3"/>
+                            <constraint firstItem="h3O-4P-yV5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="5" id="z8m-Wx-ItN"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="_interstitialAdButton" destination="Rf0-GO-NfB" id="rH5-YJ-b9T"/>
+                        <outlet property="_interstitialVideoButton" destination="qVq-cC-583" id="pCo-cN-dbJ"/>
+                        <outlet property="_messageLabel" destination="l6h-9x-nNn" id="OG9-fk-LIo"/>
+                        <outlet property="_messageView" destination="h3O-4P-yV5" id="65r-YZ-R4L"/>
+                        <outlet property="_messageViewBottomConstraint" destination="kBm-fv-CHI" id="PNn-6O-sYA"/>
+                        <outlet property="_rewardedVideoButton" destination="cVw-tK-RJz" id="GHk-dY-xg2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
