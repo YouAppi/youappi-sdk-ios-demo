@@ -11,9 +11,5 @@
 
 @interface ViewController : UIViewController <GADRewardBasedVideoAdDelegate, GADInterstitialDelegate>
 
-- (IBAction)btnLoad:(UIButton *)sender;
-
-- (IBAction)btnShow:(UIButton *)sender;
-
 @end
 
