@@ -9,30 +9,39 @@
 import UIKit
 import YouAppi
 
-enum ButtonState {
+enum ButtonState
+{
     case Load
     case Show
     case UnKnown
    
 }
 
+enum ButtonAdType: Int
+{
+    case None
+    case RewardedVideo
+    case InterstitialVideo
+    case InterstitialAd
+}
+
 class ViewController: UIViewController, YALoggerDelegate, YAAdInterstitialAdDelegate, YAAdRewardedVideoDelegate, YAAdInterstitialVideoDelegate
 {
-     let product_rewarded_video = "rewarded video"
-     let product_interstitial_video = "interstitial video"
-     let product_interstitial_ad = "interstitial ad"
+    let product_rewarded_video = "rewarded video"
+    let product_interstitial_video = "interstitial video"
+    let product_interstitial_ad = "interstitial ad"
     
-     var rewardedVideoId = "rewarded_video_test_ios"
-     var interstitialVideoId = "interstitial_video_test_ios"
-     var interstitialAdId = "interstitial_ad_test_ios"
+    var rewardedVideoId = "rewarded_video_test_ios"
+    var interstitialVideoId = "interstitial_video_test_ios"
+    var interstitialAdId = "interstitial_ad_test_ios"
     
     var rewardedVideo: YAAdRewardedVideo?
     var interstitialVideo: YAAdInterstitialVideo?
     var interstitialAd: YAAdCard?
     
-    var alert:AlertToast?
+    var alert: AlertToast?
     
-    var dictToKeepTrackOfProductTypeForEveryUnitAdID:[String:String]!
+    var dictToKeepTrackOfProductTypeForEveryUnitAdID: [String:String]!
     
     @IBOutlet weak var buttonRewardedVideo: UIButton!
     @IBOutlet weak var buttonInterstitialVideo: UIButton!
@@ -41,12 +50,12 @@ class ViewController: UIViewController, YALoggerDelegate, YAAdInterstitialAdDele
     @IBOutlet weak var lblMsg: UILabel!
     @IBOutlet weak var viewMsgCon: NSLayoutConstraint!
     
-    var buttonRewardedVideoState:ButtonState!
-    var buttonInterstitialVideoState:ButtonState!
-    var buttonInterstitialAdtate:ButtonState!
+    var buttonRewardedVideoState: ButtonState!
+    var buttonInterstitialVideoState: ButtonState!
+    var buttonInterstitialAdtate: ButtonState!
     
-    
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
         
         // Please note this is a demo access token.
@@ -58,7 +67,6 @@ class ViewController: UIViewController, YALoggerDelegate, YAAdInterstitialAdDele
         YouAppi.sharedInstance.log()?.delegate = self
         
         self.dictToKeepTrackOfProductTypeForEveryUnitAdID = [String:String]()
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -66,9 +74,9 @@ class ViewController: UIViewController, YALoggerDelegate, YAAdInterstitialAdDele
         super.viewWillAppear(animated)
         
         self.enableOrDisableButton(flag: true)
-        self.setButtonText(tag:1,text:"Load ")
-        self.setButtonText(tag:2,text:"Load ")
-        self.setButtonText(tag:3,text:"Load ")
+        self.updateButtonText(adType: .RewardedVideo, text: "Load ")
+        self.updateButtonText(adType: .InterstitialVideo, text: "Load ")
+        self.updateButtonText(adType: .InterstitialAd, text: "Load ")
         
         buttonRewardedVideoState = .Load
         buttonInterstitialVideoState = .Load
@@ -77,9 +85,9 @@ class ViewController: UIViewController, YALoggerDelegate, YAAdInterstitialAdDele
         self.alert = AlertToast(view: self.view, viewMsg: self.viewMsg, lblMsg: self.lblMsg, viewMsgCon: self.viewMsgCon)
         self.alert?.hideAlert()
         
-        self.showOrHideActivityIndictor(buttonTag: 1, flagShow: false)
-        self.showOrHideActivityIndictor(buttonTag: 2, flagShow: false)
-        self.showOrHideActivityIndictor(buttonTag: 3, flagShow: false)
+        self.showOrHideActivityIndictor(adType: .RewardedVideo)
+        self.showOrHideActivityIndictor(adType: .InterstitialVideo)
+        self.showOrHideActivityIndictor(adType: .InterstitialAd)
         
         self.viewMsg.layer.cornerRadius = 15.0
         self.viewMsg.clipsToBounds = true
@@ -93,8 +101,8 @@ class ViewController: UIViewController, YALoggerDelegate, YAAdInterstitialAdDele
     //MARK: Private Functions delegate
     
     
-    private func enableOrDisableButton(flag:Bool){
-        
+    private func enableOrDisableButton(flag: Bool)
+    {
         self.buttonRewardedVideo?.isEnabled = flag
         self.buttonInterstitialVideo?.isEnabled = flag
         self.buttonInterstitialAd?.isEnabled = flag
@@ -102,98 +110,105 @@ class ViewController: UIViewController, YALoggerDelegate, YAAdInterstitialAdDele
         self.buttonRewardedVideo.alpha = flag ? 1.0 : 0.2
         self.buttonInterstitialVideo.alpha = flag ? 1.0 : 0.2
         self.buttonInterstitialVideo.alpha = flag ? 1.0 : 0.2
-        
     }
     
-    private func setButtonStateByTag(tag:Int,state:ButtonState){
-        switch tag {
-        case 1:
-             self.buttonRewardedVideoState = state
-            break
-        case 2:
-             self.buttonInterstitialVideoState = state
-            break
-        case 3:
-             self.buttonInterstitialAdtate = state
-            break
-        default:
-            print("no state for this  button")
+    private func updateButtonState(by adType: ButtonAdType, state: ButtonState)
+    {
+        switch adType
+        {
+            case .RewardedVideo:
+                 self.buttonRewardedVideoState = state
+            case .InterstitialVideo:
+                 self.buttonInterstitialVideoState = state
+            case .InterstitialAd:
+                 self.buttonInterstitialAdtate = state
+            default:
+                print("no state for this  button")
         }
     }
     
-    private func setButtonText(tag:Int,text:String) {
-        
-        switch tag {
-        case 1:
-             self.buttonRewardedVideo?.setTitle(text + product_rewarded_video, for: .normal)
-            break
-        case 2:
-            self.buttonInterstitialVideo?.setTitle(
-                text + product_interstitial_video, for: .normal)
-            break
-        case 3:
-            self.buttonInterstitialAd?.setTitle(text + product_interstitial_ad, for: .normal)
-            break
-        default:
-            return
+    private func updateButtonText(adType: ButtonAdType, text: String)
+    {
+        UIView.performWithoutAnimation {
+            
+            switch adType
+            {
+                case .RewardedVideo:
+                    self.buttonRewardedVideo?.setTitle(text + product_rewarded_video, for: .normal)
+                    self.buttonRewardedVideo.layoutIfNeeded()
+                case .InterstitialVideo:
+                    self.buttonInterstitialVideo?.setTitle(text + product_interstitial_video, for: .normal)
+                    self.buttonInterstitialVideo.layoutIfNeeded()
+                case .InterstitialAd:
+                    self.buttonInterstitialAd?.setTitle(text + product_interstitial_ad, for: .normal)
+                    self.buttonInterstitialAd.layoutIfNeeded()
+                default:
+                    return
+            }
         }
     }
     
-    
-    private func removeProduct(with adUnitID: String){
-        
+    private func removeProduct(with adUnitID: String)
+    {
         self.dictToKeepTrackOfProductTypeForEveryUnitAdID.removeValue(forKey: adUnitID)
         
         if adUnitID == rewardedVideoId
         {
-            self.self.rewardedVideo = nil
-            self.setButtonText(tag: 1, text: "Load ")
-            self.setButtonStateByTag(tag: 1, state: .Load)
+            self.rewardedVideo = nil
+            self.updateButtonText(adType: .RewardedVideo, text: "Load ")
+            self.updateButtonState(by: .RewardedVideo, state: .Load)
         }
         else
-            if adUnitID == interstitialVideoId
-            {
-                self.interstitialVideo = nil
-                self.setButtonText(tag: 2, text: "Load ")
-                self.setButtonStateByTag(tag: 2, state: .Load)
-            }
-            else
-                if adUnitID == interstitialAdId
-                {
-                    self.interstitialAd = nil
-                    self.setButtonText(tag: 3, text: "Load ")
-                    self.setButtonStateByTag(tag: 3, state: .Load)
+        if adUnitID == interstitialVideoId
+        {
+            self.interstitialVideo = nil
+            self.updateButtonText(adType: .InterstitialVideo, text: "Load ")
+            self.updateButtonState(by: .InterstitialVideo, state: .Load)
+        }
+        else
+        if adUnitID == interstitialAdId
+        {
+            self.interstitialAd = nil
+            self.updateButtonText(adType: .InterstitialAd, text: "Load ")
+            self.updateButtonState(by: .InterstitialAd, state: .Load)
         }
     }
     
-    private func getButtonTagByAdUnitId(with adUnitID: String) -> Int{
-        
-        if adUnitID.contains(rewardedVideoId){
-            return 1
+    private func adType(by adUnitID: String) -> ButtonAdType
+    {
+        if adUnitID.contains(rewardedVideoId)
+        {
+            return .RewardedVideo
         }
-        else if adUnitID.contains(interstitialVideoId){
-                return 2
-            }
-        return 3 // interstitialAdId
+        else if adUnitID.contains(interstitialVideoId)
+        {
+            return .InterstitialVideo
+        }
+        else if adUnitID.contains(interstitialAdId)
+        {
+            return .InterstitialAd
+        }
+        
+        return .None
     }
     
     private func productType(for adUnitID: String?) -> String
     {
-        
         guard let unitID = adUnitID else
         {
             return ""
         }
      
-        if let name = self.dictToKeepTrackOfProductTypeForEveryUnitAdID[unitID] {
+        if let name = self.dictToKeepTrackOfProductTypeForEveryUnitAdID[unitID]
+        {
             return name
         }
         
         return ""
     }
 
-    private func showSetAdUnitId(){
-        
+    private func showSetAdUnitId()
+    {
         let alertController = UIAlertController(title: "Enter Unit Ad ID", message: "", preferredStyle: UIAlertControllerStyle.alert)
         
         let saveAction = UIAlertAction(title: "Save", style: UIAlertActionStyle.default, handler: {
@@ -210,18 +225,15 @@ class ViewController: UIViewController, YALoggerDelegate, YAAdInterstitialAdDele
             if text1_trim.count != 0{
               
                 self.rewardedVideoId =  text1_trim
-               
             }
             if text2_trim.count != 0{
                 
                 self.interstitialVideoId = text2_trim
-                
             }
             if text3_trim.count != 0{
        
                 self.interstitialAdId = text3_trim
             }
-   
         })
         
         let cancelAction = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.default, handler: {
@@ -254,117 +266,126 @@ class ViewController: UIViewController, YALoggerDelegate, YAAdInterstitialAdDele
         self.alert?.showAlert(message: message)
     }
     
-    private func showOrHideActivityIndictor(buttonTag:Int,flagShow:Bool){
-        
+    private func showOrHideActivityIndictor(adType: ButtonAdType, flagShow: Bool = false)
+    {
         var indicator: UIActivityIndicatorView?
         
-        switch buttonTag{
-        case 1:
-            indicator = self.view!.viewWithTag(111) as? UIActivityIndicatorView
-            break
-        case 2:
-            indicator = self.view!.viewWithTag(222) as? UIActivityIndicatorView
-          break
-        case 3:
-            indicator = self.view!.viewWithTag(333) as? UIActivityIndicatorView
-          break
-        default:
+        switch adType
+        {
+            case .RewardedVideo:
+                indicator = self.view!.viewWithTag(111) as? UIActivityIndicatorView
+            case .InterstitialVideo:
+                indicator = self.view!.viewWithTag(222) as? UIActivityIndicatorView
+            case .InterstitialAd:
+                indicator = self.view!.viewWithTag(333) as? UIActivityIndicatorView
+            default:
+                return
+        }
+        
+        guard let indView = indicator else
+        {
             return
         }
         
-        guard let indView = indicator else {
-            return
-        }
-        if flagShow == true{
+        if flagShow == true
+        {
             indView.isHidden = false
             indView.startAnimating()
         }
-        else{
-            indView.stopAnimating()
+        else
+        {
             indView.isHidden = true
+            indView.stopAnimating()
         }
-
     }
     
-    private func getButtonStateByTag(tag:Int) -> ButtonState{
-        switch tag {
-        case 1:
-            return self.buttonRewardedVideoState
-
-        case 2:
-            return self.buttonInterstitialVideoState
-
-        case 3:
-            return self.buttonInterstitialAdtate
-
-        default:
-            print("no state for this  button")
-            
+    private func buttonState(by type: ButtonAdType) -> ButtonState
+    {
+        switch type
+        {
+            case .RewardedVideo:
+                return self.buttonRewardedVideoState
+            case .InterstitialVideo:
+                return self.buttonInterstitialVideoState
+            case .InterstitialAd:
+                return self.buttonInterstitialAdtate
+            default:
+                print("no state for this  button")
         }
         return .UnKnown
     }
     
-    //MARK: Actions
+    //MARK: UIButton Delegates
     
-    
-    @IBAction func btnSetUnitsAdIDs(_ sender: UIButton) {
+    @IBAction func btnSetUnitsAdIDs(_ sender: UIButton)
+    {
         self.showSetAdUnitId()
     }
     
-    
-    @IBAction func showAd(sender: UIButton) {
-        
+    @IBAction func showAd(sender: UIButton)
+    {
         var adOpt: YAAd?
         
-        switch sender.tag {
-            
-        case 1:
-            if self.buttonRewardedVideoState == .Load {
-                self.rewardedVideo = YouAppi.sharedInstance.rewardedVideo(rewardedVideoId)
-                self.dictToKeepTrackOfProductTypeForEveryUnitAdID[rewardedVideoId] = self.product_rewarded_video
-                self.rewardedVideo?.delegate = self
-                self.rewardedVideo?.load()
-            }
-            adOpt = self.rewardedVideo
-            break
-        case 2:
-            if buttonInterstitialVideoState == .Load {
-                self.interstitialVideo = YouAppi.sharedInstance.interstitialVideo(interstitialVideoId)
-                self.dictToKeepTrackOfProductTypeForEveryUnitAdID[interstitialVideoId] = self.product_interstitial_video
-                self.interstitialVideo?.delegate = self
-                self.interstitialVideo?.load()
-            }
-            adOpt = self.interstitialVideo
-            break
-        case 3:
-            if buttonInterstitialAdtate == .Load {
-                self.interstitialAd = YouAppi.sharedInstance.interstitialAd(interstitialAdId)
-                self.dictToKeepTrackOfProductTypeForEveryUnitAdID[interstitialAdId] = self.product_interstitial_ad
-                self.interstitialAd?.delegate = self
-                self.interstitialAd?.load()
-            }
-            adOpt = self.interstitialAd
-            break
-        default: return
+        guard let adType: ButtonAdType = ButtonAdType(rawValue: sender.tag) else
+        {
+            return
         }
         
-        if self.getButtonStateByTag(tag: sender.tag) == .Load{
-            if let ad = adOpt {
-                if (ad.isAvailable()) {
-                    self.showOrHideActivityIndictor(buttonTag: sender.tag, flagShow: false)
-                    self.setButtonText(tag: sender.tag, text:"Show ")
-                    self.setButtonStateByTag(tag: sender.tag, state: .Show)
+        switch adType
+        {
+            case .RewardedVideo:
+                if self.buttonRewardedVideoState == .Load
+                {
+                    self.rewardedVideo = YouAppi.sharedInstance.rewardedVideo(rewardedVideoId)
+                    self.dictToKeepTrackOfProductTypeForEveryUnitAdID[rewardedVideoId] = self.product_rewarded_video
+                    self.rewardedVideo?.delegate = self
+                    self.rewardedVideo?.load()
                 }
-                else{
-                    self.showOrHideActivityIndictor(buttonTag: sender.tag ,flagShow: true)
+                adOpt = self.rewardedVideo
+            case .InterstitialVideo:
+                if buttonInterstitialVideoState == .Load
+                {
+                    self.interstitialVideo = YouAppi.sharedInstance.interstitialVideo(interstitialVideoId)
+                    self.dictToKeepTrackOfProductTypeForEveryUnitAdID[interstitialVideoId] = self.product_interstitial_video
+                    self.interstitialVideo?.delegate = self
+                    self.interstitialVideo?.load()
                 }
-                
+                adOpt = self.interstitialVideo
+            case .InterstitialAd:
+                if buttonInterstitialAdtate == .Load
+                {
+                    self.interstitialAd = YouAppi.sharedInstance.interstitialAd(interstitialAdId)
+                    self.dictToKeepTrackOfProductTypeForEveryUnitAdID[interstitialAdId] = self.product_interstitial_ad
+                    self.interstitialAd?.delegate = self
+                    self.interstitialAd?.load()
+                }
+                adOpt = self.interstitialAd
+            default:
+                return
+        }
+        
+        if self.buttonState(by: adType) == .Load
+        {
+            if let ad = adOpt
+            {
+                if (ad.isAvailable())
+                {
+                    self.showOrHideActivityIndictor(adType: adType, flagShow: false)
+                    self.updateButtonText(adType: adType, text:"Show ")
+                    self.updateButtonState(by: adType, state: .Show)
+                }
+                else
+                {
+                    self.showOrHideActivityIndictor(adType: adType, flagShow: true)
+                }
             }
         }
-        else{
-            
-            if let ad = adOpt {
-                if (ad.isAvailable()) {
+        else
+        {
+            if let ad = adOpt
+            {
+                if (ad.isAvailable())
+                {
                     ad.show()
                 }
             }
@@ -395,10 +416,10 @@ class ViewController: UIViewController, YALoggerDelegate, YAAdInterstitialAdDele
         let productName: String = self.productType(for: adUnitID)
         let message = "\(productName) was loaded"
         
-        let buttonTag = self.getButtonTagByAdUnitId(with: adUnitID)
-        self.showOrHideActivityIndictor(buttonTag: buttonTag, flagShow:false )
-        self.setButtonText(tag: buttonTag, text: "Show ")
-        self.setButtonStateByTag(tag: buttonTag, state: .Show)
+        let adType: ButtonAdType = self.adType(by: adUnitID)
+        self.showOrHideActivityIndictor(adType: adType)
+        self.updateButtonText(adType: adType, text: "Show ")
+        self.updateButtonState(by: adType, state: .Show)
         
         print("*** \(message)")
         self.showAlert(message: message)
@@ -419,10 +440,10 @@ class ViewController: UIViewController, YALoggerDelegate, YAAdInterstitialAdDele
         }
         let productName: String = self.productType(for: adUnitID)
         
-        let buttonTag = self.getButtonTagByAdUnitId(with: adUnitID)
-        self.showOrHideActivityIndictor(buttonTag: buttonTag, flagShow: false)
-        self.setButtonText(tag: buttonTag, text: "Load ")
-        self.setButtonStateByTag(tag: buttonTag, state: .Load)
+        let buttonAdType: ButtonAdType = self.adType(by: adUnitID)
+        self.showOrHideActivityIndictor(adType: buttonAdType)
+        self.updateButtonText(adType: buttonAdType, text: "Load ")
+        self.updateButtonState(by: buttonAdType, state: .Load)
 
         let errorCodeInfo = errorCode.description()
         let errorMessage = "Failed to retrieve \(productName), Error code: \(errorCodeInfo)"

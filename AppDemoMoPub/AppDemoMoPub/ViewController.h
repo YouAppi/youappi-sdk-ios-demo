@@ -8,10 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "MoPub.h"
-@interface ViewController : UIViewController
 
-- (IBAction)btnLoad:(UIButton *)sender;
-- (IBAction)btnShow:(UIButton *)sender;
+@interface ViewController : UIViewController <MPInterstitialAdControllerDelegate, MPRewardedVideoDelegate>
 
 @end
-
