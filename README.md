@@ -1,8 +1,11 @@
 ### What is this repository for? ###
 
-A simple iOS demo app showing how to use YouAppi's iOS SDK.
+This repository contains 3 iOS demo apps showing how to use YouAppi's iOS SDK:
+* AppDemo - A demo app showing how to use YouAppi's SDK
+* AppDemoAdMob - A demo app showing how to use YouAppi's SDK with AdMob adapter.
+* AppdDemoMoPub - A demo app showing how to use YouApp'd SDK with MoPub adapter.
 
-The app includes 3 buttons showing ads for each product (ad unit type):
+Each app includes 3 buttons for showing ads for the following each ad unit types:
 
 * Rewarded Video
 * Interstitial Video
@@ -10,13 +13,10 @@ The app includes 3 buttons showing ads for each product (ad unit type):
 
 ### How do I get set up? ###
 
-* Load the project with XCode (on a Mac machine).
-* For instrcutions of how to integrate YouAppi's iOS SDK refer to [YouApp's confluence](https://youappi.atlassian.net/wiki/display/RD/YouAppi+iOS+SDK) 
+* On the project main direcotry run **pod install**
+* Load the project workspace with XCode (on a Mac machine).
 
 ### How do I run? ###
 
-Simply press the project play button.
-
-### Who do I talk to? ###
-
-* Guy Bashan, [guy.b@youappi.com](mailto:guy.b@youappi.com)
+* On the project run menu select the desired demo app you would like to run.
+* Press the run button and wait for the demo app to load.
