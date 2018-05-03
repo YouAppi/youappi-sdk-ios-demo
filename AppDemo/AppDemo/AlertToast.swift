@@ -23,7 +23,6 @@ class AlertToast: NSObject {
         self.viewMsg = viewMsg
     }
     
-    
     func showAlert(message: String)
     {
         self.timer?.invalidate()
@@ -41,5 +40,9 @@ class AlertToast: NSObject {
     @objc func hideAlert(){
         
         self.viewMsgCon.constant = ((-1) * self.viewMsg.frame.size.height)
+
+        UIView.animate(withDuration: 0.4) {
+            self.view.layoutIfNeeded();
+        }
     }
 }
