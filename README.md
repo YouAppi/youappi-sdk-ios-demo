@@ -1,6 +1,7 @@
 ### What is this repository for? ###
 
 This repository contains 3 iOS demo apps showing how to use YouAppi's iOS SDK:
+
 * **AppDemo** - A demo app showing how to use YouAppi's SDK
 * **AppDemoAdMob** - A demo app showing how to use YouAppi's SDK with AdMob adapter.
 * **AppdDemoMoPub** - A demo app showing how to use YouApp'd SDK with MoPub adapter.
