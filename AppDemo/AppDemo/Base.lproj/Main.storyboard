@@ -137,6 +137,7 @@
                         <outlet property="buttonRewardedVideo" destination="wyN-k3-2wf" id="Izr-eP-Vkc"/>
                         <outlet property="lblMsg" destination="1R8-o0-EXR" id="17D-Ya-iun"/>
                         <outlet property="viewMsg" destination="bSB-xm-xX8" id="dqE-dx-oAh"/>
+                        <outlet property="viewMsgCon" destination="OmS-kk-JYM" id="3OP-bg-Dhm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
