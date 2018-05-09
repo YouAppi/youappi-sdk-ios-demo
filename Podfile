@@ -17,7 +17,7 @@ end
 target 'AppDemoAdMob' do
     project 'AppDemoAdMob/AppDemoAdMob.xcodeproj'
     pod 'Google-Mobile-Ads-SDK'
-    pod 'YouAppi_Admob_Adapter'
+    pod 'YouAppiAdMobAdapter'
     pod 'YouAppiMoatSDK'
 end
 
