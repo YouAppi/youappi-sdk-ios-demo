@@ -77,5 +77,6 @@ fastlane/test_output
 !*.xcworkspace/xcshareddata/
 !*.xcworkspace/contents.xcworkspacedata
 /*.gcno
- 
+
+*.DS_Store
 # End of https://www.gitignore.io/api/swift,xcode
