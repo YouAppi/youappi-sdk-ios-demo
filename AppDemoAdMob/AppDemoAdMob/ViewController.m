@@ -397,6 +397,14 @@ typedef NS_ENUM(NSUInteger, ButtonAdType)
     [self updateButtonText:adType text:@"Load"];
     [self updateButtonState:adType state:Load];
 }
+
+- (void)layoutAdFailed:(NSString *)unitID
+{
+    NSString *productName = [self productNameForUnitID:unitID];
+    NSString *message = [NSString stringWithFormat:@"%@ was failed to load", productName];
+    
+    [self showAlert:message];
+}
     
 #pragma mark - interstitial ad mob Delegate
 
@@ -418,11 +426,6 @@ didFailToReceiveAdWithError:(GADRequestError *)error {
     NSLog(@"interstitial:didFailToReceiveAdWithError: %@", [error localizedDescription]);
     
     [self layoutAdFailed:ad.adUnitID];
-    
-    NSString *productName = [self productNameForUnitID:ad.adUnitID];
-    NSString *message = [NSString stringWithFormat:@"%@ was failed to load", productName];
-    
-    [self showAlert:message];
 }
 
 /// Tells the delegate that an interstitial will be presented.
