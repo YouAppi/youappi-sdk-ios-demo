@@ -7,7 +7,11 @@
 //
 
 import UIKit
+#if MOAT
 import YouAppi
+#else
+import YouAppiMoat
+#endif
 
 enum ButtonState
 {
