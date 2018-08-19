@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  AppDemo
 //
-//  Created by Guy Bashan on 3/30/17.
-//  Copyright © 2017 YouAppi. All rights reserved.
+//  Created by YouAppi.
+//  Copyright © 2018 YouAppi. All rights reserved.
 //
 
 import UIKit
