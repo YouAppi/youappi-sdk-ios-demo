@@ -169,7 +169,6 @@
 				8C2D83071E94758300E55A8B /* Resources */,
 				8CC1501C1EAC8368008156D4 /* ShellScript */,
 				11BA4201ADF233B3A6BD52FA /* [CP] Embed Pods Frameworks */,
-				172ECECDCBC99989EE759CB0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -311,21 +310,6 @@
 			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-AppDemo/Pods-AppDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		172ECECDCBC99989EE759CB0 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-AppDemo/Pods-AppDemo-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		8CC1501C1EAC8368008156D4 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -337,7 +321,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "#This step is required to work around an App Store submission bug in swift when archiving universal binaries.\n#\"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/YouAppi.framework/strip-frameworks.sh\"";
+			shellScript = "#This step is required to work around an App Store submission bug in swift when archiving universal binaries.\n#\"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/YouAppiMoat.framework/strip-frameworks.sh\"";
 		};
 		CAE478F60564AF4F48DB1CE3 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -550,7 +534,7 @@
 				);
 				INFOPLIST_FILE = AppDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.youappi.sdk.demo.simple;
+				PRODUCT_BUNDLE_IDENTIFIER = com.youappi.AppDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -576,7 +560,7 @@
 				INFOPLIST_FILE = AppDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = com.youappi.sdk.demo.simple;
+				PRODUCT_BUNDLE_IDENTIFIER = com.youappi.AppDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "b417d4a0-27cb-426e-8148-9aa434a2e5de";
 				PROVISIONING_PROFILE_SPECIFIER = MoatAdHoKNew;

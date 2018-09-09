@@ -182,7 +182,6 @@
 				BE71B3B320346A0500024D2B /* Resources */,
 				BEE337D92042CD2200F07C68 /* Embed Frameworks */,
 				728DFD0C1A9CC6A3CD62F122 /* [CP] Embed Pods Frameworks */,
-				1F2A3CE857C7C5F4662FC39B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -302,21 +301,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1F2A3CE857C7C5F4662FC39B /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-AppDemoAdMob/Pods-AppDemoAdMob-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		728DFD0C1A9CC6A3CD62F122 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
