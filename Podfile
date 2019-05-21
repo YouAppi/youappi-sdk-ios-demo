@@ -1,4 +1,5 @@
 workspace 'SimpleYouAppiApp.xcworkspace'
+platform :ios, ‘9.0’
 
 project 'AppDemoMoPub/AppDemoMoPub.xcodeproj'
 project 'AppDemoAdMob/AppDemoAdMob.xcodeproj'

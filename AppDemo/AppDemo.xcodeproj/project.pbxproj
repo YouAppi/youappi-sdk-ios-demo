@@ -227,7 +227,7 @@
 				TargetAttributes = {
 					8C2D83081E94758300E55A8B = {
 						CreatedOnToolsVersion = 8.3;
-						DevelopmentTeam = 3RD42EKR43;
+						DevelopmentTeam = 54TJADLH4F;
 						ProvisioningStyle = Automatic;
 					};
 					8C2D831C1E94758300E55A8B = {
@@ -249,6 +249,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -298,7 +299,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/../Pods/Target Support Files/Pods-AppDemo/Pods-AppDemo-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-AppDemo/Pods-AppDemo-frameworks.sh",
 				"${PODS_ROOT}/YouAppiMoatSDK/YouAppiMoat.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -307,7 +308,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-AppDemo/Pods-AppDemo-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AppDemo/Pods-AppDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		8CC1501C1EAC8368008156D4 /* ShellScript */ = {
@@ -408,6 +409,7 @@
 		8C2D832F1E94758300E55A8B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -438,6 +440,7 @@
 				DEBUG_ACTIVITY_MODE = "";
 				"DEBUG_ACTIVITY_MODE[sdk=iphonesimulator*]" = disable;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
 				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -469,6 +472,7 @@
 		8C2D83301E94758300E55A8B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -498,6 +502,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_ACTIVITY_MODE = "";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
 				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -527,14 +532,14 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 3RD42EKR43;
+				DEVELOPMENT_TEAM = 54TJADLH4F;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = AppDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.youappi.AppDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.youappi.AppDemotest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -560,7 +565,7 @@
 				INFOPLIST_FILE = AppDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = com.youappi.AppDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.youappi.AppDemotest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "b417d4a0-27cb-426e-8148-9aa434a2e5de";
 				PROVISIONING_PROFILE_SPECIFIER = MoatAdHoKNew;

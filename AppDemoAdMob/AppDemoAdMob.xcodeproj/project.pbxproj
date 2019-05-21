@@ -307,7 +307,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/../Pods/Target Support Files/Pods-AppDemoAdMob/Pods-AppDemoAdMob-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-AppDemoAdMob/Pods-AppDemoAdMob-frameworks.sh",
 				"${PODS_ROOT}/YouAppiMoatSDK/YouAppiMoat.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -316,7 +316,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-AppDemoAdMob/Pods-AppDemoAdMob-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AppDemoAdMob/Pods-AppDemoAdMob-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		CD3515E9C42F138E4AB94159 /* [CP] Check Pods Manifest.lock */ = {

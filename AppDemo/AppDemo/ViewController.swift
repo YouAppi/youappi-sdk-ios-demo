@@ -238,10 +238,11 @@ class ViewController: UIViewController, YALoggerDelegate, YAAdInterstitialAdDele
                     self.rewardedVideo?.delegate = self
                     
                     // Add custom parameters to be received on server-to-server completion callback (optional)
-                    let adRequest = YAAdRequest()
-                    adRequest.addCustomParam(paramKey: "user_id", paramValue: "user1")
-                    adRequest.addCustomParam(paramKey: "reward_type", paramValue: "coins")
-                    adRequest.addCustomParam(paramKey: "reward_value", paramValue: "25")
+                    let adRequest = AdRequestBuilder()
+                        .addCustomParam(paramKey: "user_id", paramValue: "user1")
+                        .addCustomParam(paramKey: "reward_type", paramValue: "coins")
+                        .addCustomParam(paramKey: "reward_value", paramValue: "25")
+                        .build()
                     self.rewardedVideo?.adRequest = adRequest
                     
                     self.rewardedVideo?.load()
