@@ -87,7 +87,20 @@ typedef NS_ENUM(NSUInteger, ButtonAdType)
 - (void)loadRewardedVideo {
     
     // Initialize rewarded video before loading any ads.
-    [[MoPub sharedInstance] initializeRewardedVideoWithGlobalMediationSettings:nil delegate:self];
+    MPMoPubConfiguration *sdkConfig = [[MPMoPubConfiguration alloc] initWithAdUnitIdForAppInitialization:RewardedUnitID];
+    
+    sdkConfig.globalMediationSettings = @[];
+//    sdkConfig.loggingLevel = MPLogLevelInfo;
+//    sdkConfig.allowLegitimateInterest(BOOL);
+//    sdkConfig.allowLegitimateInterest(BOOL);
+//    sdkConfig.additionalNetworks(NSArray of class names);
+//   sdkConfig.mediatedNetworkConfigurations(NSMutableDictionary of network configuration);
+//    [[MoPub sharedInstance] initializeSdkWithConfiguration:sdkConfig completion:nil];
+//    [[MoPub sharedInstance] initializeRewardedVideoWithGlobalMediationSettings:nil delegate:self];
+    [[MoPub sharedInstance] initializeSdkWithConfiguration:sdkConfig completion:^{
+        NSLog(@"SDK initialization complete");
+        // SDK initialization complete. Ready to make ad requests.
+    }];
     
     // Fetch the rewarded video ad.
     [MPRewardedVideo loadRewardedVideoAdWithAdUnitID:RewardedUnitID withMediationSettings:nil];

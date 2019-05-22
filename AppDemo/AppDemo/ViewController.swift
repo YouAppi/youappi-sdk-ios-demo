@@ -54,7 +54,7 @@ class ViewController: UIViewController, YALoggerDelegate, YAAdInterstitialAdDele
         super.viewDidLoad()
         
         // Please note this is a demo access token. Change it to your in order to see ads relevant to your app.
-        YouAppi.initialize(accessToken:"821cfa77-3127-42b5-9e6b-0afcecf77c67", userConsent: true)
+        YouAppi.initialize(accessToken:"821cfa77-3127-42b5-9e6b-0afcecf77c67", userConsent: true, gdpr: false)
         YouAppi.sharedInstance.ageRestrictedUser = false
         let version = ("Version: " + YouAppi.sdkVersion())
         self.versionLabel.text = version
@@ -238,10 +238,11 @@ class ViewController: UIViewController, YALoggerDelegate, YAAdInterstitialAdDele
                     self.rewardedVideo?.delegate = self
                     
                     // Add custom parameters to be received on server-to-server completion callback (optional)
-                    let adRequest = YAAdRequest()
-                    adRequest.addCustomParam(paramKey: "user_id", paramValue: "user1")
-                    adRequest.addCustomParam(paramKey: "reward_type", paramValue: "coins")
-                    adRequest.addCustomParam(paramKey: "reward_value", paramValue: "25")
+                    let adRequest = AdRequestBuilder()
+                        .addCustomParam(paramKey: "user_id", paramValue: "user1")
+                        .addCustomParam(paramKey: "reward_type", paramValue: "coins")
+                        .addCustomParam(paramKey: "reward_value", paramValue: "25")
+                        .build()
                     self.rewardedVideo?.adRequest = adRequest
                     
                     self.rewardedVideo?.load()
