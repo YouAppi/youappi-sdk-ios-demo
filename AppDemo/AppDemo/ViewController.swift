@@ -54,7 +54,7 @@ class ViewController: UIViewController, YALoggerDelegate, YAAdInterstitialAdDele
         super.viewDidLoad()
         
         // Please note this is a demo access token. Change it to your in order to see ads relevant to your app.
-        YouAppi.initialize(accessToken:"821cfa77-3127-42b5-9e6b-0afcecf77c67", userConsent: true)
+        YouAppi.initialize(accessToken:"821cfa77-3127-42b5-9e6b-0afcecf77c67", userConsent: true, gdpr: false)
         YouAppi.sharedInstance.ageRestrictedUser = false
         let version = ("Version: " + YouAppi.sdkVersion())
         self.versionLabel.text = version
