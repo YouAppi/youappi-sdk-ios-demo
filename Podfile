@@ -23,5 +23,6 @@ target 'AppDemoAdMob' do
     pod 'YouAppiAdMobAdapter'
     pod 'YouAppiMoatSDK'
     pod ‘YouAppiMoatSDK’, ‘4.4.0’
+    pod 'PersonalizedAdConsent'
 end
 
