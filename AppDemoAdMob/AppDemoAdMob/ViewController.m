@@ -89,7 +89,7 @@ typedef NS_ENUM(NSUInteger, ButtonAdType)
 }
 
 - (void)initAdMob{
-    [GADMobileAds configureWithApplicationID:AdMobAppID];
+    [GADMobileAds.sharedInstance startWithCompletionHandler: nil];
 }
 
 - (void)loadRewardedVideoAdMob {
