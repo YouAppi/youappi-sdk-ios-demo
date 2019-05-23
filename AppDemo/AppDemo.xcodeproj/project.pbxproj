@@ -227,7 +227,8 @@
 				TargetAttributes = {
 					8C2D83081E94758300E55A8B = {
 						CreatedOnToolsVersion = 8.3;
-						DevelopmentTeam = 54TJADLH4F;
+						DevelopmentTeam = 3RD42EKR43;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 					};
 					8C2D831C1E94758300E55A8B = {
@@ -532,7 +533,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 54TJADLH4F;
+				DEVELOPMENT_TEAM = 3RD42EKR43;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -543,8 +544,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.0;
-				VALID_ARCHS = "arm64 armv7";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -569,8 +569,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "b417d4a0-27cb-426e-8148-9aa434a2e5de";
 				PROVISIONING_PROFILE_SPECIFIER = MoatAdHoKNew;
-				SWIFT_VERSION = 4.0;
-				VALID_ARCHS = "arm64 armv7";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
