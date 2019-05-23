@@ -15,7 +15,6 @@
 		BE287E7C2043026B00562044 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BE287E7B2043026B00562044 /* main.m */; };
 		BE287E862043026B00562044 /* AppDemoMoPubTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BE287E852043026B00562044 /* AppDemoMoPubTests.m */; };
 		BE287E912043026B00562044 /* AppDemoMoPubUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BE287E902043026B00562044 /* AppDemoMoPubUITests.m */; };
-		BE7F40EF204D588F00AC4F36 /* libMopubYouAppiAdapter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BE7F40E8204D588E00AC4F36 /* libMopubYouAppiAdapter.a */; };
 		F4A70894FE56D5B7792AAFDF /* libPods-AppDemoMoPub.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F272D684DC1B301E6739BE2D /* libPods-AppDemoMoPub.a */; };
 /* End PBXBuildFile section */
 
@@ -68,11 +67,6 @@
 		BE287E8C2043026B00562044 /* AppDemoMoPubUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppDemoMoPubUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE287E902043026B00562044 /* AppDemoMoPubUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDemoMoPubUITests.m; sourceTree = "<group>"; };
 		BE287E922043026B00562044 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BE7F40E8204D588E00AC4F36 /* libMopubYouAppiAdapter.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMopubYouAppiAdapter.a; sourceTree = "<group>"; };
-		BE7F40EB204D588F00AC4F36 /* YAMoPubInterstitialAdEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YAMoPubInterstitialAdEvent.h; sourceTree = "<group>"; };
-		BE7F40EC204D588F00AC4F36 /* YAAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YAAd.h; sourceTree = "<group>"; };
-		BE7F40ED204D588F00AC4F36 /* YAMoPubRewardedVideoAdEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YAMoPubRewardedVideoAdEvent.h; sourceTree = "<group>"; };
-		BE7F40EE204D588F00AC4F36 /* YAMoPubInterstitialVideoAdEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YAMoPubInterstitialVideoAdEvent.h; sourceTree = "<group>"; };
 		F272D684DC1B301E6739BE2D /* libPods-AppDemoMoPub.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AppDemoMoPub.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -81,7 +75,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE7F40EF204D588F00AC4F36 /* libMopubYouAppiAdapter.a in Frameworks */,
 				F4A70894FE56D5B7792AAFDF /* libPods-AppDemoMoPub.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -145,8 +138,6 @@
 		BE287E6B2043026B00562044 /* AppDemoMoPub */ = {
 			isa = PBXGroup;
 			children = (
-				BE7F40E9204D588F00AC4F36 /* include */,
-				BE7F40E8204D588E00AC4F36 /* libMopubYouAppiAdapter.a */,
 				BE287E6C2043026B00562044 /* AppDelegate.h */,
 				BE287E6D2043026B00562044 /* AppDelegate.m */,
 				BE287E6F2043026B00562044 /* ViewController.h */,
@@ -176,25 +167,6 @@
 				BE287E922043026B00562044 /* Info.plist */,
 			);
 			path = AppDemoMoPubUITests;
-			sourceTree = "<group>";
-		};
-		BE7F40E9204D588F00AC4F36 /* include */ = {
-			isa = PBXGroup;
-			children = (
-				BE7F40EA204D588F00AC4F36 /* MopubYouAppiAdapter */,
-			);
-			path = include;
-			sourceTree = "<group>";
-		};
-		BE7F40EA204D588F00AC4F36 /* MopubYouAppiAdapter */ = {
-			isa = PBXGroup;
-			children = (
-				BE7F40EB204D588F00AC4F36 /* YAMoPubInterstitialAdEvent.h */,
-				BE7F40EC204D588F00AC4F36 /* YAAd.h */,
-				BE7F40ED204D588F00AC4F36 /* YAMoPubRewardedVideoAdEvent.h */,
-				BE7F40EE204D588F00AC4F36 /* YAMoPubInterstitialVideoAdEvent.h */,
-			);
-			path = MopubYouAppiAdapter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,7 +235,7 @@
 		BE287E612043026B00562044 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "Itamar Menahem";
 				TargetAttributes = {
 					BE287E682043026B00562044 = {
@@ -503,6 +475,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -510,6 +483,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -559,6 +533,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -566,6 +541,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
