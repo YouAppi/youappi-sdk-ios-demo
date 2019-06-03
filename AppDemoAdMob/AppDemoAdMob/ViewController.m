@@ -89,7 +89,7 @@ typedef NS_ENUM(NSUInteger, ButtonAdType)
 }
 
 - (void)initAdMob{
-    [GADMobileAds configureWithApplicationID:AdMobAppID];
+    [GADMobileAds.sharedInstance startWithCompletionHandler: nil];
 }
 
 - (void)loadRewardedVideoAdMob {
@@ -160,22 +160,22 @@ typedef NS_ENUM(NSUInteger, ButtonAdType)
             case RewardedVideo:
             {
                 NSString *buttonText = [text stringByAppendingString:@" rewarded video"];
-                [_rewardedVideoButton setTitle:buttonText forState:UIControlStateNormal];
-                [_rewardedVideoButton layoutIfNeeded];
+                [self->_rewardedVideoButton setTitle:buttonText forState:UIControlStateNormal];
+                [self->_rewardedVideoButton layoutIfNeeded];
                 break;
             }
             case InterstitialVideo:
             {
                 NSString *buttonText = [text stringByAppendingString:@" interstitial video"];
-                [_interstitialVideoButton setTitle:buttonText forState:UIControlStateNormal];
-                [_interstitialVideoButton layoutIfNeeded];
+                [self->_interstitialVideoButton setTitle:buttonText forState:UIControlStateNormal];
+                [self->_interstitialVideoButton layoutIfNeeded];
                 break;
             }
             case InterstitialAd:
             {
                 NSString *buttonText = [text stringByAppendingString:@" interstitial ad"];
-                [_interstitialAdButton setTitle:buttonText forState:UIControlStateNormal];
-                [_interstitialAdButton layoutIfNeeded];
+                [self->_interstitialAdButton setTitle:buttonText forState:UIControlStateNormal];
+                [self->_interstitialAdButton layoutIfNeeded];
                 break;
             }
             default:
@@ -378,7 +378,7 @@ typedef NS_ENUM(NSUInteger, ButtonAdType)
     [UIView animateWithDuration:0.4 animations:^{
         [self.view layoutIfNeeded];
     } completion:^(BOOL finished) {
-        _messageLabel.text = nil;
+        self->_messageLabel.text = nil;
     }];
 }
 
