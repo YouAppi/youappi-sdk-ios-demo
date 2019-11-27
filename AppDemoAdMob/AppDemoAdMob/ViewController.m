@@ -59,6 +59,8 @@ typedef NS_ENUM(NSUInteger, ButtonAdType)
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    _messageViewBottomConstraint.constant = -(2*MESSAGE_VIEW_HEIGHT);
 
     [self updateButtonText:RewardedVideo text:@"Load"];
     [self updateButtonText:InterstitialVideo text:@"Load"];
@@ -373,7 +375,7 @@ typedef NS_ENUM(NSUInteger, ButtonAdType)
     if (!_isAlertShown) return;
     
     _isAlertShown = NO;
-    _messageViewBottomConstraint.constant = -MESSAGE_VIEW_HEIGHT;
+    _messageViewBottomConstraint.constant = -(2*MESSAGE_VIEW_HEIGHT);
     
     [UIView animateWithDuration:0.4 animations:^{
         [self.view layoutIfNeeded];

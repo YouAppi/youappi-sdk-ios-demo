@@ -58,6 +58,12 @@ typedef NS_ENUM(NSUInteger, ButtonAdType)
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    _messageViewBottomConstraint.constant = -(2*MESSAGE_VIEW_HEIGHT);
+    
+    // Initialize rewarded video before loading any ads.
+    MPMoPubConfiguration *config = [[MPMoPubConfiguration alloc] initWithAdUnitIdForAppInitialization:RewardedUnitID];
+    [[MoPub sharedInstance] initializeSdkWithConfiguration:config completion:nil];
+    
     [self updateButtonText:RewardedVideo text:@"Load"];
     [self updateButtonText:InterstitialVideo text:@"Load"];
     [self updateButtonText:InterstitialAd text:@"Load"];
@@ -86,23 +92,8 @@ typedef NS_ENUM(NSUInteger, ButtonAdType)
 
 - (void)loadRewardedVideo {
     
-    // Initialize rewarded video before loading any ads.
-    MPMoPubConfiguration *sdkConfig = [[MPMoPubConfiguration alloc] initWithAdUnitIdForAppInitialization:RewardedUnitID];
-    
-    sdkConfig.globalMediationSettings = @[];
-//    sdkConfig.loggingLevel = MPLogLevelInfo;
-//    sdkConfig.allowLegitimateInterest(BOOL);
-//    sdkConfig.allowLegitimateInterest(BOOL);
-//    sdkConfig.additionalNetworks(NSArray of class names);
-//   sdkConfig.mediatedNetworkConfigurations(NSMutableDictionary of network configuration);
-//    [[MoPub sharedInstance] initializeSdkWithConfiguration:sdkConfig completion:nil];
-//    [[MoPub sharedInstance] initializeRewardedVideoWithGlobalMediationSettings:nil delegate:self];
-    [[MoPub sharedInstance] initializeSdkWithConfiguration:sdkConfig completion:^{
-        NSLog(@"SDK initialization complete");
-        // SDK initialization complete. Ready to make ad requests.
-    }];
-    
     // Fetch the rewarded video ad.
+    [MPRewardedVideo setDelegate:self forAdUnitId:RewardedUnitID];
     [MPRewardedVideo loadRewardedVideoAdWithAdUnitID:RewardedUnitID withMediationSettings:nil];
 }
 
@@ -379,7 +370,7 @@ typedef NS_ENUM(NSUInteger, ButtonAdType)
     if (!_isAlertShown) return;
     
     _isAlertShown = NO;
-    _messageViewBottomConstraint.constant = -MESSAGE_VIEW_HEIGHT;
+    _messageViewBottomConstraint.constant = -(2*MESSAGE_VIEW_HEIGHT);
     
     [UIView animateWithDuration:0.4 animations:^{
         [self.view layoutIfNeeded];

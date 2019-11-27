@@ -181,8 +181,8 @@
 				BE71B3B220346A0500024D2B /* Frameworks */,
 				BE71B3B320346A0500024D2B /* Resources */,
 				BEE337D92042CD2200F07C68 /* Embed Frameworks */,
-				728DFD0C1A9CC6A3CD62F122 /* [CP] Embed Pods Frameworks */,
 				0C347EC80FE8E8B366DC1DE2 /* [CP] Copy Pods Resources */,
+				5A2633692D7386E36B5F28DF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -307,15 +307,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-AppDemoAdMob/Pods-AppDemoAdMob-resources.sh",
 				"${PODS_CONFIGURATION_BUILD_DIR}/PersonalizedAdConsent/PersonalizedAdConsent.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/PersonalizedAdConsent.bundle",
 			);
@@ -324,7 +320,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AppDemoAdMob/Pods-AppDemoAdMob-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		728DFD0C1A9CC6A3CD62F122 /* [CP] Embed Pods Frameworks */ = {
+		5A2633692D7386E36B5F28DF /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -562,7 +558,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = youappi.MoPub;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = $SOURCE_ROOT/include;
+				USER_HEADER_SEARCH_PATHS = "$SOURCE_ROOT/include";
 			};
 			name = Debug;
 		};
@@ -588,7 +584,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = youappi.MoPub;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = $SOURCE_ROOT/include;
+				USER_HEADER_SEARCH_PATHS = "$SOURCE_ROOT/include";
 			};
 			name = Release;
 		};

@@ -1,0 +1,9 @@
+
+
+
+module OMSDK_Youappi{
+    
+    header "OMSDK_Youappi.framework/Headers/OMIDImports.h"
+    
+    export *
+}

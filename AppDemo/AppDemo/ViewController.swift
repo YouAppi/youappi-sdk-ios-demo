@@ -22,7 +22,7 @@ enum ButtonAdType: Int {
     case InterstitialAd
 }
 
-class ViewController: UIViewController, YALoggerDelegate, YAAdInterstitialAdDelegate, YAAdRewardedVideoDelegate, YAAdInterstitialVideoDelegate {
+class ViewController: UIViewController, YAAdInterstitialAdDelegate, YAAdRewardedVideoDelegate {
     let product_rewarded_video = "Rewarded Video"
     let product_interstitial_video = "Interstitial Video"
     let product_interstitial_ad = "Interstitial Ad"
@@ -32,8 +32,8 @@ class ViewController: UIViewController, YALoggerDelegate, YAAdInterstitialAdDele
     var interstitialAdId = "interstitial_ad_test_ios"
     
     var rewardedVideo: YAAdRewardedVideo?
-    var interstitialVideo: YAAdInterstitialVideo?
-    var interstitialAd: YAAdCard?
+    var interstitialVideo: YAAdInterstitialAd?
+    var interstitialAd: YAAdInterstitialAd?
     
     var alert: AlertToast?
     var dictToKeepTrackOfProductTypeForEveryUnitAdID: [String:String]!
@@ -62,8 +62,7 @@ class ViewController: UIViewController, YALoggerDelegate, YAAdInterstitialAdDele
         print("Environment: " + YouAppi.sharedInstance.environment)
         print(version)
         
-        YouAppi.sharedInstance.logLevel(.all)
-        YouAppi.sharedInstance.log()?.delegate = self
+        YouAppi.sharedInstance.logLevel(.error)
         
         self.dictToKeepTrackOfProductTypeForEveryUnitAdID = [String:String]()
     }
@@ -251,9 +250,11 @@ class ViewController: UIViewController, YALoggerDelegate, YAAdInterstitialAdDele
             case .InterstitialVideo:
                 if buttonInterstitialVideoState == .Load {
                     if (interstitialVideo == nil) {
-                        self.interstitialVideo = YouAppi.sharedInstance.interstitialVideo(interstitialVideoId)}
+                        self.interstitialVideo = YouAppi.sharedInstance.interstitialAd(interstitialVideoId)}
                     self.dictToKeepTrackOfProductTypeForEveryUnitAdID[interstitialVideoId] = self.product_interstitial_video
                     self.interstitialVideo?.delegate = self
+                    let adRequest = AdRequestBuilder().setCreativeType(.Video).build()
+                    self.interstitialVideo?.adRequest = adRequest
                     self.interstitialVideo?.load()
                 }
                 adOpt = self.interstitialVideo
@@ -263,6 +264,8 @@ class ViewController: UIViewController, YALoggerDelegate, YAAdInterstitialAdDele
                         self.interstitialAd = YouAppi.sharedInstance.interstitialAd(interstitialAdId)}
                     self.dictToKeepTrackOfProductTypeForEveryUnitAdID[interstitialAdId] = self.product_interstitial_ad
                     self.interstitialAd?.delegate = self
+                    let adRequest = AdRequestBuilder().setCreativeType(.Static).build()
+                    self.interstitialAd?.adRequest = adRequest
                     self.interstitialAd?.load()
                 }
                 adOpt = self.interstitialAd
@@ -367,28 +370,6 @@ class ViewController: UIViewController, YALoggerDelegate, YAAdInterstitialAdDele
         self.showAlert(message: errorMessage)
     }
     
-    // MARK: YALogger Delegate
-    
-    func logDidReceivedInformation(youAppi: YouAppi, tag: YALogTag, logLevel: YALogLevel, message: String, error: Error?)
-    {
-        /*
-         switch logLevel
-         {
-         case .none:
-         print(logLevel.descriptionAsString())
-         case .all:
-         print(logLevel.descriptionAsString())
-         case .debug:
-         print(logLevel.descriptionAsString())
-         case .info:
-         print(logLevel.descriptionAsString())
-         case .warning:
-         print(logLevel.descriptionAsString())
-         case .error:
-         print(logLevel.descriptionAsString())
-         }
-         */
-    }
 }
 
     
